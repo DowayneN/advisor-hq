@@ -1,0 +1,92 @@
+{
+  "date": "2026-04-09",
+  "generated_at": "07:00",
+  "source": "seed",
+  "sme_leads": [
+    {
+      "id": "lead_seed_1",
+      "company": "The Anchor Kitchen",
+      "industry": "Restaurant / Café",
+      "website": null,
+      "phone": "02380 221 455",
+      "location": "Ocean Village, Southampton",
+      "notes": "No website — Facebook page only. Good footfall, strong Google reviews."
+    },
+    {
+      "id": "lead_seed_2",
+      "company": "Solent Plumbing Co.",
+      "industry": "Trades / Plumbing",
+      "website": "solentplumbing.co.uk",
+      "phone": "07891 234 567",
+      "location": "Shirley, Southampton",
+      "notes": "Existing site is outdated — no mobile version. High-intent search traffic."
+    },
+    {
+      "id": "lead_seed_3",
+      "company": "Bitterne Barbers",
+      "industry": "Personal Care",
+      "website": null,
+      "phone": "02380 443 221",
+      "location": "Bitterne, Southampton",
+      "notes": "Instagram only. 200+ Google Maps reviews. No booking system online."
+    },
+    {
+      "id": "lead_seed_4",
+      "company": "Eastleigh Electricals",
+      "industry": "Trades / Electrical",
+      "website": null,
+      "phone": "07712 098 334",
+      "location": "Eastleigh, Southampton",
+      "notes": "Listed on Checkatrade only. No standalone web presence."
+    },
+    {
+      "id": "lead_seed_5",
+      "company": "Hampshire Laser Clinic",
+      "industry": "Health & Beauty",
+      "website": "hampshirelaserclinic.com",
+      "phone": "02381 556 780",
+      "location": "Shirley, Southampton",
+      "notes": "Site loads slowly, no online booking, outdated design. High-value clients."
+    }
+  ],
+  "linkedin_prospects": [
+    {
+      "id": "prospect_seed_1",
+      "name": "James Holloway",
+      "title": "Sales Director",
+      "company": "Meridian Recruitment",
+      "url": "https://www.linkedin.com/in/james-holloway-example",
+      "reason": "Manages a team of 6 sales reps. Recently posted about onboarding challenges and new hire ramp-up time."
+    },
+    {
+      "id": "prospect_seed_2",
+      "name": "Sarah Chen",
+      "title": "Head of Sales",
+      "company": "Hampshire Insurance Group",
+      "url": "https://www.linkedin.com/in/sarah-chen-example",
+      "reason": "Posts regularly about sales training. Team of 8. Ideal CloseCoach profile."
+    },
+    {
+      "id": "prospect_seed_3",
+      "name": "Marcus Reid",
+      "title": "Branch Manager",
+      "company": "Countrywide Estate Agents",
+      "url": "https://www.linkedin.com/in/marcus-reid-example",
+      "reason": "Estate agency with active sales team. Commented on a post about reducing time-to-productivity for new staff."
+    }
+  ],
+  "content_ideas": {
+    "dts": [
+      "Short video: 'DVSA test dates are 6 months out — here's how learners are getting them in 2 weeks' (30 sec, voiceover on screen recording of the swap flow)",
+      "Community post: respond to learner driver frustration posts in Facebook groups with a natural mention of drivingtestswap.uk"
+    ],
+    "athletics": [
+      "Slow-mo muscle-up or L-sit attempt — raw footage, no edit needed, caption: 'Progress is quiet until it isn't'",
+      "Caption hook: 'Most people overtrain and undertrain at the same time — here's what I mean' (pair with a compound movement clip)"
+    ],
+    "aimybiz": [
+      "LinkedIn post: 'I built an AI that simulates a difficult customer call — here's what happened when I tested it on myself' (first-person, honest, shows CloseCoach)",
+      "60-second screen record walkthrough: show a CloseCoach roleplay session start-to-finish with voiceover commentary"
+    ]
+  }
+}

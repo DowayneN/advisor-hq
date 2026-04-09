@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ── Sumi Theme (Warm Dark) ── */
+:root {
+  --color-bg:          #141210;
+  --color-surface:     #1c1a18;
+  --color-surface-2:   #252220;
+  --color-surface-3:   #302d2a;
+  --color-text:        #e8e4de;
+  --color-text-muted:  #a09b94;
+  --color-text-faint:  #6b665f;
+  --color-border:      #302d2a;
+  --color-border-soft: #252220;
+  --color-accent:      #c8a96e;
+  --color-accent-dim:  #3d3020;
+  --color-success:     #7aad7a;
+  --color-warning:     #c8a96e;
+  --color-error:       #c47a7a;
+
+  /* Typography scale */
+  --text-xs:   0.625rem;
+  --text-sm:   0.8125rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.625rem;
+  --text-2xl:  2rem;
+  --text-3xl:  2.625rem;
+
+  /* Spacing (Fibonacci) */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.8125rem;
+  --space-4:   1.3125rem;
+  --space-5:   2.125rem;
+  --space-6:   3.4375rem;
+  --space-7:   5.5rem;
+
+  /* Radii */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.8125rem;
+  --radius-xl:   1.3125rem;
+  --radius-2xl:  2.125rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.14), 0 2px 6px rgba(0,0,0,0.08);
+  --shadow-lg:   0 8px 28px rgba(0,0,0,0.16), 0 4px 12px rgba(0,0,0,0.10);
+  --shadow-xl:   0 20px 60px rgba(0,0,0,0.20), 0 8px 24px rgba(0,0,0,0.12);
+  --shadow-inner: inset 0 1px 3px rgba(0,0,0,0.12);
+
+  /* Venture accents (muted, natural) */
+  --venture-dts:       #7aadca;
+  --venture-dts-dim:   #1a2a35;
+  --venture-aimybiz:   #7aad7a;
+  --venture-aimybiz-dim: #1a2e1a;
+  --venture-athletics: #c49a6c;
+  --venture-athletics-dim: #2e231a;
+  --venture-admin:     #a09b94;
+  --venture-admin-dim: #252220;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-faint); }
+
+/* Checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+input[type="checkbox"]:checked {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: 5px;
+  width: 5px; height: 9px;
+  border: solid var(--color-bg);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Progress bar animation */
+@keyframes fillBar {
+  from { width: 0; }
+}
+.progress-fill {
+  animation: fillBar 0.8s ease-out;
+}
+
+/* Entrance animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fadeUp 0.3s ease forwards;
+}
+
+/* XP pop */
+@keyframes xpPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.xp-pop {
+  animation: xpPop 0.3s ease;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

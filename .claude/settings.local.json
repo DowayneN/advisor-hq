@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(netstat -ano)",
+      "Bash(findstr 5080)",
+      "Bash(taskkill /PID 33292 /F)",
+      "Bash(cmd /c \"taskkill /PID 33292 /F\")",
+      "Bash(cmd /c \"netstat -ano | findstr 5080\")",
+      "Bash(cmd /c \"netstat -ano | findstr :5080\")",
+      "Bash(cmd /c \"netstat -ano | findstr :59963\")",
+      "Bash(cmd /c \"taskkill /F /IM node.exe 2>&1\")",
+      "Bash(cmd /c \"netstat -ano | findstr :3000\")",
+      "Bash(curl -s http://localhost:5082/)"
+    ]
+  }
+}
