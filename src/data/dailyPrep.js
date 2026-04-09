@@ -7,14 +7,21 @@ export const EMPTY_PREP = {
   content_ideas: { dts: [], athletics: [], aimybiz: [] },
 }
 
+const GITHUB_RAW_URL =
+  'https://raw.githubusercontent.com/DowayneN/advisor-hq/main/public/daily-prep.json'
+
 export async function fetchDailyPrep() {
+  // Try GitHub first — written by the 7am scheduled agent
+  try {
+    const res = await fetch(GITHUB_RAW_URL + '?t=' + Date.now())
+    if (res.ok) return await res.json()
+  } catch {}
+  // Fall back to local seed data during development
   try {
     const res = await fetch('/daily-prep.json?t=' + Date.now())
-    if (!res.ok) return EMPTY_PREP
-    return await res.json()
-  } catch {
-    return EMPTY_PREP
-  }
+    if (res.ok) return await res.json()
+  } catch {}
+  return EMPTY_PREP
 }
 
 export const OUTCOME_CONFIG = {
