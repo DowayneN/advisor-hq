@@ -34,11 +34,11 @@ function EmptyStage({ label }) {
   return (
     <div
       style={{
-        border: '1px dashed var(--color-border-soft)',
+        border: '1px dashed var(--border-subtle)',
         borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-3)',
         textAlign: 'center',
-        color: 'var(--color-text-faint)',
+        color: 'var(--text-tertiary)',
         fontSize: 'var(--text-xs)',
       }}
     >
@@ -55,20 +55,30 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
   return (
     <div
       style={{
-        background: 'var(--color-surface)',
-        border: '1px solid var(--color-border)',
-        borderRadius: 'var(--radius-lg)',
+        background: 'var(--layer-2)',
+        border: '1px solid var(--border-subtle)',
+        borderRadius: '16px',
         padding: 'var(--space-3)',
         boxShadow: 'var(--shadow-sm)',
-        transition: 'box-shadow 0.2s',
+        transition: 'all var(--duration-base) var(--ease-out)',
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.borderColor = 'var(--border-medium)'
+        e.currentTarget.style.boxShadow = 'var(--shadow-md)'
+        e.currentTarget.style.transform = 'translateY(-1px)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.borderColor = 'var(--border-subtle)'
+        e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
+        e.currentTarget.style.transform = 'translateY(0)'
       }}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
-          <p className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)', lineHeight: 1.3 }}>
+          <p className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--text-primary)', lineHeight: 1.3 }}>
             {prospect.name}
           </p>
-          <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)', marginTop: '2px' }}>
+          <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', marginTop: '2px' }}>
             {prospect.company}
           </p>
         </div>
@@ -90,7 +100,7 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
       </div>
 
       {prospect.value > 0 && (
-        <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-accent)', marginTop: '4px' }}>
+        <p style={{ fontSize: 'var(--text-xs)', color: 'var(--accent-gold)', marginTop: '4px' }}>
           £{prospect.value.toLocaleString()} potential
         </p>
       )}
@@ -105,7 +115,7 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
               border: 'none',
               padding: 0,
               fontSize: '10px',
-              color: 'var(--color-text-faint)',
+              color: 'var(--text-tertiary)',
               cursor: 'pointer',
               fontFamily: 'inherit',
             }}
@@ -113,7 +123,7 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
             {showNote ? '↑ hide notes' : '↓ notes'}
           </button>
           {showNote && (
-            <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)', marginTop: '4px', lineHeight: 1.6 }}>
+            <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.6 }}>
               {prospect.notes}
             </p>
           )}
@@ -121,7 +131,7 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
       )}
 
       {/* Last contact */}
-      <p style={{ fontSize: '10px', color: 'var(--color-text-faint)', marginTop: 'var(--space-2)' }}>
+      <p style={{ fontSize: '10px', color: 'var(--text-tertiary)', marginTop: 'var(--space-2)' }}>
         Last contact: {prospect.lastContact}
       </p>
 
@@ -132,11 +142,11 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
             onClick={() => onMove(prospect.id, STAGE_ORDER[stageIndex - 1])}
             style={{
               background: 'transparent',
-              border: '1px solid var(--color-border)',
+              border: '1px solid var(--border-medium)',
               borderRadius: 'var(--radius-md)',
               padding: '3px 8px',
               fontSize: '10px',
-              color: 'var(--color-text-faint)',
+              color: 'var(--text-tertiary)',
               cursor: 'pointer',
               fontFamily: 'inherit',
               transition: 'all 0.15s',
@@ -149,12 +159,12 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
           <button
             onClick={() => onMove(prospect.id, STAGE_ORDER[stageIndex + 1])}
             style={{
-              background: 'var(--color-accent-dim)',
-              border: '1px solid var(--color-accent)',
+              background: 'var(--accent-gold-muted)',
+              border: '1px solid var(--accent-gold)',
               borderRadius: 'var(--radius-md)',
               padding: '3px 8px',
               fontSize: '10px',
-              color: 'var(--color-accent)',
+              color: 'var(--accent-gold)',
               cursor: 'pointer',
               fontFamily: 'inherit',
               fontWeight: 600,
@@ -172,7 +182,7 @@ function ProspectCard({ prospect, onMove, onDelete, onEdit }) {
             border: 'none',
             padding: '3px 6px',
             fontSize: '10px',
-            color: 'var(--color-text-faint)',
+            color: 'var(--text-tertiary)',
             cursor: 'pointer',
             fontFamily: 'inherit',
           }}
@@ -203,11 +213,11 @@ function AddProspectForm({ onAdd, onCancel }) {
   }
 
   const inputStyle = {
-    background: 'var(--color-surface-2)',
-    border: '1px solid var(--color-border)',
+    background: 'var(--layer-2)',
+    border: '1px solid var(--border-medium)',
     borderRadius: 'var(--radius-md)',
     padding: 'var(--space-2) var(--space-2)',
-    color: 'var(--color-text)',
+    color: 'var(--text-primary)',
     fontSize: 'var(--text-sm)',
     fontFamily: 'inherit',
     width: '100%',
@@ -216,7 +226,7 @@ function AddProspectForm({ onAdd, onCancel }) {
 
   return (
     <form onSubmit={submit} className="space-y-3" style={{ marginTop: 'var(--space-4)' }}>
-      <p className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)' }}>
+      <p className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--text-primary)' }}>
         Add Prospect
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-2)' }}>
@@ -272,8 +282,8 @@ function AddProspectForm({ onAdd, onCancel }) {
         <button
           type="submit"
           style={{
-            background: 'var(--color-accent)',
-            color: 'var(--color-bg)',
+            background: 'var(--accent-gold)',
+            color: 'var(--layer-0)',
             border: 'none',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
@@ -290,8 +300,8 @@ function AddProspectForm({ onAdd, onCancel }) {
           onClick={onCancel}
           style={{
             background: 'transparent',
-            color: 'var(--color-text-muted)',
-            border: '1px solid var(--color-border)',
+            color: 'var(--text-secondary)',
+            border: '1px solid var(--border-medium)',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
             fontSize: 'var(--text-sm)',
@@ -335,19 +345,19 @@ export default function ProspectPipeline() {
         <div>
           <h2
             className="font-bold"
-            style={{ fontSize: 'var(--text-xl)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)', lineHeight: 1.2 }}
           >
             Prospect Pipeline
           </h2>
-          <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text-faint)', marginTop: '2px' }}>
+          <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-tertiary)', marginTop: '2px' }}>
             {prospects.length} total · {prospects.filter(p => p.stage === 'won').length} won
           </p>
         </div>
         <button
           onClick={() => setShowAdd(s => !s)}
           style={{
-            background: 'var(--color-accent)',
-            color: 'var(--color-bg)',
+            background: 'var(--accent-gold)',
+            color: 'var(--layer-0)',
             border: 'none',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
@@ -365,8 +375,8 @@ export default function ProspectPipeline() {
       {showAdd && (
         <div
           style={{
-            background: 'var(--color-surface)',
-            border: '1px solid var(--color-border)',
+            background: 'var(--layer-2)',
+            border: '1px solid var(--border-medium)',
             borderRadius: 'var(--radius-xl)',
             padding: 'var(--space-4)',
             marginBottom: 'var(--space-4)',

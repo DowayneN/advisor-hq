@@ -211,47 +211,57 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
   return (
     <div
       style={{
-        background: 'var(--color-surface)',
-        border: '1px solid var(--color-border)',
-        borderRadius: 'var(--radius-xl)',
-        marginBottom: 'var(--space-5)',
+        background: 'var(--layer-1)',
+        border: '1px solid var(--border-subtle)',
+        borderRadius: 'var(--radius-lg)',
+        marginBottom: 'var(--space-8)',
         overflow: 'hidden',
+        boxShadow: 'var(--shadow-xs)',
       }}
     >
       {/* Panel header */}
       <div
         className="flex items-center justify-between"
         style={{
-          padding: 'var(--space-3) var(--space-4)',
-          borderBottom: collapsed ? 'none' : '1px solid var(--color-border-soft)',
+          padding: 'var(--space-4) var(--space-6)',
+          borderBottom: collapsed ? 'none' : '1px solid var(--divider)',
           cursor: 'pointer',
+          background: 'var(--layer-1)',
         }}
         onClick={() => setCollapsed(c => !c)}
       >
         <div className="flex items-center gap-3">
           <div
             style={{
-              width: '6px',
-              height: '6px',
-              borderRadius: '50%',
-              background: prep?.source === 'scheduled_agent' ? 'var(--color-success)' : 'var(--color-accent)',
-              boxShadow: `0 0 6px ${prep?.source === 'scheduled_agent' ? 'var(--color-success)' : 'var(--color-accent)'}`,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '3px 10px',
+              background: prep?.source === 'scheduled_agent' ? 'var(--success-bg)' : 'var(--accent-gold-muted)',
+              border: `1px solid ${prep?.source === 'scheduled_agent' ? 'rgba(52,211,153,0.2)' : 'rgba(232,196,104,0.2)'}`,
+              borderRadius: 'var(--radius-full)',
+              fontSize: 'var(--text-xs)',
+              color: prep?.source === 'scheduled_agent' ? 'var(--success)' : 'var(--accent-gold)',
+              fontWeight: 500,
             }}
-          />
+          >
+            <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'currentColor' }} />
+            {prep?.source === 'scheduled_agent' ? 'Live' : 'Seed'}
+          </div>
           <span
             className="font-semibold"
-            style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)' }}
+            style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
           >
             Today's Prep
           </span>
           {prep?.generated_at && (
-            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
               Generated {prep.generated_at}
               {prep.source === 'scheduled_agent' ? ' by agent' : ' · seed data'}
             </span>
           )}
         </div>
-        <span style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-xs)' }}>
+        <span style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-xs)' }}>
           {collapsed ? '↓ expand' : '↑ collapse'}
         </span>
       </div>
@@ -262,9 +272,9 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
           <div
             className="flex"
             style={{
-              padding: '0 var(--space-4)',
-              gap: 'var(--space-2)',
-              borderBottom: '1px solid var(--color-border-soft)',
+              padding: '0 var(--space-6)',
+              gap: 'var(--space-3)',
+              borderBottom: '1px solid var(--divider)',
             }}
           >
             {tabs.map(t => (
@@ -275,8 +285,8 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                   padding: 'var(--space-2) var(--space-2)',
                   background: 'transparent',
                   border: 'none',
-                  borderBottom: activeTab === t.id ? '2px solid var(--color-accent)' : '2px solid transparent',
-                  color: activeTab === t.id ? 'var(--color-text)' : 'var(--color-text-faint)',
+                  borderBottom: activeTab === t.id ? '2px solid var(--accent-gold)' : '2px solid transparent',
+                  color: activeTab === t.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
                   fontSize: 'var(--text-xs)',
                   fontFamily: 'inherit',
                   fontWeight: activeTab === t.id ? 600 : 400,
@@ -291,8 +301,8 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                 {t.label}
                 <span
                   style={{
-                    background: activeTab === t.id ? 'var(--color-accent-dim)' : 'var(--color-surface-3)',
-                    color: activeTab === t.id ? 'var(--color-accent)' : 'var(--color-text-faint)',
+                    background: activeTab === t.id ? 'rgba(232, 196, 104, 0.10)' : 'var(--layer-3)',
+                    color: activeTab === t.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
                     borderRadius: 'var(--radius-full)',
                     padding: '0 6px',
                     fontSize: '10px',
@@ -306,7 +316,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
           </div>
 
           {/* Tab content */}
-          <div style={{ padding: 'var(--space-3) var(--space-4)' }}>
+          <div style={{ padding: 'var(--space-5) var(--space-6)' }}>
 
             {/* ── SME LEADS ── */}
             {activeTab === 'leads' && (
@@ -318,27 +328,50 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                 ) : activeLeads.map(lead => (
                   <div
                     key={lead.id}
+                    className="lead-card-anim"
                     style={{
-                      background: 'var(--color-surface-2)',
-                      border: '1px solid var(--color-border-soft)',
+                      background: 'var(--layer-2)',
+                      border: '1px solid var(--border-subtle)',
                       borderRadius: 'var(--radius-lg)',
-                      padding: 'var(--space-3)',
+                      padding: 'var(--space-6)',
+                      boxShadow: 'var(--shadow-sm)',
+                      transition: 'all var(--duration-base) var(--ease-out)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = 'var(--border-medium)'
+                      e.currentTarget.style.boxShadow = 'var(--shadow-md)'
+                      e.currentTarget.style.transform = 'translateY(-1px)'
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = 'var(--border-subtle)'
+                      e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
+                      e.currentTarget.style.transform = 'translateY(0)'
                     }}
                   >
+                    {/* Gradient accent strip */}
+                    <div style={{
+                      position: 'absolute',
+                      top: 0, left: 0, right: 0,
+                      height: '2px',
+                      background: 'linear-gradient(90deg, var(--accent-gold), var(--accent-blue))',
+                      opacity: 0.5,
+                    }} />
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span
                             className="font-semibold"
-                            style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)' }}
+                            style={{ fontSize: 'var(--text-lg)', color: 'var(--text-primary)', letterSpacing: '-0.01em' }}
                           >
                             {lead.company}
                           </span>
                           <span
                             style={{
                               fontSize: '10px',
-                              color: 'var(--color-text-faint)',
-                              background: 'var(--color-surface-3)',
+                              color: 'var(--text-tertiary)',
+                              background: 'var(--layer-3)',
                               borderRadius: 'var(--radius-full)',
                               padding: '1px 8px',
                             }}
@@ -350,21 +383,29 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                               href={`https://${lead.website}`}
                               target="_blank"
                               rel="noreferrer"
-                              style={{ fontSize: '10px', color: 'var(--color-accent)', textDecoration: 'none' }}
+                              style={{ fontSize: '10px', color: 'var(--accent-blue)', textDecoration: 'none' }}
                             >
                               {lead.website} ↗
                             </a>
                           )}
                           {!lead.website && (
-                            <span style={{ fontSize: '10px', color: 'var(--color-error)' }}>No website</span>
+                            <span style={{
+                              fontSize: 'var(--text-xs)',
+                              color: 'var(--danger)',
+                              background: 'var(--danger-bg)',
+                              border: '1px solid rgba(248,113,113,0.2)',
+                              borderRadius: 'var(--radius-full)',
+                              padding: '2px 10px',
+                              fontWeight: 500,
+                            }}>No website</span>
                           )}
                         </div>
                         <p
                           style={{
-                            fontSize: 'var(--text-xs)',
-                            color: 'var(--color-text-faint)',
+                            fontSize: 'var(--text-sm)',
+                            color: 'var(--text-secondary)',
                             marginTop: '4px',
-                            lineHeight: 1.5,
+                            lineHeight: 1.65,
                           }}
                         >
                           {lead.location} · {lead.notes}
@@ -376,15 +417,15 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                         onClick={() => copyPhone(lead)}
                         style={{
                           flexShrink: 0,
-                          background: copiedId === lead.id ? 'rgba(74,124,89,0.2)' : 'var(--color-surface-3)',
-                          border: '1px solid var(--color-border)',
-                          borderRadius: 'var(--radius-md)',
-                          padding: '4px 10px',
+                          background: copiedId === lead.id ? 'rgba(52,211,153,0.12)' : 'rgba(124,140,248,0.08)',
+                          border: `1px solid ${copiedId === lead.id ? 'rgba(52,211,153,0.25)' : 'rgba(124,140,248,0.15)'}`,
+                          borderRadius: 'var(--radius-full)',
+                          padding: '4px 12px',
                           fontSize: 'var(--text-xs)',
-                          fontFamily: "'JetBrains Mono', monospace",
-                          color: copiedId === lead.id ? 'var(--color-success)' : 'var(--color-text-muted)',
+                          fontFamily: 'var(--font-mono)',
+                          color: copiedId === lead.id ? 'var(--success)' : 'var(--accent-blue)',
                           cursor: 'pointer',
-                          transition: 'all 0.15s',
+                          transition: 'all var(--duration-base)',
                           whiteSpace: 'nowrap',
                         }}
                       >
@@ -393,16 +434,24 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                     </div>
 
                     {/* Script toggle + outcome buttons */}
-                    <div className="flex items-center gap-2 flex-wrap" style={{ marginTop: 'var(--space-2)' }}>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 'var(--space-2)',
+                      flexWrap: 'wrap',
+                      marginTop: 'var(--space-4)',
+                      paddingTop: 'var(--space-4)',
+                      borderTop: '1px solid var(--divider)',
+                    }}>
                       <button
                         onClick={() => setOpenScript(openScript === lead.id ? null : lead.id)}
                         style={{
-                          background: openScript === lead.id ? 'var(--color-accent-dim)' : 'transparent',
-                          border: `1px solid ${openScript === lead.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+                          background: openScript === lead.id ? 'var(--accent-gold-muted)' : 'transparent',
+                          border: `1px solid ${openScript === lead.id ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
                           borderRadius: 'var(--radius-full)',
-                          padding: '2px 10px',
-                          fontSize: '10px',
-                          color: openScript === lead.id ? 'var(--color-accent)' : 'var(--color-text-faint)',
+                          padding: '6px 14px',
+                          fontSize: 'var(--text-xs)',
+                          color: openScript === lead.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
                           cursor: 'pointer',
                           fontFamily: 'inherit',
                           transition: 'all 0.15s',
@@ -411,26 +460,35 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                       >
                         {openScript === lead.id ? '↑ hide script' : '📞 call script'}
                       </button>
-                      <span style={{ fontSize: '10px', color: 'var(--color-text-faint)', marginRight: '2px' }}>
-                        Log:
+                      <span style={{
+                        fontSize: 'var(--text-xs)',
+                        fontWeight: 600,
+                        color: 'var(--text-tertiary)',
+                        letterSpacing: '0.05em',
+                        textTransform: 'uppercase',
+                        marginRight: 'var(--space-1)',
+                      }}>
+                        Log
                       </span>
                       {Object.entries(OUTCOME_CONFIG).map(([key, cfg]) => (
                         <button
                           key={key}
                           onClick={() => logOutcome(lead, key)}
                           style={{
-                            background: 'transparent',
-                            border: `1px solid ${cfg.color}`,
+                            background: key === 'interested' ? 'var(--accent-gold)' : key === 'follow_up' ? 'rgba(255,255,255,0.06)' : 'transparent',
+                            border: key === 'interested' ? 'none' : key === 'follow_up' ? '1px solid var(--border-medium)' : '1px solid var(--border-subtle)',
                             borderRadius: 'var(--radius-full)',
-                            padding: '2px 10px',
-                            fontSize: '10px',
-                            color: cfg.color,
+                            padding: '6px 14px',
+                            fontSize: 'var(--text-xs)',
+                            color: key === 'interested' ? 'var(--layer-0)' : key === 'follow_up' ? 'var(--text-secondary)' : 'var(--text-tertiary)',
                             cursor: 'pointer',
                             fontFamily: 'inherit',
-                            transition: 'background 0.15s',
+                            fontWeight: key === 'interested' ? 600 : 500,
+                            boxShadow: key === 'interested' ? 'var(--shadow-gold)' : 'none',
+                            transition: 'all 0.15s',
                           }}
-                          onMouseEnter={e => e.target.style.background = cfg.dim}
-                          onMouseLeave={e => e.target.style.background = 'transparent'}
+                          onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+                          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
                         >
                           {cfg.label} +{cfg.xp}XP
                         </button>
@@ -460,25 +518,35 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                   <div key={p.id}>
                   <div
                     style={{
-                      background: 'var(--color-surface-2)',
-                      border: '1px solid var(--color-border-soft)',
+                      background: 'var(--layer-2)',
+                      border: '1px solid var(--border-subtle)',
                       borderRadius: 'var(--radius-lg)',
-                      padding: 'var(--space-3)',
+                      padding: 'var(--space-6)',
                       display: 'flex',
                       alignItems: 'flex-start',
                       gap: 'var(--space-3)',
+                      boxShadow: 'var(--shadow-sm)',
+                      transition: 'all var(--duration-base) var(--ease-out)',
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.borderColor = 'var(--border-medium)'
+                      e.currentTarget.style.boxShadow = 'var(--shadow-md)'
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.borderColor = 'var(--border-subtle)'
+                      e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
                     }}
                   >
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)' }}>
+                        <span className="font-semibold" style={{ fontSize: 'var(--text-lg)', color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>
                           {p.name}
                         </span>
-                        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-muted)' }}>
+                        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
                           {p.title} · {p.company}
                         </span>
                       </div>
-                      <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)', marginTop: '4px', lineHeight: 1.5 }}>
+                      <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.65 }}>
                         {p.reason}
                       </p>
                     </div>
@@ -488,11 +556,11 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                         target="_blank"
                         rel="noreferrer"
                         style={{
-                          background: 'var(--color-accent-dim)',
-                          color: 'var(--color-accent)',
-                          border: '1px solid var(--color-accent)',
-                          borderRadius: 'var(--radius-md)',
-                          padding: '4px 10px',
+                          background: 'rgba(124,140,248,0.08)',
+                          color: 'var(--accent-blue)',
+                          border: '1px solid rgba(124,140,248,0.15)',
+                          borderRadius: 'var(--radius-full)',
+                          padding: '4px 12px',
                           fontSize: '10px',
                           textDecoration: 'none',
                           fontWeight: 500,
@@ -503,12 +571,12 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                       <button
                         onClick={() => setOpenScript(openScript === p.id ? null : p.id)}
                         style={{
-                          background: openScript === p.id ? 'var(--color-accent-dim)' : 'transparent',
-                          border: `1px solid ${openScript === p.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
-                          borderRadius: 'var(--radius-md)',
-                          padding: '4px 10px',
+                          background: openScript === p.id ? 'var(--accent-gold-muted)' : 'transparent',
+                          border: `1px solid ${openScript === p.id ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
+                          borderRadius: 'var(--radius-full)',
+                          padding: '4px 12px',
                           fontSize: '10px',
-                          color: openScript === p.id ? 'var(--color-accent)' : 'var(--color-text-faint)',
+                          color: openScript === p.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
                           cursor: 'pointer',
                           fontFamily: 'inherit',
                           transition: 'all 0.15s',
@@ -520,17 +588,17 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                         onClick={() => markMessaged(p.id)}
                         style={{
                           background: 'transparent',
-                          border: '1px solid var(--color-border)',
-                          borderRadius: 'var(--radius-md)',
-                          padding: '4px 10px',
+                          border: '1px solid var(--border-subtle)',
+                          borderRadius: 'var(--radius-full)',
+                          padding: '4px 12px',
                           fontSize: '10px',
-                          color: 'var(--color-text-faint)',
+                          color: 'var(--text-tertiary)',
                           cursor: 'pointer',
                           fontFamily: 'inherit',
                           transition: 'all 0.15s',
                         }}
-                        onMouseEnter={e => { e.target.style.color = 'var(--color-success)'; e.target.style.borderColor = 'var(--color-success)' }}
-                        onMouseLeave={e => { e.target.style.color = 'var(--color-text-faint)'; e.target.style.borderColor = 'var(--color-border)' }}
+                        onMouseEnter={e => { e.currentTarget.style.color = 'var(--success)'; e.currentTarget.style.borderColor = 'rgba(52,211,153,0.3)' }}
+                        onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-tertiary)'; e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
                       >
                         Sent +20XP
                       </button>
@@ -571,10 +639,10 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                             <div
                               key={key}
                               style={{
-                                background: used ? 'transparent' : 'var(--color-surface-2)',
-                                border: '1px solid var(--color-border-soft)',
+                                background: used ? 'transparent' : 'var(--layer-2)',
+                                border: '1px solid var(--border-subtle)',
                                 borderRadius: 'var(--radius-lg)',
-                                padding: 'var(--space-2) var(--space-3)',
+                                padding: 'var(--space-3) var(--space-4)',
                                 opacity: used ? 0.4 : 1,
                                 transition: 'opacity 0.2s',
                               }}

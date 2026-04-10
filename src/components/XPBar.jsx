@@ -13,8 +13,8 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
   return (
     <div
       style={{
-        background: 'var(--color-surface)',
-        border: '1px solid var(--color-border-soft)',
+        background: 'var(--layer-2)',
+        border: '1px solid var(--border-subtle)',
         borderRadius: 'var(--radius-lg)',
         padding: 'var(--space-4)',
         boxShadow: 'var(--shadow-sm)',
@@ -23,17 +23,17 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
       {/* Top row */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>
+          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600 }}>
             Daily XP
           </span>
           <span
-            className="font-mono font-semibold"
-            style={{ fontSize: 'var(--text-sm)', color: 'var(--color-accent)' }}
+            className="font-semibold"
+            style={{ fontSize: 'var(--text-sm)', color: 'var(--accent-gold)', fontFamily: 'var(--font-mono)' }}
           >
             {xpToday} / {DAILY_XP_TARGET}
           </span>
         </div>
-        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
           {xpTotal.toLocaleString()} total XP
         </span>
       </div>
@@ -42,7 +42,7 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
       <div
         style={{
           height: '6px',
-          background: 'var(--color-surface-3)',
+          background: 'var(--layer-3)',
           borderRadius: 'var(--radius-full)',
           overflow: 'hidden',
           marginBottom: 'var(--space-3)',
@@ -52,7 +52,7 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
           style={{
             height: '100%',
             width: `${pct}%`,
-            background: pct >= 100 ? 'var(--color-success)' : 'var(--color-accent)',
+            background: pct >= 100 ? 'var(--success)' : 'var(--accent-gold)',
             borderRadius: 'var(--radius-full)',
             transition: 'width 0.6s ease',
           }}
@@ -65,12 +65,12 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
           <span style={{ fontSize: 'var(--text-sm)' }}>🔥</span>
           <span
             className="font-medium"
-            style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text-muted)' }}
+            style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)' }}
           >
             {streak}-day streak
           </span>
           {nextMilestone && (
-            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
               · {nextMilestone.days - streak} to {nextMilestone.label}
             </span>
           )}
@@ -84,8 +84,8 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
               className="text-xs font-medium px-2 py-0.5 rounded-full"
               style={{
                 color: m.color,
-                background: 'var(--color-surface-2)',
-                border: '1px solid var(--color-border)',
+                background: 'var(--layer-1)',
+                border: '1px solid var(--border-medium)',
               }}
             >
               {m.label}

@@ -17,10 +17,10 @@ function TaskCard({ task, done, onToggle }) {
   return (
     <div
       style={{
-        background: 'var(--color-surface)',
-        border: `1px solid ${done ? 'var(--color-border-soft)' : 'var(--color-border)'}`,
+        background: 'var(--layer-2)',
+        border: `1px solid ${done ? 'var(--border-subtle)' : 'var(--border-medium)'}`,
         borderRadius: 'var(--radius-lg)',
-        transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+        transition: 'all var(--duration-base) var(--ease-out)',
         boxShadow: done ? 'none' : 'var(--shadow-sm)',
         opacity: done ? 0.5 : 1,
       }}
@@ -42,8 +42,10 @@ function TaskCard({ task, done, onToggle }) {
             <p
               className="text-sm font-medium leading-snug"
               style={{
-                color: done ? 'var(--color-text-faint)' : 'var(--color-text)',
+                color: done ? 'var(--text-disabled)' : 'var(--text-primary)',
                 textDecoration: done ? 'line-through' : 'none',
+                fontSize: 'var(--text-sm)',
+                fontWeight: 500,
               }}
             >
               {task.label}
@@ -61,8 +63,8 @@ function TaskCard({ task, done, onToggle }) {
               </span>
               {/* XP */}
               <span
-                className="text-xs font-mono font-semibold"
-                style={{ color: done ? 'var(--color-text-faint)' : 'var(--color-accent)' }}
+                className="text-xs font-semibold"
+                style={{ color: done ? 'var(--text-disabled)' : 'var(--accent-gold)', fontFamily: 'var(--font-mono)' }}
               >
                 +{task.xp}
               </span>
@@ -79,7 +81,7 @@ function TaskCard({ task, done, onToggle }) {
             <button
               onClick={() => setExpanded(e => !e)}
               className="text-xs flex items-center gap-1 transition-colors"
-              style={{ color: expanded ? 'var(--color-accent)' : 'var(--color-text-faint)' }}
+              style={{ color: expanded ? 'var(--accent-gold)' : 'var(--text-tertiary)' }}
             >
               <span>{expanded ? '↑ hide' : '↓ how to do this'}</span>
             </button>
@@ -91,10 +93,10 @@ function TaskCard({ task, done, onToggle }) {
       {expanded && task.detail && (
         <div
           style={{
-            borderTop: '1px solid var(--color-border-soft)',
+            borderTop: '1px solid var(--divider)',
             padding: 'var(--space-4)',
             paddingTop: 'var(--space-3)',
-            background: 'var(--color-surface-2)',
+            background: 'var(--layer-1)',
             borderRadius: '0 0 var(--radius-lg) var(--radius-lg)',
           }}
           className="animate-in space-y-3"
@@ -186,25 +188,27 @@ export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xp
         <div>
           <h1
             className="font-bold leading-tight"
-            style={{ fontSize: 'var(--text-2xl)', color: 'var(--color-text)' }}
+            style={{ fontSize: 'var(--text-3xl)', color: 'var(--text-primary)', letterSpacing: '-0.025em', fontWeight: 700 }}
           >
             {DAY_NAMES[dayIndex]}
           </h1>
-          <p style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-sm)' }}>
+          <p style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-sm)' }}>
             {dateStr}
           </p>
         </div>
         <div className="text-right pt-1">
           <div
-            className="font-bold font-mono"
+            className="font-bold"
             style={{
               fontSize: 'var(--text-2xl)',
-              color: completionPct === 100 ? 'var(--color-success)' : 'var(--color-accent)',
+              fontWeight: 700,
+              fontFamily: 'var(--font-mono)',
+              color: completionPct === 100 ? 'var(--success)' : 'var(--accent-gold)',
             }}
           >
             {completionPct}%
           </div>
-          <div style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-xs)' }}>
+          <div style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-xs)' }}>
             {doneTasks} of {totalTasks} done
           </div>
         </div>
@@ -241,7 +245,7 @@ export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xp
           <div key={period} className="space-y-2">
             <p
               className="text-xs font-semibold uppercase tracking-widest"
-              style={{ color: 'var(--color-text-faint)' }}
+              style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-xs)', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}
             >
               {PERIOD_LABELS[period]}
             </p>
@@ -262,15 +266,15 @@ export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xp
         <div
           className="text-center py-5 animate-in"
           style={{
-            border: '1px solid var(--color-border-soft)',
+            border: '1px solid var(--border-subtle)',
             borderRadius: 'var(--radius-xl)',
-            background: 'var(--color-surface)',
+            background: 'var(--layer-2)',
           }}
         >
-          <p className="font-semibold" style={{ color: 'var(--color-success)' }}>
+          <p className="font-semibold" style={{ color: 'var(--success)' }}>
             All tasks complete
           </p>
-          <p style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-sm)' }}>
+          <p style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-sm)' }}>
             Streak extends tomorrow.
           </p>
         </div>

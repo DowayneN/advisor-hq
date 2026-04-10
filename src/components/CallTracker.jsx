@@ -53,11 +53,11 @@ function LogCallForm({ onAdd, onCancel }) {
   }
 
   const inputStyle = {
-    background: 'var(--color-surface-2)',
-    border: '1px solid var(--color-border)',
+    background: 'var(--layer-2)',
+    border: '1px solid var(--border-medium)',
     borderRadius: 'var(--radius-md)',
     padding: 'var(--space-2)',
-    color: 'var(--color-text)',
+    color: 'var(--text-primary)',
     fontSize: 'var(--text-sm)',
     fontFamily: 'inherit',
     width: '100%',
@@ -109,8 +109,8 @@ function LogCallForm({ onAdd, onCancel }) {
         <button
           type="submit"
           style={{
-            background: 'var(--color-accent)',
-            color: 'var(--color-bg)',
+            background: 'var(--accent-gold)',
+            color: 'var(--layer-0)',
             border: 'none',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
@@ -127,8 +127,8 @@ function LogCallForm({ onAdd, onCancel }) {
           onClick={onCancel}
           style={{
             background: 'transparent',
-            color: 'var(--color-text-muted)',
-            border: '1px solid var(--color-border)',
+            color: 'var(--text-secondary)',
+            border: '1px solid var(--border-medium)',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
             fontSize: 'var(--text-sm)',
@@ -176,20 +176,20 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
         <div>
           <h2
             className="font-bold"
-            style={{ fontSize: 'var(--text-xl)', color: 'var(--color-text)', lineHeight: 1.2 }}
+            style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)', lineHeight: 1.2 }}
           >
             Call Log
           </h2>
-          <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text-faint)', marginTop: '2px' }}>
+          <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-tertiary)', marginTop: '2px' }}>
             {todayCalls.length} today · {allCalls.length} total · {convRate}% interested
           </p>
         </div>
         <button
           onClick={() => setShowForm(s => !s)}
           style={{
-            background: showForm ? 'transparent' : 'var(--color-accent)',
-            color: showForm ? 'var(--color-text-muted)' : 'var(--color-bg)',
-            border: showForm ? '1px solid var(--color-border)' : 'none',
+            background: showForm ? 'transparent' : 'var(--accent-gold)',
+            color: showForm ? 'var(--text-secondary)' : 'var(--layer-0)',
+            border: showForm ? '1px solid var(--border-medium)' : 'none',
             borderRadius: 'var(--radius-md)',
             padding: 'var(--space-2) var(--space-3)',
             fontSize: 'var(--text-sm)',
@@ -212,25 +212,26 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
         }}
       >
         {[
-          { label: "Today's Calls",  value: todayCalls.length,  color: 'var(--color-text)' },
-          { label: 'Total Calls',    value: allCalls.length,    color: 'var(--color-text)' },
-          { label: 'Interested',     value: interestedCount,    color: 'var(--color-success)' },
-          { label: 'XP from Calls',  value: `+${totalXpFromCalls}`, color: 'var(--color-accent)' },
+          { label: "Today's Calls",  value: todayCalls.length,  color: 'var(--text-primary)' },
+          { label: 'Total Calls',    value: allCalls.length,    color: 'var(--text-primary)' },
+          { label: 'Interested',     value: interestedCount,    color: 'var(--success)' },
+          { label: 'XP from Calls',  value: `+${totalXpFromCalls}`, color: 'var(--accent-gold)' },
         ].map(stat => (
           <div
             key={stat.label}
             style={{
-              background: 'var(--color-surface)',
-              border: '1px solid var(--color-border-soft)',
+              background: 'var(--layer-2)',
+              border: '1px solid var(--border-subtle)',
               borderRadius: 'var(--radius-lg)',
               padding: 'var(--space-3)',
               textAlign: 'center',
+              boxShadow: 'var(--shadow-sm)',
             }}
           >
-            <div className="font-bold font-mono" style={{ fontSize: 'var(--text-xl)', color: stat.color }}>
+            <div className="font-bold" style={{ fontSize: 'var(--text-xl)', color: stat.color, fontFamily: 'var(--font-mono)' }}>
               {stat.value}
             </div>
-            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)', marginTop: '2px' }}>
+            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: '2px' }}>
               {stat.label}
             </div>
           </div>
@@ -241,8 +242,8 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
       {showForm && (
         <div
           style={{
-            background: 'var(--color-surface)',
-            border: '1px solid var(--color-border)',
+            background: 'var(--layer-2)',
+            border: '1px solid var(--border-medium)',
             borderRadius: 'var(--radius-xl)',
             padding: 'var(--space-4)',
             marginBottom: 'var(--space-4)',
@@ -264,12 +265,12 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
             key={f.id}
             onClick={() => setFilter(f.id)}
             style={{
-              background: filter === f.id ? 'var(--color-accent-dim)' : 'transparent',
-              border: `1px solid ${filter === f.id ? 'var(--color-accent)' : 'var(--color-border)'}`,
+              background: filter === f.id ? 'var(--accent-gold-muted)' : 'transparent',
+              border: `1px solid ${filter === f.id ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
               borderRadius: 'var(--radius-full)',
               padding: '4px 12px',
               fontSize: 'var(--text-xs)',
-              color: filter === f.id ? 'var(--color-accent)' : 'var(--color-text-faint)',
+              color: filter === f.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
               cursor: 'pointer',
               fontFamily: 'inherit',
               fontWeight: filter === f.id ? 600 : 400,
@@ -285,11 +286,11 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
       {displayCalls.length === 0 ? (
         <div
           style={{
-            border: '1px dashed var(--color-border-soft)',
+            border: '1px dashed var(--border-subtle)',
             borderRadius: 'var(--radius-xl)',
             padding: 'var(--space-5)',
             textAlign: 'center',
-            color: 'var(--color-text-faint)',
+            color: 'var(--text-tertiary)',
             fontSize: 'var(--text-sm)',
           }}
         >
@@ -301,8 +302,8 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
             <div
               key={call.id}
               style={{
-                background: 'var(--color-surface)',
-                border: '1px solid var(--color-border-soft)',
+                background: 'var(--layer-2)',
+                border: '1px solid var(--border-subtle)',
                 borderRadius: 'var(--radius-lg)',
                 padding: 'var(--space-3)',
                 display: 'flex',
@@ -312,29 +313,29 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
             >
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text)' }}>
+                  <span className="font-semibold" style={{ fontSize: 'var(--text-sm)', color: 'var(--text-primary)' }}>
                     {call.company}
                   </span>
                   {call.industry && (
-                    <span style={{ fontSize: '10px', color: 'var(--color-text-faint)' }}>
+                    <span style={{ fontSize: '10px', color: 'var(--text-tertiary)' }}>
                       {call.industry}
                     </span>
                   )}
                 </div>
                 {call.notes && (
-                  <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)', marginTop: '2px' }}>
+                  <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: '2px' }}>
                     {call.notes}
                   </p>
                 )}
-                <p style={{ fontSize: '10px', color: 'var(--color-text-faint)', marginTop: '2px' }}>
+                <p style={{ fontSize: '10px', color: 'var(--text-tertiary)', marginTop: '2px' }}>
                   {call.date} {call.phone && `· ${call.phone}`}
                 </p>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
                 <OutcomeBadge outcome={call.outcome} />
                 <span
-                  className="font-mono font-semibold"
-                  style={{ fontSize: 'var(--text-xs)', color: 'var(--color-accent)' }}
+                  className="font-semibold"
+                  style={{ fontSize: 'var(--text-xs)', color: 'var(--accent-gold)', fontFamily: 'var(--font-mono)' }}
                 >
                   +{call.xp}XP
                 </span>

@@ -6,14 +6,14 @@ function ProgressBar({ current, target, color }) {
   const pct = Math.min(100, Math.round((current / target) * 100))
   return (
     <div className="space-y-1">
-      <div className="flex justify-between" style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+      <div className="flex justify-between" style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
         <span>{pct}%</span>
         <span>{current.toLocaleString()} / {target.toLocaleString()}</span>
       </div>
       <div
         style={{
           height: '4px',
-          background: 'var(--color-surface-3)',
+          background: 'var(--layer-3)',
           borderRadius: 'var(--radius-full)',
           overflow: 'hidden',
         }}
@@ -64,11 +64,11 @@ export default function MissionControl({ metrics, setMetrics }) {
       <div>
         <h1
           className="font-bold"
-          style={{ fontSize: 'var(--text-xl)', color: 'var(--color-text)' }}
+          style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)' }}
         >
           Mission Control
         </h1>
-        <p style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-sm)', marginTop: '2px' }}>
+        <p style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-sm)', marginTop: '2px' }}>
           April → October 2026 · click any metric to update
         </p>
       </div>
@@ -76,8 +76,8 @@ export default function MissionControl({ metrics, setMetrics }) {
       {/* 6-month goal banner */}
       <div
         style={{
-          background: 'var(--color-surface)',
-          border: '1px solid var(--color-border-soft)',
+          background: 'var(--layer-2)',
+          border: '1px solid var(--border-subtle)',
           borderRadius: 'var(--radius-lg)',
           padding: 'var(--space-4)',
           boxShadow: 'var(--shadow-sm)',
@@ -85,7 +85,7 @@ export default function MissionControl({ metrics, setMetrics }) {
       >
         <p
           className="font-semibold text-sm mb-1"
-          style={{ color: 'var(--color-text-muted)' }}
+          style={{ color: 'var(--text-secondary)' }}
         >
           6-Month Objectives
         </p>
@@ -99,11 +99,11 @@ export default function MissionControl({ metrics, setMetrics }) {
             <div key={item.label} className="flex gap-3 text-sm">
               <span
                 className="font-medium flex-shrink-0"
-                style={{ color: 'var(--color-text-muted)', width: '80px' }}
+                style={{ color: 'var(--text-secondary)', width: '80px' }}
               >
                 {item.label}
               </span>
-              <span style={{ color: 'var(--color-text-faint)' }}>{item.goal}</span>
+              <span style={{ color: 'var(--text-tertiary)' }}>{item.goal}</span>
             </div>
           ))}
         </div>
@@ -119,20 +119,20 @@ export default function MissionControl({ metrics, setMetrics }) {
             <div
               key={ventureKey}
               style={{
-                background: 'var(--color-surface)',
-                border: '1px solid var(--color-border-soft)',
-                borderRadius: 'var(--radius-xl)',
+                background: 'var(--layer-2)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: '16px',
                 padding: 'var(--space-4)',
                 boxShadow: 'var(--shadow-sm)',
                 transition: 'box-shadow 0.2s ease, border-color 0.2s ease',
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.boxShadow = 'var(--shadow-md)'
-                e.currentTarget.style.borderColor = 'var(--color-border)'
+                e.currentTarget.style.borderColor = 'var(--border-medium)'
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
-                e.currentTarget.style.borderColor = 'var(--color-border-soft)'
+                e.currentTarget.style.borderColor = 'var(--border-subtle)'
               }}
             >
               {/* Card header */}
@@ -148,7 +148,7 @@ export default function MissionControl({ metrics, setMetrics }) {
                   />
                   <h3
                     className="font-semibold"
-                    style={{ color: 'var(--color-text)', fontSize: 'var(--text-base)' }}
+                    style={{ color: 'var(--text-primary)', fontSize: 'var(--text-base)' }}
                   >
                     {venture.label}
                   </h3>
@@ -168,7 +168,7 @@ export default function MissionControl({ metrics, setMetrics }) {
               <div
                 style={{
                   height: '3px',
-                  background: 'var(--color-surface-3)',
+                  background: 'var(--layer-3)',
                   borderRadius: 'var(--radius-full)',
                   overflow: 'hidden',
                   marginBottom: 'var(--space-4)',
@@ -198,7 +198,7 @@ export default function MissionControl({ metrics, setMetrics }) {
                       <div className="flex items-center justify-between">
                         <span
                           className="text-xs transition-colors"
-                          style={{ color: 'var(--color-text-faint)' }}
+                          style={{ color: 'var(--text-tertiary)' }}
                         >
                           {field.label}
                         </span>
@@ -222,8 +222,8 @@ export default function MissionControl({ metrics, setMetrics }) {
       {/* Priority stack */}
       <div
         style={{
-          background: 'var(--color-surface)',
-          border: '1px solid var(--color-border-soft)',
+          background: 'var(--layer-2)',
+          border: '1px solid var(--border-subtle)',
           borderRadius: 'var(--radius-lg)',
           padding: 'var(--space-4)',
           boxShadow: 'var(--shadow-sm)',
@@ -231,7 +231,7 @@ export default function MissionControl({ metrics, setMetrics }) {
       >
         <p
           className="text-xs font-semibold uppercase tracking-widest mb-3"
-          style={{ color: 'var(--color-text-faint)' }}
+          style={{ color: 'var(--text-tertiary)' }}
         >
           Priority Stack
         </p>
@@ -245,7 +245,7 @@ export default function MissionControl({ metrics, setMetrics }) {
             <div key={item.n} className="flex items-baseline gap-3 text-sm">
               <span
                 className="font-mono text-xs flex-shrink-0"
-                style={{ color: 'var(--color-text-faint)', width: '20px' }}
+                style={{ color: 'var(--text-tertiary)', width: '20px' }}
               >
                 #{item.n}
               </span>
@@ -255,7 +255,7 @@ export default function MissionControl({ metrics, setMetrics }) {
               >
                 {item.label}
               </span>
-              <span style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-xs)' }}>
+              <span style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-xs)' }}>
                 {item.note}
               </span>
             </div>

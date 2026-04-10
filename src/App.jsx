@@ -7,6 +7,7 @@ import WeeklyTimetable from './components/WeeklyTimetable'
 import MissionControl from './components/MissionControl'
 import ProspectPipeline from './components/ProspectPipeline'
 import CallTracker from './components/CallTracker'
+import ThemeEditor from './components/ThemeEditor'
 
 const TABS = [
   { id: 'daily',    label: 'Daily HQ' },
@@ -60,12 +61,13 @@ export default function App() {
       {/* Header */}
       <header
         style={{
-          background: 'var(--color-surface)',
-          borderBottom: '1px solid var(--color-border-soft)',
+          background: 'rgba(22, 24, 34, 0.85)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+          borderBottom: '1px solid var(--border-subtle)',
           position: 'sticky',
           top: 0,
           zIndex: 40,
-          boxShadow: 'var(--shadow-sm)',
         }}
       >
         <div
@@ -73,7 +75,7 @@ export default function App() {
           style={{
             maxWidth: '1200px',
             margin: '0 auto',
-            padding: 'var(--space-3) var(--space-5)',
+            padding: 'var(--space-3) var(--space-8)',
           }}
         >
           {/* Brand */}
@@ -83,8 +85,8 @@ export default function App() {
                 width: '28px',
                 height: '28px',
                 borderRadius: 'var(--radius-md)',
-                background: 'var(--color-accent-dim)',
-                border: '1px solid var(--color-border)',
+                background: 'var(--accent-gold-muted)',
+                border: '1px solid var(--border-medium)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -95,13 +97,13 @@ export default function App() {
                   width: '8px',
                   height: '8px',
                   borderRadius: '50%',
-                  background: 'var(--color-accent)',
+                  background: 'var(--accent-gold)',
                 }}
               />
             </div>
             <span
               className="font-semibold"
-              style={{ color: 'var(--color-text)', fontSize: 'var(--text-base)' }}
+              style={{ color: 'var(--text-primary)', fontSize: 'var(--text-base)', letterSpacing: '-0.01em', fontFamily: 'var(--font-sans)' }}
             >
               Advisor HQ
             </span>
@@ -113,14 +115,14 @@ export default function App() {
               <span style={{ fontSize: 'var(--text-sm)' }}>🔥</span>
               <span
                 className="font-medium"
-                style={{ color: 'var(--color-text-muted)', fontSize: 'var(--text-sm)' }}
+                style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)' }}
               >
                 {streak}-day streak
               </span>
             </div>
             <div
-              className="font-mono font-semibold"
-              style={{ color: 'var(--color-accent)', fontSize: 'var(--text-sm)' }}
+              className="font-semibold"
+              style={{ color: 'var(--accent-gold)', fontSize: 'var(--text-sm)', fontFamily: 'var(--font-mono)' }}
             >
               {xpTotal.toLocaleString()} XP
             </div>
@@ -132,9 +134,9 @@ export default function App() {
           style={{
             maxWidth: '1200px',
             margin: '0 auto',
-            padding: '0 var(--space-5)',
+            padding: 'var(--space-2) var(--space-8)',
             display: 'flex',
-            gap: 0,
+            gap: 'var(--space-1)',
           }}
         >
           {TABS.map(t => (
@@ -142,27 +144,29 @@ export default function App() {
               key={t.id}
               onClick={() => setTab(t.id)}
               style={{
-                padding: 'var(--space-2) var(--space-3)',
-                background: 'transparent',
+                padding: '6px 16px',
+                background: tab === t.id ? 'rgba(232, 196, 104, 0.12)' : 'transparent',
                 border: 'none',
-                borderBottom: tab === t.id
-                  ? '2px solid var(--color-accent)'
-                  : '2px solid transparent',
-                color: tab === t.id
-                  ? 'var(--color-text)'
-                  : 'var(--color-text-faint)',
-                fontFamily: 'inherit',
+                borderRadius: 'var(--radius-sm)',
+                color: tab === t.id ? 'var(--text-primary)' : 'var(--text-tertiary)',
+                fontFamily: 'var(--font-sans)',
                 fontSize: 'var(--text-sm)',
-                fontWeight: tab === t.id ? 600 : 400,
+                fontWeight: tab === t.id ? 600 : 500,
                 cursor: 'pointer',
-                transition: 'color 0.15s ease, border-color 0.15s ease',
-                lineHeight: 1.4,
+                letterSpacing: '0.01em',
+                transition: 'all var(--duration-base) var(--ease-out)',
               }}
               onMouseEnter={e => {
-                if (tab !== t.id) e.target.style.color = 'var(--color-text-muted)'
+                if (tab !== t.id) {
+                  e.currentTarget.style.color = 'var(--text-secondary)'
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
+                }
               }}
               onMouseLeave={e => {
-                if (tab !== t.id) e.target.style.color = 'var(--color-text-faint)'
+                if (tab !== t.id) {
+                  e.currentTarget.style.color = 'var(--text-tertiary)'
+                  e.currentTarget.style.background = 'transparent'
+                }
               }}
             >
               {t.label}
@@ -176,7 +180,7 @@ export default function App() {
         style={{
           maxWidth: '1200px',
           margin: '0 auto',
-          padding: 'var(--space-5)',
+          padding: 'var(--space-8)',
         }}
       >
         {tab === 'daily' && (
@@ -212,15 +216,18 @@ export default function App() {
       {/* Footer */}
       <footer
         style={{
-          borderTop: '1px solid var(--color-border-soft)',
-          padding: 'var(--space-4) var(--space-5)',
+          borderTop: '1px solid var(--border-subtle)',
+          background: 'var(--layer-1)',
+          padding: 'var(--space-4) var(--space-8)',
           textAlign: 'center',
-          color: 'var(--color-text-faint)',
+          color: 'var(--text-tertiary)',
           fontSize: 'var(--text-xs)',
         }}
       >
         Advisor HQ · {new Date().getFullYear()} · DTS · AIMyBiz · Athletics
       </footer>
+
+      <ThemeEditor />
     </div>
   )
 }
