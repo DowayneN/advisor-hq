@@ -1,92 +1,134 @@
 {
-  "date": "2026-04-09",
-  "generated_at": "07:00",
-  "source": "seed",
+  "date": "2026-04-10",
+  "generated_at": "06:30",
+  "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_seed_1",
-      "company": "The Anchor Kitchen",
-      "industry": "Restaurant / Café",
+      "id": "lead_20260410_1",
+      "company": "Fade Zone Barbers",
+      "industry": "Barber",
       "website": null,
-      "phone": "02380 221 455",
-      "location": "Ocean Village, Southampton",
-      "notes": "No website — Facebook page only. Good footfall, strong Google reviews."
-    },
-    {
-      "id": "lead_seed_2",
-      "company": "Solent Plumbing Co.",
-      "industry": "Trades / Plumbing",
-      "website": "solentplumbing.co.uk",
-      "phone": "07891 234 567",
+      "phone": "02380362326",
       "location": "Shirley, Southampton",
-      "notes": "Existing site is outdated — no mobile version. High-intent search traffic."
+      "notes": "No dedicated website \u2014 only a third-party Booksy booking link \u2014 invisible to Google organic search; a clean local site with embedded booking and postcode SEO would immediately increase walk-in conversion."
     },
     {
-      "id": "lead_seed_3",
-      "company": "Bitterne Barbers",
-      "industry": "Personal Care",
+      "id": "lead_20260410_2",
+      "company": "The Business Barbershop Totton",
+      "industry": "Barber",
       "website": null,
-      "phone": "02380 443 221",
-      "location": "Bitterne, Southampton",
-      "notes": "Instagram only. 200+ Google Maps reviews. No booking system online."
+      "phone": "02380862575",
+      "location": "Totton, Southampton",
+      "notes": "Operates purely from a Facebook page with no dedicated website; a one-page site with a booking widget and local SEO would outrank competitor barbers in Totton search results."
     },
     {
-      "id": "lead_seed_4",
-      "company": "Eastleigh Electricals",
-      "industry": "Trades / Electrical",
+      "id": "lead_20260410_3",
+      "company": "Annie's Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "07712 098 334",
+      "phone": "02380421200",
+      "location": "Woolston, Southampton",
+      "notes": "Family-run cafe trading since 1989 with no owned website \u2014 only directory listings and Facebook; a simple menu and contact site optimised for 'cafe Woolston Southampton' would drive new daytime footfall."
+    },
+    {
+      "id": "lead_20260410_4",
+      "company": "Studio Seven",
+      "industry": "Beauty Salon",
+      "website": null,
+      "phone": "02380644811",
       "location": "Eastleigh, Southampton",
-      "notes": "Listed on Checkatrade only. No standalone web presence."
+      "notes": "High-street beauty salon with no owned website, relying entirely on Yell, Fresha and Facebook; a branded site with a treatment menu and inline booking would improve trust and cut third-party platform fees."
     },
     {
-      "id": "lead_seed_5",
-      "company": "Hampshire Laser Clinic",
-      "industry": "Health & Beauty",
-      "website": "hampshirelaserclinic.com",
-      "phone": "02381 556 780",
-      "location": "Shirley, Southampton",
-      "notes": "Site loads slowly, no online booking, outdated design. High-value clients."
+      "id": "lead_20260410_5",
+      "company": "Vama Brows & Beauty",
+      "industry": "Beauty / Aesthetics",
+      "website": null,
+      "phone": "02380867731",
+      "location": "Redbridge, Southampton",
+      "notes": "Growing aesthetics brand with an active Facebook following and Treatwell profile but no owned website; a professional site with a treatment gallery and before/after photos would lift premium bookings and brand credibility."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_seed_1",
-      "name": "James Holloway",
-      "title": "Sales Director",
-      "company": "Meridian Recruitment",
-      "url": "https://www.linkedin.com/in/james-holloway-example",
-      "reason": "Manages a team of 6 sales reps. Recently posted about onboarding challenges and new hire ramp-up time."
+      "id": "prospect_20260410_1",
+      "name": "Jonathan Bell",
+      "title": "Sales Manager",
+      "company": "Peter Cooper Motor Group",
+      "url": "https://www.linkedin.com/in/jonathan-bell-8aa691b9/",
+      "reason": "Manages the sales team at a leading South Coast VW dealership group; CloseCoach's AI objection-handling and call-scoring features map directly to the high-volume, repeatable sales process of a franchised car dealership."
     },
     {
-      "id": "prospect_seed_2",
-      "name": "Sarah Chen",
-      "title": "Head of Sales",
-      "company": "Hampshire Insurance Group",
-      "url": "https://www.linkedin.com/in/sarah-chen-example",
-      "reason": "Posts regularly about sales training. Team of 8. Ideal CloseCoach profile."
-    },
-    {
-      "id": "prospect_seed_3",
-      "name": "Marcus Reid",
+      "id": "prospect_20260410_2",
+      "name": "Rhys Hathaway",
       "title": "Branch Manager",
-      "company": "Countrywide Estate Agents",
-      "url": "https://www.linkedin.com/in/marcus-reid-example",
-      "reason": "Estate agency with active sales team. Commented on a post about reducing time-to-productivity for new staff."
+      "company": "R&S Property",
+      "url": "https://www.linkedin.com/in/rhys-hathaway-466518250/",
+      "reason": "Award-winning branch manager at an independent estate agency who actively shares CRM and conversion content on LinkedIn, signalling he's seeking performance tools \u2014 a strong fit for CloseCoach's AI sales coaching pitch."
+    },
+    {
+      "id": "prospect_20260410_3",
+      "name": "Paul Dickinson",
+      "title": "Branch Manager",
+      "company": "Blundells Property Services Ltd",
+      "url": "https://www.linkedin.com/in/paul-dickinson-a6b1581b5/",
+      "reason": "23-year estate agency veteran and branch manager who publicly champions team training and development; CloseCoach aligns perfectly with his stated priority of coaching reps to build trust and improve conversion."
     }
   ],
   "content_ideas": {
     "dts": [
-      "Short video: 'DVSA test dates are 6 months out — here's how learners are getting them in 2 weeks' (30 sec, voiceover on screen recording of the swap flow)",
-      "Community post: respond to learner driver frustration posts in Facebook groups with a natural mention of drivingtestswap.uk"
+      {
+        "id": "dts_idea_1",
+        "format": "Short-form video / Reel",
+        "title": "DVSA wait times in your area right now",
+        "hook": "Show a phone-screen recording of the DVSA booking portal revealing 4-month waits, then cut to DrivingTestSwap.uk confirming a date 3 weeks away \u2014 ends with 'Swap yours in 60 seconds' CTA.",
+        "platform": "TikTok, Instagram Reels, YouTube Shorts",
+        "notes": "Highly searchable topic; captures learners already frustrated with wait times and drives direct traffic to DTS."
+      },
+      {
+        "id": "dts_idea_2",
+        "format": "POV Story / Testimonial-style clip",
+        "title": "POV: You just got your test date 6 weeks earlier",
+        "hook": "First-person walkthrough showing someone logging into DTS, seeing an available slot, confirming the swap, and getting the confirmation email \u2014 authentic and relatable for the learner-driver audience.",
+        "platform": "TikTok, Instagram Stories, YouTube Shorts",
+        "notes": "Emotional payoff ('I don't have to wait any more') drives shares among learners and their parents; low production cost to film."
+      }
     ],
     "athletics": [
-      "Slow-mo muscle-up or L-sit attempt — raw footage, no edit needed, caption: 'Progress is quiet until it isn't'",
-      "Caption hook: 'Most people overtrain and undertrain at the same time — here's what I mean' (pair with a compound movement clip)"
+      {
+        "id": "athletics_idea_1",
+        "format": "Progressive training series",
+        "title": "60-Day Sprint Progression \u2014 Week-by-Week",
+        "hook": "Weekly clips filmed at the track showing measurable changes in start position, drive phase, and top-end speed; voice-over coaching cues position Dowayne as both elite athlete and credible coach.",
+        "platform": "Instagram Reels, YouTube Shorts, TikTok",
+        "notes": "Serialised content builds a returning audience; strong foundation for a future sprint coaching offer or programme."
+      },
+      {
+        "id": "athletics_idea_2",
+        "format": "Tutorial / Skill breakdown",
+        "title": "The calisthenics move most gym-goers can't do \u2014 and how to build up to it",
+        "hook": "Break down a high-difficulty move (front lever, human flag, or muscle-up) with progressive drills filmed in the gym; clear steps with Dowayne demonstrating each stage.",
+        "platform": "Instagram Reels, YouTube Shorts, TikTok",
+        "notes": "High save and share rate on Instagram; positions Dowayne as an authority in functional strength and bodyweight training."
+      }
     ],
     "aimybiz": [
-      "LinkedIn post: 'I built an AI that simulates a difficult customer call — here's what happened when I tested it on myself' (first-person, honest, shows CloseCoach)",
-      "60-second screen record walkthrough: show a CloseCoach roleplay session start-to-finish with voiceover commentary"
+      {
+        "id": "aimybiz_idea_1",
+        "format": "LinkedIn carousel / short video",
+        "title": "Watch a rep go from 30% to 60% close rate in 30 days with AI coaching",
+        "hook": "Carousel or 60-second video documenting a composite rep's journey \u2014 before/after call transcript snippets, objection scores, and manager dashboard \u2014 speaks directly to sales managers frustrated by inconsistent team performance.",
+        "platform": "LinkedIn",
+        "notes": "Use anonymised or fictional data for now; end with a CloseCoach demo CTA or waitlist link."
+      },
+      {
+        "id": "aimybiz_idea_2",
+        "format": "LinkedIn text post",
+        "title": "The 3 objections killing deals across your whole team (and how AI catches them in real time)",
+        "hook": "Bold opening line naming the 3 most common unhandled objections in SME sales; explains how CloseCoach flags them during live calls and gives instant coaching feedback, ending with a demo offer.",
+        "platform": "LinkedIn",
+        "notes": "Resonates with heads of sales and sales directors; pin to profile and re-share weekly to maximise organic reach."
+      }
     ]
   }
 }
