@@ -1,115 +1,115 @@
 {
-  "date": "2026-04-10",
-  "generated_at": "06:39",
+  "date": "2026-04-11",
+  "generated_at": "06:29",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260410_1",
-      "company": "CSJ Hair and Turkish Barber",
-      "industry": "Barbershop / Hairdresser",
+      "id": "lead_20260411_1",
+      "company": "First Class Turkish Barbers",
+      "industry": "Barber Shop",
       "website": null,
-      "phone": "023 8043 8805",
-      "location": "Bitterne, Southampton",
-      "notes": "Facebook-only presence (no standalone website) for a popular multi-service Turkish barber and unisex salon on West End Road \u2014 strong candidate for a modern booking-enabled site."
+      "phone": "07404 031649",
+      "location": "Shirley",
+      "notes": "Facebook and Instagram only with no standalone website despite active presence on busy Shirley High Street \u2014 missing all Google local search traffic."
     },
     {
-      "id": "lead_20260410_2",
-      "company": "AGA Unisex Hairdressers",
-      "industry": "Hairdresser / Beauty Salon",
+      "id": "lead_20260411_2",
+      "company": "Kovan and Ramo's Gentlemens Barber",
+      "industry": "Barber Shop",
       "website": null,
-      "phone": "07895 339721",
-      "location": "Freemantle, Southampton",
-      "notes": "Listed on Fresha and Yell but lacks any owned website; the salon has a loyal local following on Facebook and would benefit from a branded site with online booking to reduce platform dependency."
+      "phone": "07533 171755",
+      "location": "Portswood",
+      "notes": "Popular Turkish barber on a high-footfall student road relying entirely on Facebook and Fresha \u2014 no website means zero organic search visibility."
     },
     {
-      "id": "lead_20260410_3",
-      "company": "The Zen Nails and Beauty",
-      "industry": "Nail Salon / Beauty",
+      "id": "lead_20260411_3",
+      "company": "Ruby's Nails & Beauty",
+      "industry": "Beauty Salon / Nail Bar",
       "website": null,
-      "phone": "07427 868686",
-      "location": "Portswood, Southampton",
-      "notes": "No dedicated website \u2014 relies entirely on Fresha and Facebook for bookings; a branded site with a price list and gallery would help capture walk-in traffic from the busy Portswood student area."
+      "phone": "023 8023 2039",
+      "location": "City Centre",
+      "notes": "Established city centre nail salon active on Facebook and Fresha but lacking a website, losing bookings to competitors who rank on Google."
     },
     {
-      "id": "lead_20260410_4",
-      "company": "Neyo's Turkish Barbers",
-      "industry": "Barbershop",
+      "id": "lead_20260411_4",
+      "company": "Bitterne Barber Shop",
+      "industry": "Barber Shop",
       "website": null,
-      "phone": "07944 206163",
-      "location": "Locks Heath / Park Gate, Southampton",
-      "notes": "287+ reviews on Birdeye but no owned website \u2014 solely operates through Facebook and Fresha; a professional site with opening hours and a local SEO push would dramatically increase discoverability."
+      "phone": "07438 492941",
+      "location": "Bitterne",
+      "notes": "20+ year local barber with strong reviews but only a basic placeholder Netlify page \u2014 ripe for a proper mobile-first website to capture local search."
     },
     {
-      "id": "lead_20260410_5",
-      "company": "Origin Hair and Beauty",
-      "industry": "Hairdresser / Beauty Salon",
+      "id": "lead_20260411_5",
+      "company": "Annie's Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "023 8070 4426",
-      "location": "Shirley, Southampton",
-      "notes": "12-year-old established salon at 104 Shirley High Street with only a Facebook page and Instagram \u2014 no owned website means they lose search traffic to competitors who rank on Google Maps and organic search."
+      "phone": "023 8042 1200",
+      "location": "Woolston",
+      "notes": "Family-run cafe since 1989 with no website and Facebook-only presence \u2014 a simple one-page site with menu and opening hours would immediately drive footfall."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260410_1",
-      "name": "Brett Foulser",
+      "id": "prospect_20260411_1",
+      "name": "Hannah Mollison",
       "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales team across multiple Surrey branches of a well-regarded independent estate agency \u2014 exactly the profile of an SME sales leader who would benefit from AI-powered coaching to sharpen objection handling and conversion rates."
+      "company": "Workwell Outsourcing",
+      "url": "https://uk.linkedin.com/in/hannah-mollison",
+      "reason": "Leads a 23-person sales department at a UK recruitment services firm, making her team an ideal target for AI sales coaching to sharpen performance and reduce ramp time."
     },
     {
-      "id": "prospect_20260410_2",
-      "name": "Kevin Jackson",
+      "id": "prospect_20260411_2",
+      "name": "Scott Gemmell",
       "title": "Sales Director",
-      "company": "Bayzos Estate Agents",
-      "url": "https://uk.linkedin.com/in/kevinjuk",
-      "reason": "Commercial-minded Sales Director who grew Bayzos' Midlands division; an independent estate agency with a small sales team focused on results \u2014 a strong fit for CloseCoach's structured AI sales training."
+      "company": "Cornerstone EAS",
+      "url": "https://www.linkedin.com/in/scott-gemmell-8a776a29/",
+      "reason": "Newly appointed Sales Director at a UK estate agency PropTech startup actively building out a sales team, highly open to tools that accelerate rep development."
     },
     {
-      "id": "prospect_20260410_3",
-      "name": "Matthew Savage",
-      "title": "Sales Manager",
-      "company": "Coventry Motor Company",
-      "url": "https://www.linkedin.com/in/matthew-savage-9034a7b9/",
-      "reason": "Manages a multi-brand dealership sales team (Mazda, MG, Suzuki) at an independent UK car dealership since 2015 \u2014 car dealerships with 3-10 sales reps are a prime CloseCoach segment given high-ticket, relationship-driven sales cycles."
+      "id": "prospect_20260411_3",
+      "name": "Ian Macbeth",
+      "title": "Managing Partner",
+      "company": "Avocado Property",
+      "url": "https://www.linkedin.com/in/ian-macbeth-5190a926/",
+      "reason": "Former Sales Managing Director turned independent estate agency owner who is LinkedIn-active and well-placed to adopt CloseCoach for training his negotiators."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "platform": "TikTok / Instagram Reels",
-        "title": "DVSA wait times mapped: which UK cities have the longest queues right now?",
-        "format": "60-sec talking-head or screen-record showing a visual map of DVSA waiting times by region, ending with a CTA to use DTS to grab a cancelled slot weeks earlier."
+        "format": "Short-form video / TikTok",
+        "title": "DVSA Test Wait Times Are at Record Highs \u2014 Here's What Learners Can Do",
+        "hook": "Show a regional DVSA wait-time map, narrate the pain, then reveal DTS as the fix \u2014 end with a CTA to drivingtestswap.uk"
       },
       {
-        "platform": "YouTube Shorts / TikTok",
-        "title": "I got my driving test 8 weeks earlier \u2014 here's exactly how",
-        "format": "Story-style walkthrough of the DTS platform in under 60 seconds: how to set up alerts, what a swap looks like, and how fast slots move \u2014 social proof-led with a screenshot of the notification."
+        "format": "Reel / Carousel",
+        "title": "I Got My Driving Test 3 Months Early \u2014 This Is How",
+        "hook": "First-person story from a DTS success story: the 6-month wait, the swap, the pass \u2014 raw and relatable, ends with a swipe-up or link in bio"
       }
     ],
     "athletics": [
       {
-        "platform": "Instagram Reels / TikTok",
-        "title": "Track day breakdown: warm-up \u2192 drills \u2192 full-effort 100m sprint",
-        "format": "POV-style clip at the track showing the full session arc \u2014 dynamic warm-up, acceleration drills, a timed sprint rep, and a brief voiceover on what each phase trains."
+        "format": "Reel / TikTok",
+        "title": "Sprint Finisher \u2014 4x60m, Walk Back, Repeat",
+        "hook": "Film 4 reps at the track with walk-back recovery, voiceover: 'The session is short. The results aren't.' \u2014 post Mon morning to hit gym crowd"
       },
       {
-        "platform": "Instagram Reels / YouTube Shorts",
-        "title": "3 calisthenics moves that carry over to sprint speed",
-        "format": "Short gym clip demonstrating explosive push-ups, dips, and hanging leg raises with a voiceover explaining the power-to-weight rationale and how they improved Dowayne's drive phase."
+        "format": "Progression Video",
+        "title": "From 0 to 10 Pull-Ups \u2014 The 6-Week Daily Protocol",
+        "hook": "Before/after or day-by-day montage at the gym showing the exact daily protocol, tagged with calisthenics and bodyweight training keywords"
       }
     ],
     "aimybiz": [
       {
-        "platform": "LinkedIn Video",
-        "title": "Your sales team is losing on objection handling \u2014 watch this 60-second AI coaching session",
-        "format": "Short screen-record of a CloseCoach AI roleplay on a classic 'we already have a supplier' objection, with a talking-head intro and a CTA to book a team demo."
+        "format": "LinkedIn Carousel",
+        "title": "5 Objections Your Sales Reps Will Hear This Week (and How CloseCoach Trains Them to Handle Each One)",
+        "hook": "Each slide = one objection + a before/after rep response; final slide CTA to DM for a demo \u2014 targets sales managers scrolling LinkedIn during lunch"
       },
       {
-        "platform": "LinkedIn Post (text + carousel)",
-        "title": "How a 5-person estate agency sales team cut their no-show rate by 40% using AI coaching in 60 days",
-        "format": "Case-study carousel (5 slides): problem \u2192 solution \u2192 CloseCoach feature used \u2192 result \u2192 CTA; leads with a bold stat in slide 1 to stop the scroll, targets heads of sales in estate agency and recruitment."
+        "format": "LinkedIn Video (60s)",
+        "title": "Watch CloseCoach Roleplay a Cold Call \u2014 Live AI Feedback in Real Time",
+        "hook": "Screen-record a CloseCoach cold-call roleplay session with instant AI feedback, narrate over it as a live demo \u2014 stops the scroll for any sales manager"
       }
     ]
   }
