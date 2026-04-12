@@ -1,115 +1,121 @@
 {
-  "date": "2026-04-11",
-  "generated_at": "06:29",
+  "date": "2026-04-12",
+  "generated_at": "06:20",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260411_1",
-      "company": "First Class Turkish Barbers",
-      "industry": "Barber Shop",
+      "id": "lead_20260412_1",
+      "company": "KT Nails Woolston",
+      "industry": "Beauty / Nail Salon",
       "website": null,
-      "phone": "07404 031649",
-      "location": "Shirley",
-      "notes": "Facebook and Instagram only with no standalone website despite active presence on busy Shirley High Street \u2014 missing all Google local search traffic."
+      "phone": "023 8043 4068",
+      "location": "Woolston, Southampton",
+      "notes": "Active on Instagram (@ktnailswoolston) and Fresha booking page only \u2014 no standalone website, making them an easy win for a clean, bookable brochure site."
     },
     {
-      "id": "lead_20260411_2",
-      "company": "Kovan and Ramo's Gentlemens Barber",
-      "industry": "Barber Shop",
+      "id": "lead_20260412_2",
+      "company": "Venus Nails Bar",
+      "industry": "Beauty / Nail Bar",
       "website": null,
-      "phone": "07533 171755",
-      "location": "Portswood",
-      "notes": "Popular Turkish barber on a high-footfall student road relying entirely on Facebook and Fresha \u2014 no website means zero organic search visibility."
+      "phone": "02380 445684",
+      "location": "Bitterne, Southampton",
+      "notes": "Relies entirely on Facebook and Instagram for promotion; a dedicated website with online booking could significantly lift their discoverability on Google."
     },
     {
-      "id": "lead_20260411_3",
+      "id": "lead_20260412_3",
       "company": "Ruby's Nails & Beauty",
-      "industry": "Beauty Salon / Nail Bar",
+      "industry": "Beauty / Nail Salon",
       "website": null,
-      "phone": "023 8023 2039",
-      "location": "City Centre",
-      "notes": "Established city centre nail salon active on Facebook and Fresha but lacking a website, losing bookings to competitors who rank on Google."
+      "phone": "02380 232039",
+      "location": "City Centre, Southampton",
+      "notes": "Facebook-only presence with no branded website; listed on Fresha and Yell but lacks a professional home base online that could drive direct bookings."
     },
     {
-      "id": "lead_20260411_4",
-      "company": "Bitterne Barber Shop",
-      "industry": "Barber Shop",
+      "id": "lead_20260412_4",
+      "company": "Woolston Barber Shop",
+      "industry": "Barbershop",
       "website": null,
-      "phone": "07438 492941",
-      "location": "Bitterne",
-      "notes": "20+ year local barber with strong reviews but only a basic placeholder Netlify page \u2014 ripe for a proper mobile-first website to capture local search."
+      "phone": null,
+      "location": "Woolston, Southampton",
+      "notes": "Facebook-only business with no website or booking platform; a simple one-page site with a booking widget could immediately increase new-client walk-ins."
     },
     {
-      "id": "lead_20260411_5",
-      "company": "Annie's Cafe",
-      "industry": "Cafe",
+      "id": "lead_20260412_5",
+      "company": "AJH Electricians",
+      "industry": "Electrical / Trades",
       "website": null,
-      "phone": "023 8042 1200",
-      "location": "Woolston",
-      "notes": "Family-run cafe since 1989 with no website and Facebook-only presence \u2014 a simple one-page site with menu and opening hours would immediately drive footfall."
+      "phone": null,
+      "location": "Southampton, Hampshire",
+      "notes": "Solo-trader electrician operating via Facebook with no website; tradespeople without sites miss out on Google local search \u2014 an ideal low-cost project."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260411_1",
+      "id": "prospect_20260412_1",
       "name": "Hannah Mollison",
       "title": "Sales Director",
       "company": "Workwell Outsourcing",
       "url": "https://uk.linkedin.com/in/hannah-mollison",
-      "reason": "Leads a 23-person sales department at a UK recruitment services firm, making her team an ideal target for AI sales coaching to sharpen performance and reduce ramp time."
+      "reason": "Leads sales at a UK recruitment outsourcing firm, managing relationships with multiple recruitment agency clients \u2014 a perfect CloseCoach pilot target overseeing a B2B sales team."
     },
     {
-      "id": "prospect_20260411_2",
-      "name": "Scott Gemmell",
-      "title": "Sales Director",
-      "company": "Cornerstone EAS",
-      "url": "https://www.linkedin.com/in/scott-gemmell-8a776a29/",
-      "reason": "Newly appointed Sales Director at a UK estate agency PropTech startup actively building out a sales team, highly open to tools that accelerate rep development."
+      "id": "prospect_20260412_2",
+      "name": "Nick Whittaker",
+      "title": "Managing Director",
+      "company": "NW Recruitment Services Ltd",
+      "url": "https://uk.linkedin.com/in/nick-whittaker-48995312",
+      "reason": "Runs a small recruitment agency (founded 2018) with a dedicated sales/consulting function; as MD he controls the training budget and would directly benefit from CloseCoach for his consultants."
     },
     {
-      "id": "prospect_20260411_3",
-      "name": "Ian Macbeth",
-      "title": "Managing Partner",
-      "company": "Avocado Property",
-      "url": "https://www.linkedin.com/in/ian-macbeth-5190a926/",
-      "reason": "Former Sales Managing Director turned independent estate agency owner who is LinkedIn-active and well-placed to adopt CloseCoach for training his negotiators."
+      "id": "prospect_20260412_3",
+      "name": "Ben Watkins",
+      "title": "Director",
+      "company": "Intrinsic Executive Search",
+      "url": "https://www.linkedin.com/in/watkinsben/",
+      "reason": "Heads a boutique UK executive search firm where consultant billings depend on sales skills \u2014 a small, high-stakes team where CloseCoach role-play training would have immediate ROI."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video / TikTok",
-        "title": "DVSA Test Wait Times Are at Record Highs \u2014 Here's What Learners Can Do",
-        "hook": "Show a regional DVSA wait-time map, narrate the pain, then reveal DTS as the fix \u2014 end with a CTA to drivingtestswap.uk"
+        "format": "Short-form video (TikTok / Instagram Reel)",
+        "title": "DVSA wait times hit 22 weeks \u2014 here\u2019s how learners are getting tests sooner (legally)",
+        "hook": "Open with the stat \u201822 weeks\u2019, cut to a countdown clock, then show the DTS swap flow in 30 seconds.",
+        "cta": "Link in bio to drivingtestswap.uk"
       },
       {
-        "format": "Reel / Carousel",
-        "title": "I Got My Driving Test 3 Months Early \u2014 This Is How",
-        "hook": "First-person story from a DTS success story: the 6-month wait, the swap, the pass \u2014 raw and relatable, ends with a swipe-up or link in bio"
+        "format": "Instagram carousel / LinkedIn post",
+        "title": "DVSA\u2019s new 2025 rules explained: what changes for learner drivers & how test-date swapping still works",
+        "hook": "Lead with \u2018Big DVSA change\u2019 alarm, then slide-by-slide breakdown of the new instructor booking rules vs what learners can still do themselves.",
+        "cta": "Comment \u2018SWAP\u2019 for the link"
       }
     ],
     "athletics": [
       {
-        "format": "Reel / TikTok",
-        "title": "Sprint Finisher \u2014 4x60m, Walk Back, Repeat",
-        "hook": "Film 4 reps at the track with walk-back recovery, voiceover: 'The session is short. The results aren't.' \u2014 post Mon morning to hit gym crowd"
+        "format": "60-second gym clip (Instagram Reel / YouTube Shorts)",
+        "title": "Pull-up progression: Week 1 vs Week 8 \u2014 calisthenics compound gains",
+        "hook": "Side-by-side split screen showing reps at start vs current level, with form coaching overlay text.",
+        "cta": "Follow for weekly calisthenics programming drops"
       },
       {
-        "format": "Progression Video",
-        "title": "From 0 to 10 Pull-Ups \u2014 The 6-Week Daily Protocol",
-        "hook": "Before/after or day-by-day montage at the gym showing the exact daily protocol, tagged with calisthenics and bodyweight training keywords"
+        "format": "Track slow-motion clip (TikTok / Instagram Reel)",
+        "title": "Sprint start breakdown \u2014 3 tweaks that shaved 0.2s off my 60m",
+        "hook": "Slow-mo footage of block start with on-screen annotations highlighting hip drive, arm mechanics, and first-step contact.",
+        "cta": "Save this for your next track session"
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn Carousel",
-        "title": "5 Objections Your Sales Reps Will Hear This Week (and How CloseCoach Trains Them to Handle Each One)",
-        "hook": "Each slide = one objection + a before/after rep response; final slide CTA to DM for a demo \u2014 targets sales managers scrolling LinkedIn during lunch"
+        "format": "LinkedIn native video (60\u201390 seconds)",
+        "title": "I let AI coach my sales team for a week \u2014 here\u2019s what changed",
+        "hook": "Talking-head to camera opening: \u2018We stopped doing traditional role-play. Here\u2019s what we did instead.\u2019 Then screen-share CloseCoach session highlights.",
+        "cta": "DM \u2018DEMO\u2019 to see CloseCoach for your team"
       },
       {
-        "format": "LinkedIn Video (60s)",
-        "title": "Watch CloseCoach Roleplay a Cold Call \u2014 Live AI Feedback in Real Time",
-        "hook": "Screen-record a CloseCoach cold-call roleplay session with instant AI feedback, narrate over it as a live demo \u2014 stops the scroll for any sales manager"
+        "format": "LinkedIn carousel post",
+        "title": "3 objections your sales reps still can\u2019t handle (and the AI fix)",
+        "hook": "Slide 1: \u20183 objections killing your team\u2019s close rate.\u2019 Each slide names one objection with a CloseCoach-style response script, final slide is a soft pitch.",
+        "cta": "Try CloseCoach free \u2014 link in comments"
       }
     ]
   }
