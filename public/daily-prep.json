@@ -1,116 +1,92 @@
 {
   "date": "2026-04-15",
-  "generated_at": "07:30",
+  "generated_at": "06:08",
   "source": "scheduled_agent",
   "sme_leads": [
     {
       "id": "lead_20260415_1",
-      "company": "Shirley Carpets & Flooring",
-      "industry": "Home Improvement / Flooring",
+      "company": "Venus Nails Bar",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "023 8077 1234",
-      "location": "Shirley, Southampton",
-      "notes": "No web presence found — relies entirely on word of mouth and a listing on Yell. A simple site with a portfolio and quote request form would capture homeowners searching 'carpet fitters Southampton' on Google."
+      "phone": "023 8044 5684",
+      "location": "Bitterne, Southampton",
+      "notes": "Active on Facebook and Instagram with 2,000+ followers but no standalone website; missing out on Google local search traffic and unable to showcase services or take direct bookings."
     },
     {
       "id": "lead_20260415_2",
-      "company": "Blossom Beauty Lounge",
-      "industry": "Beauty / Aesthetics",
-      "website": "blossombeautylounge.co.uk",
-      "phone": "023 8044 5678",
+      "company": "A.T Nails Spa",
+      "industry": "Nail Salon",
+      "website": null,
+      "phone": null,
       "location": "Bitterne, Southampton",
-      "notes": "Has a basic site but no online booking and no mobile-responsive layout — users on phones see a broken layout. Adding Fresha or Calendly integration and a mobile rebuild would convert casual social media followers into booked appointments."
+      "notes": "Facebook and Instagram-only presence with no website; relies entirely on Fresha for bookings, leaving significant SEO traffic and brand credibility on the table."
     },
     {
       "id": "lead_20260415_3",
-      "company": "Portswood Grill House",
-      "industry": "Restaurant / Takeaway",
+      "company": "Woolston Barber Shop",
+      "industry": "Barbershop",
       "website": null,
-      "phone": "023 8055 3344",
-      "location": "Portswood, Southampton",
-      "notes": "Visible on Google Maps with decent reviews but zero website. Student area location means heavy mobile search — a landing page with menu, opening hours, and a click-to-order link would immediately lift covers."
+      "phone": "07838 021711",
+      "location": "Woolston, Southampton",
+      "notes": "Facebook-only business with zero web presence; a simple local barbershop site with pricing, gallery, and online booking would immediately improve walk-in discoverability."
     },
     {
       "id": "lead_20260415_4",
-      "company": "Eastleigh Electrical Services",
-      "industry": "Electrical Contractor / Trades",
+      "company": "Just Gents",
+      "industry": "Barbershop",
       "website": null,
-      "phone": "07812 556 901",
-      "location": "Eastleigh, Hampshire",
-      "notes": "Checkatrade profile only — no standalone website. Tradespeople with their own domain and a clear services/testimonials page consistently outrank directory listings in local search. Strong pitch: 'own your Google rank, not just a Checkatrade profile.'"
+      "phone": "023 8022 4356",
+      "location": "Bitterne, Southampton",
+      "notes": "Appears only in third-party directories with no owned website; a branded site would help them compete with newer barbershops opening in the Bitterne area."
     },
     {
       "id": "lead_20260415_5",
-      "company": "Hedge End Health & Physio",
-      "industry": "Physiotherapy / Wellness",
-      "website": "hedgeendhealthphysio.co.uk",
-      "phone": "01489 782 345",
-      "location": "Hedge End, Hampshire",
-      "notes": "Existing site is built on an old template — no SSL on all pages, tiny text on mobile, and the online booking link is broken. A clean rebuild with working booking and Google reviews integration would reduce front-desk admin calls significantly."
+      "company": "Lush Nails & Beauty Bar",
+      "industry": "Beauty Salon",
+      "website": null,
+      "phone": null,
+      "location": "Shirley, Southampton",
+      "notes": "Registered company operating from Shirley Road with only a Treatwell listing; a standalone website would build brand identity and drive direct bookings away from commission platforms."
     }
   ],
   "linkedin_prospects": [
     {
       "id": "prospect_20260415_1",
-      "name": "Karen Whitfield",
-      "title": "Branch Manager",
-      "company": "Hunters Estate Agents — Southampton",
-      "url": "https://linkedin.com/in/karen-whitfield-estateagent",
-      "reason": "Manages a team of 6 negotiators in a competitive Southampton market where conversion from valuation to instruction is the key metric. CloseCoach's objection-handling roleplay maps directly to the 'vendor choosing between agents' call — a daily pressure point for her team."
+      "name": "Kevin Ashley",
+      "title": "Branch Partner",
+      "company": "Charters Estate Agents",
+      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254",
+      "reason": "Oversees a 15+ person residential sales team in Southampton at one of Hampshire's largest independent estate agencies (133 staff, 9 branches) \u2014 ideal target for CloseCoach's AI sales coaching."
     },
     {
       "id": "prospect_20260415_2",
-      "name": "James Colton",
-      "title": "Sales Manager",
-      "company": "Pentagon Volkswagen Southampton",
-      "url": "https://linkedin.com/in/james-colton-automotive",
-      "reason": "Automotive sales managers are under constant pressure on monthly plate targets; finance upsell and test-drive close rates are the two biggest skill gaps. CloseCoach can simulate real buyer objections so reps practise without burning live prospects."
+      "name": "Jonathan Clegg",
+      "title": "Managing Director",
+      "company": "Hunters Estate Agents Southampton",
+      "url": "https://www.linkedin.com/in/jonathan-clegg-2208098/",
+      "reason": "Runs his own Hunters franchise in Southampton with a dedicated sales and lettings team actively scaling since 2004 \u2014 strong fit for AI tools that sharpen negotiator performance."
     },
     {
       "id": "prospect_20260415_3",
-      "name": "Sarah Nwosu",
-      "title": "Head of Sales",
-      "company": "Meridian Business Support (Recruitment)",
-      "url": "https://linkedin.com/in/sarah-nwosu-recruitment",
-      "reason": "Heads a 10-person permanent recruitment desk with high staff turnover and inconsistent billing across the team. CloseCoach gives her a way to upskill new consultants on BD calls and client retainer conversations without pulling senior billers off their desks."
+      "name": "Allen Moore",
+      "title": "Sales Manager",
+      "company": "Solent Motor Homes Limited",
+      "url": "https://uk.linkedin.com/in/allen-m-0b96b4133",
+      "reason": "20-year sales veteran managing a specialist motorhome dealership sales team in the Solent region \u2014 CloseCoach's objection-handling and discovery coaching fits high-value vehicle sales perfectly."
     }
   ],
   "content_ideas": {
     "dts": [
-      {
-        "platform": "TikTok / Instagram Reels",
-        "title": "\"I swapped my driving test and passed 3 months earlier — here's exactly how\"",
-        "format": "60-second talking-head from a real or dramatised DTS user walking through finding an earlier slot, the nerves of the swap, and passing sooner — end with the DTS URL as CTA."
-      },
-      {
-        "platform": "TikTok",
-        "title": "\"DVSA test wait times by area — April 2026 update (some are WILD)\"",
-        "format": "Screen-record scrolling through the DVSA booking system showing extreme wait times in major cities, cut with on-screen text reactions — positioned as proof that swapping is necessary, not just convenient."
-      }
+      "Short-form video: 'DVSA test wait times just hit 5+ months in [city] \u2014 here's how to swap into a cancelled slot today', showing DTS alert notifications arriving in real-time on screen",
+      "TikTok/Reel: 'POV: You just booked your driving test and your date is 6 months away...' \u2014 relatable learner story arc ending with the DTS date-swap solution and a real testimonial screenshot"
     ],
     "athletics": [
-      {
-        "platform": "Instagram Reels",
-        "title": "\"Why your sprint isn't getting faster (it's not your legs)\"",
-        "format": "Dowayne talks to camera on a track breaking down one underrated sprint mechanic (e.g. arm drive or hip height), demonstrated with a before/after clip of the same drill done wrong vs. right."
-      },
-      {
-        "platform": "TikTok / Instagram Reels",
-        "title": "\"Day in the life: training around a full work schedule\"",
-        "format": "Quick-cut vlog of a real training session squeezed around a busy day — morning session, work tasks, evening cool-down. Honest and relatable, positions Dowayne as building discipline not just showcasing peak performance."
-      }
+      "60-second track reel: full sprint session from dynamic warm-up to max-effort run, with voiceover coaching on acceleration mechanics, shin angle, and drive phase \u2014 film at the athletics track",
+      "Calisthenics gym clip: L-sit to muscle-up progression breakdown across three difficulty levels (beginner \u2192 intermediate \u2192 advanced), filmed from two angles with form cues overlaid"
     ],
     "aimybiz": [
-      {
-        "platform": "LinkedIn (native video or carousel)",
-        "title": "\"Most sales reps can't handle this 1 objection — watch AI coach them through it in real time\"",
-        "format": "Screen-capture of a CloseCoach live roleplay where the AI buyer pushes back hard on price — show the rep fumbling, then coached and nailing the reframe. Product demo that doubles as insight content."
-      },
-      {
-        "platform": "LinkedIn (text post + comment thread)",
-        "title": "\"I built an AI that will argue with your sales team. Here's what we learned after 100 practice calls.\"",
-        "format": "Long-form post in Dowayne's voice sharing 3 patterns CloseCoach exposed (e.g. reps giving up too early on follow-up, over-explaining price). Ends with a soft CTA to trial CloseCoach — designed to pull comments from sales managers."
-      }
+      "LinkedIn post: 'What most sales managers get wrong about onboarding new reps \u2014 and how AI is fixing it', sharing a real stat on ramp time and teasing CloseCoach's scoring rubric as the solution",
+      "LinkedIn video demo (60s): 'Live look at what CloseCoach flags when a sales rep skips discovery questions' \u2014 screen recording of AI coaching feedback running on a mock sales call, posted as a native LinkedIn video"
     ]
   }
 }
