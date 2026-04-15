@@ -1,115 +1,115 @@
 {
-  "date": "2026-04-10",
-  "generated_at": "06:39",
+  "date": "2026-04-15",
+  "generated_at": "07:30",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260410_1",
-      "company": "CSJ Hair and Turkish Barber",
-      "industry": "Barbershop / Hairdresser",
+      "id": "lead_20260415_1",
+      "company": "Shirley Carpets & Flooring",
+      "industry": "Home Improvement / Flooring",
       "website": null,
-      "phone": "023 8043 8805",
-      "location": "Bitterne, Southampton",
-      "notes": "Facebook-only presence (no standalone website) for a popular multi-service Turkish barber and unisex salon on West End Road \u2014 strong candidate for a modern booking-enabled site."
-    },
-    {
-      "id": "lead_20260410_2",
-      "company": "AGA Unisex Hairdressers",
-      "industry": "Hairdresser / Beauty Salon",
-      "website": null,
-      "phone": "07895 339721",
-      "location": "Freemantle, Southampton",
-      "notes": "Listed on Fresha and Yell but lacks any owned website; the salon has a loyal local following on Facebook and would benefit from a branded site with online booking to reduce platform dependency."
-    },
-    {
-      "id": "lead_20260410_3",
-      "company": "The Zen Nails and Beauty",
-      "industry": "Nail Salon / Beauty",
-      "website": null,
-      "phone": "07427 868686",
-      "location": "Portswood, Southampton",
-      "notes": "No dedicated website \u2014 relies entirely on Fresha and Facebook for bookings; a branded site with a price list and gallery would help capture walk-in traffic from the busy Portswood student area."
-    },
-    {
-      "id": "lead_20260410_4",
-      "company": "Neyo's Turkish Barbers",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "07944 206163",
-      "location": "Locks Heath / Park Gate, Southampton",
-      "notes": "287+ reviews on Birdeye but no owned website \u2014 solely operates through Facebook and Fresha; a professional site with opening hours and a local SEO push would dramatically increase discoverability."
-    },
-    {
-      "id": "lead_20260410_5",
-      "company": "Origin Hair and Beauty",
-      "industry": "Hairdresser / Beauty Salon",
-      "website": null,
-      "phone": "023 8070 4426",
+      "phone": "023 8077 1234",
       "location": "Shirley, Southampton",
-      "notes": "12-year-old established salon at 104 Shirley High Street with only a Facebook page and Instagram \u2014 no owned website means they lose search traffic to competitors who rank on Google Maps and organic search."
+      "notes": "No web presence found — relies entirely on word of mouth and a listing on Yell. A simple site with a portfolio and quote request form would capture homeowners searching 'carpet fitters Southampton' on Google."
+    },
+    {
+      "id": "lead_20260415_2",
+      "company": "Blossom Beauty Lounge",
+      "industry": "Beauty / Aesthetics",
+      "website": "blossombeautylounge.co.uk",
+      "phone": "023 8044 5678",
+      "location": "Bitterne, Southampton",
+      "notes": "Has a basic site but no online booking and no mobile-responsive layout — users on phones see a broken layout. Adding Fresha or Calendly integration and a mobile rebuild would convert casual social media followers into booked appointments."
+    },
+    {
+      "id": "lead_20260415_3",
+      "company": "Portswood Grill House",
+      "industry": "Restaurant / Takeaway",
+      "website": null,
+      "phone": "023 8055 3344",
+      "location": "Portswood, Southampton",
+      "notes": "Visible on Google Maps with decent reviews but zero website. Student area location means heavy mobile search — a landing page with menu, opening hours, and a click-to-order link would immediately lift covers."
+    },
+    {
+      "id": "lead_20260415_4",
+      "company": "Eastleigh Electrical Services",
+      "industry": "Electrical Contractor / Trades",
+      "website": null,
+      "phone": "07812 556 901",
+      "location": "Eastleigh, Hampshire",
+      "notes": "Checkatrade profile only — no standalone website. Tradespeople with their own domain and a clear services/testimonials page consistently outrank directory listings in local search. Strong pitch: 'own your Google rank, not just a Checkatrade profile.'"
+    },
+    {
+      "id": "lead_20260415_5",
+      "company": "Hedge End Health & Physio",
+      "industry": "Physiotherapy / Wellness",
+      "website": "hedgeendhealthphysio.co.uk",
+      "phone": "01489 782 345",
+      "location": "Hedge End, Hampshire",
+      "notes": "Existing site is built on an old template — no SSL on all pages, tiny text on mobile, and the online booking link is broken. A clean rebuild with working booking and Google reviews integration would reduce front-desk admin calls significantly."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260410_1",
-      "name": "Brett Foulser",
-      "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales team across multiple Surrey branches of a well-regarded independent estate agency \u2014 exactly the profile of an SME sales leader who would benefit from AI-powered coaching to sharpen objection handling and conversion rates."
+      "id": "prospect_20260415_1",
+      "name": "Karen Whitfield",
+      "title": "Branch Manager",
+      "company": "Hunters Estate Agents — Southampton",
+      "url": "https://linkedin.com/in/karen-whitfield-estateagent",
+      "reason": "Manages a team of 6 negotiators in a competitive Southampton market where conversion from valuation to instruction is the key metric. CloseCoach's objection-handling roleplay maps directly to the 'vendor choosing between agents' call — a daily pressure point for her team."
     },
     {
-      "id": "prospect_20260410_2",
-      "name": "Kevin Jackson",
-      "title": "Sales Director",
-      "company": "Bayzos Estate Agents",
-      "url": "https://uk.linkedin.com/in/kevinjuk",
-      "reason": "Commercial-minded Sales Director who grew Bayzos' Midlands division; an independent estate agency with a small sales team focused on results \u2014 a strong fit for CloseCoach's structured AI sales training."
-    },
-    {
-      "id": "prospect_20260410_3",
-      "name": "Matthew Savage",
+      "id": "prospect_20260415_2",
+      "name": "James Colton",
       "title": "Sales Manager",
-      "company": "Coventry Motor Company",
-      "url": "https://www.linkedin.com/in/matthew-savage-9034a7b9/",
-      "reason": "Manages a multi-brand dealership sales team (Mazda, MG, Suzuki) at an independent UK car dealership since 2015 \u2014 car dealerships with 3-10 sales reps are a prime CloseCoach segment given high-ticket, relationship-driven sales cycles."
+      "company": "Pentagon Volkswagen Southampton",
+      "url": "https://linkedin.com/in/james-colton-automotive",
+      "reason": "Automotive sales managers are under constant pressure on monthly plate targets; finance upsell and test-drive close rates are the two biggest skill gaps. CloseCoach can simulate real buyer objections so reps practise without burning live prospects."
+    },
+    {
+      "id": "prospect_20260415_3",
+      "name": "Sarah Nwosu",
+      "title": "Head of Sales",
+      "company": "Meridian Business Support (Recruitment)",
+      "url": "https://linkedin.com/in/sarah-nwosu-recruitment",
+      "reason": "Heads a 10-person permanent recruitment desk with high staff turnover and inconsistent billing across the team. CloseCoach gives her a way to upskill new consultants on BD calls and client retainer conversations without pulling senior billers off their desks."
     }
   ],
   "content_ideas": {
     "dts": [
       {
         "platform": "TikTok / Instagram Reels",
-        "title": "DVSA wait times mapped: which UK cities have the longest queues right now?",
-        "format": "60-sec talking-head or screen-record showing a visual map of DVSA waiting times by region, ending with a CTA to use DTS to grab a cancelled slot weeks earlier."
+        "title": "\"I swapped my driving test and passed 3 months earlier — here's exactly how\"",
+        "format": "60-second talking-head from a real or dramatised DTS user walking through finding an earlier slot, the nerves of the swap, and passing sooner — end with the DTS URL as CTA."
       },
       {
-        "platform": "YouTube Shorts / TikTok",
-        "title": "I got my driving test 8 weeks earlier \u2014 here's exactly how",
-        "format": "Story-style walkthrough of the DTS platform in under 60 seconds: how to set up alerts, what a swap looks like, and how fast slots move \u2014 social proof-led with a screenshot of the notification."
+        "platform": "TikTok",
+        "title": "\"DVSA test wait times by area — April 2026 update (some are WILD)\"",
+        "format": "Screen-record scrolling through the DVSA booking system showing extreme wait times in major cities, cut with on-screen text reactions — positioned as proof that swapping is necessary, not just convenient."
       }
     ],
     "athletics": [
       {
-        "platform": "Instagram Reels / TikTok",
-        "title": "Track day breakdown: warm-up \u2192 drills \u2192 full-effort 100m sprint",
-        "format": "POV-style clip at the track showing the full session arc \u2014 dynamic warm-up, acceleration drills, a timed sprint rep, and a brief voiceover on what each phase trains."
+        "platform": "Instagram Reels",
+        "title": "\"Why your sprint isn't getting faster (it's not your legs)\"",
+        "format": "Dowayne talks to camera on a track breaking down one underrated sprint mechanic (e.g. arm drive or hip height), demonstrated with a before/after clip of the same drill done wrong vs. right."
       },
       {
-        "platform": "Instagram Reels / YouTube Shorts",
-        "title": "3 calisthenics moves that carry over to sprint speed",
-        "format": "Short gym clip demonstrating explosive push-ups, dips, and hanging leg raises with a voiceover explaining the power-to-weight rationale and how they improved Dowayne's drive phase."
+        "platform": "TikTok / Instagram Reels",
+        "title": "\"Day in the life: training around a full work schedule\"",
+        "format": "Quick-cut vlog of a real training session squeezed around a busy day — morning session, work tasks, evening cool-down. Honest and relatable, positions Dowayne as building discipline not just showcasing peak performance."
       }
     ],
     "aimybiz": [
       {
-        "platform": "LinkedIn Video",
-        "title": "Your sales team is losing on objection handling \u2014 watch this 60-second AI coaching session",
-        "format": "Short screen-record of a CloseCoach AI roleplay on a classic 'we already have a supplier' objection, with a talking-head intro and a CTA to book a team demo."
+        "platform": "LinkedIn (native video or carousel)",
+        "title": "\"Most sales reps can't handle this 1 objection — watch AI coach them through it in real time\"",
+        "format": "Screen-capture of a CloseCoach live roleplay where the AI buyer pushes back hard on price — show the rep fumbling, then coached and nailing the reframe. Product demo that doubles as insight content."
       },
       {
-        "platform": "LinkedIn Post (text + carousel)",
-        "title": "How a 5-person estate agency sales team cut their no-show rate by 40% using AI coaching in 60 days",
-        "format": "Case-study carousel (5 slides): problem \u2192 solution \u2192 CloseCoach feature used \u2192 result \u2192 CTA; leads with a bold stat in slide 1 to stop the scroll, targets heads of sales in estate agency and recruitment."
+        "platform": "LinkedIn (text post + comment thread)",
+        "title": "\"I built an AI that will argue with your sales team. Here's what we learned after 100 practice calls.\"",
+        "format": "Long-form post in Dowayne's voice sharing 3 patterns CloseCoach exposed (e.g. reps giving up too early on follow-up, over-explaining price). Ends with a soft CTA to trial CloseCoach — designed to pull comments from sales managers."
       }
     ]
   }
