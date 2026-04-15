@@ -1,122 +1,92 @@
 {
-  "date": "2026-04-14",
-  "generated_at": "06:09",
+  "date": "2026-04-15",
+  "generated_at": "06:08",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260414_1",
+      "id": "lead_20260415_1",
       "company": "Venus Nails Bar",
       "industry": "Nail Salon",
       "website": null,
-      "phone": "07476 539809",
+      "phone": "023 8044 5684",
       "location": "Bitterne, Southampton",
-      "notes": "No standalone website \u2014 operates via Facebook page only; ideal candidate for a professional mobile-first site to boost local bookings."
+      "notes": "Active on Facebook and Instagram with 2,000+ followers but no standalone website; missing out on Google local search traffic and unable to showcase services or take direct bookings."
     },
     {
-      "id": "lead_20260414_2",
+      "id": "lead_20260415_2",
       "company": "A.T Nails Spa",
       "industry": "Nail Salon",
       "website": null,
       "phone": null,
-      "location": "Bitterne Village, Southampton",
-      "notes": "Presence limited to Facebook and Instagram with no dedicated website; a booking-enabled site would professionalise their online presence and drive new clients."
+      "location": "Bitterne, Southampton",
+      "notes": "Facebook and Instagram-only presence with no website; relies entirely on Fresha for bookings, leaving significant SEO traffic and brand credibility on the table."
     },
     {
-      "id": "lead_20260414_3",
-      "company": "Focus Nails Woolston",
-      "industry": "Nail & Beauty Salon",
+      "id": "lead_20260415_3",
+      "company": "Woolston Barber Shop",
+      "industry": "Barbershop",
       "website": null,
-      "phone": "023 8090 0150",
+      "phone": "07838 021711",
       "location": "Woolston, Southampton",
-      "notes": "Listed only on Facebook and third-party booking platforms (Fresha) with no own website; a branded site with online booking would convert walk-in traffic to pre-booked appointments."
+      "notes": "Facebook-only business with zero web presence; a simple local barbershop site with pricing, gallery, and online booking would immediately improve walk-in discoverability."
     },
     {
-      "id": "lead_20260414_4",
-      "company": "Origin Hair & Beauty",
-      "industry": "Hair & Beauty Salon",
+      "id": "lead_20260415_4",
+      "company": "Just Gents",
+      "industry": "Barbershop",
       "website": null,
-      "phone": "023 8070 4426",
-      "location": "Shirley, Southampton",
-      "notes": "12-year-old established salon relying solely on Facebook, Instagram, and Fresha with no standalone website \u2014 ripe for a branded site showcasing services, team, and loyalty offers."
+      "phone": "023 8022 4356",
+      "location": "Bitterne, Southampton",
+      "notes": "Appears only in third-party directories with no owned website; a branded site would help them compete with newer barbershops opening in the Bitterne area."
     },
     {
-      "id": "lead_20260414_5",
-      "company": "Voytek Plumbing and Heating",
-      "industry": "Plumbing & Heating",
+      "id": "lead_20260415_5",
+      "company": "Lush Nails & Beauty Bar",
+      "industry": "Beauty Salon",
       "website": null,
       "phone": null,
-      "location": "Woolston, Southampton",
-      "notes": "Active sole-trader plumber with only a Checkatrade profile and Facebook page \u2014 a simple trust-building site with reviews, services, and a clear call-to-action would immediately increase enquiries."
+      "location": "Shirley, Southampton",
+      "notes": "Registered company operating from Shirley Road with only a Treatwell listing; a standalone website would build brand identity and drive direct bookings away from commission platforms."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260414_1",
-      "name": "Hannah Mollison",
-      "title": "Sales Director",
-      "company": "Workwell Outsourcing",
-      "url": "https://uk.linkedin.com/in/hannah-mollison",
-      "reason": "Leads a 23-person sales function selling into UK recruitment agency owners \u2014 the exact SME decision-makers who manage small sales teams and would benefit from CloseCoach."
-    },
-    {
-      "id": "prospect_20260414_2",
+      "id": "prospect_20260415_1",
       "name": "Kevin Ashley",
       "title": "Branch Partner",
       "company": "Charters Estate Agents",
-      "url": "https://uk.linkedin.com/in/kevin-ashley-81b371254",
-      "reason": "Runs the Southampton sales division of a multi-branch independent estate agency with a long track record of managing property sales teams \u2014 high-fit CloseCoach target."
+      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254",
+      "reason": "Oversees a 15+ person residential sales team in Southampton at one of Hampshire's largest independent estate agencies (133 staff, 9 branches) \u2014 ideal target for CloseCoach's AI sales coaching."
     },
     {
-      "id": "prospect_20260414_3",
-      "name": "Christopher Walker",
-      "title": "Used Car Sales Manager",
-      "company": "Independent Prestige Car Dealership (UK)",
-      "url": "https://www.linkedin.com/in/christopher-walker-7749271a/",
-      "reason": "Directly manages a small retail sales team at a prestige used car dealership with full P&L responsibility \u2014 exactly the kind of hands-on sales leader CloseCoach is built for."
+      "id": "prospect_20260415_2",
+      "name": "Jonathan Clegg",
+      "title": "Managing Director",
+      "company": "Hunters Estate Agents Southampton",
+      "url": "https://www.linkedin.com/in/jonathan-clegg-2208098/",
+      "reason": "Runs his own Hunters franchise in Southampton with a dedicated sales and lettings team actively scaling since 2004 \u2014 strong fit for AI tools that sharpen negotiator performance."
+    },
+    {
+      "id": "prospect_20260415_3",
+      "name": "Allen Moore",
+      "title": "Sales Manager",
+      "company": "Solent Motor Homes Limited",
+      "url": "https://uk.linkedin.com/in/allen-m-0b96b4133",
+      "reason": "20-year sales veteran managing a specialist motorhome dealership sales team in the Solent region \u2014 CloseCoach's objection-handling and discovery coaching fits high-value vehicle sales perfectly."
     }
   ],
   "content_ideas": {
     "dts": [
-      {
-        "format": "Short-form video / TikTok / Reel",
-        "title": "DVSA wait times are 8+ months in your area \u2014 here's how thousands of learners are getting earlier test dates",
-        "hook": "Open with a screenshot of a real 8-month wait time, cut to a confirmed test booking 6 weeks out via drivingtestswap.uk",
-        "cta": "Link in bio \u2014 check your area's wait time and set up a free swap alert today"
-      },
-      {
-        "format": "Twitter/X thread or LinkedIn post",
-        "title": "I booked my driving test for December. I took it in October. Here's exactly how the swap worked.",
-        "hook": "First-person walkthrough of the DTS platform \u2014 from alert to confirmed swap in under 48 hours",
-        "cta": "drivingtestswap.uk \u2014 free to join, alerts fire the moment a cancellation matches your area"
-      }
+      "Short-form video: 'DVSA test wait times just hit 5+ months in [city] \u2014 here's how to swap into a cancelled slot today', showing DTS alert notifications arriving in real-time on screen",
+      "TikTok/Reel: 'POV: You just booked your driving test and your date is 6 months away...' \u2014 relatable learner story arc ending with the DTS date-swap solution and a real testimonial screenshot"
     ],
     "athletics": [
-      {
-        "format": "Instagram Reel / TikTok \u2014 split-screen progress clip",
-        "title": "Week 1 vs Week 4 sprint session \u2014 same track, same distance, different body",
-        "hook": "Side-by-side form comparison with split times on screen; no commentary needed, results speak",
-        "cta": "Follow for weekly track sessions \u2014 training plan drops next month"
-      },
-      {
-        "format": "YouTube Short / Instagram Reel \u2014 challenge format",
-        "title": "Can you pass the calisthenics baseline test? Most gym-goers fail at rep 3.",
-        "hook": "Dowayne demos the test (push-up, dip, pull-up sequence) on camera then challenges the audience",
-        "cta": "Comment your score below \u2014 I'll reply with the next-level drill"
-      }
+      "60-second track reel: full sprint session from dynamic warm-up to max-effort run, with voiceover coaching on acceleration mechanics, shin angle, and drive phase \u2014 film at the athletics track",
+      "Calisthenics gym clip: L-sit to muscle-up progression breakdown across three difficulty levels (beginner \u2192 intermediate \u2192 advanced), filmed from two angles with form cues overlaid"
     ],
     "aimybiz": [
-      {
-        "format": "LinkedIn text post with embedded screen-capture video",
-        "title": "I ran a 3-minute CloseCoach objection drill with a 5-person estate agent sales team. Here's what changed.",
-        "hook": "Short screen recording of a live roleplay session \u2014 AI feedback on tone, urgency, and close attempt shown on screen",
-        "cta": "If your team loses deals at 'I need to think about it', DM me \u2014 I'll set up a free 15-min demo"
-      },
-      {
-        "format": "LinkedIn carousel or short-form video",
-        "title": "Your sales team's weakest moment is objection handling. This is what AI-coached practice looks like.",
-        "hook": "Before/after comparison of an uncoached vs CloseCoach-drilled response to 'your price is too high'",
-        "cta": "Tag a sales manager who needs to see this \u2014 free trial at aimybiz.com"
-      }
+      "LinkedIn post: 'What most sales managers get wrong about onboarding new reps \u2014 and how AI is fixing it', sharing a real stat on ramp time and teasing CloseCoach's scoring rubric as the solution",
+      "LinkedIn video demo (60s): 'Live look at what CloseCoach flags when a sales rep skips discovery questions' \u2014 screen recording of AI coaching feedback running on a mock sales call, posted as a native LinkedIn video"
     ]
   }
 }
