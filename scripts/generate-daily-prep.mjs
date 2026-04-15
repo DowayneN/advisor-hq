@@ -9,18 +9,47 @@
 
 import Anthropic from '@anthropic-ai/sdk'
 import { execSync } from 'child_process'
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const ROOT      = join(__dirname, '..')
-const OUT_PATH  = join(ROOT, 'public', 'daily-prep.json')
+const ROOT           = join(__dirname, '..')
+const OUT_PATH       = join(ROOT, 'public', 'daily-prep.json')
+const SEEN_PATH      = join(ROOT, 'public', 'seen-leads.json')
 
-const TODAY   = new Date().toISOString().split('T')[0]
-const NOW_HR  = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false })
+const TODAY  = new Date().toISOString().split('T')[0]
+const NOW_HR = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false })
 
 const client = new Anthropic()
+
+// ── Idempotency guard ─────────────────────────────────────────────────────────
+// If daily-prep.json already has today's date, skip the run.
+// This prevents a partial run + re-run from double-firing and surfacing duplicates.
+
+if (existsSync(OUT_PATH)) {
+  try {
+    const existing = JSON.parse(readFileSync(OUT_PATH, 'utf8'))
+    if (existing.date === TODAY) {
+      console.log(`[daily-prep] Already generated for ${TODAY} — skipping.`)
+      process.exit(0)
+    }
+  } catch {}
+}
+
+// ── Seen-leads exclusion list ─────────────────────────────────────────────────
+// Read every business name surfaced in previous runs so the model never repeats them.
+
+let seenBusinesses = []
+if (existsSync(SEEN_PATH)) {
+  try {
+    seenBusinesses = JSON.parse(readFileSync(SEEN_PATH, 'utf8')).businesses || []
+  } catch {}
+}
+
+const exclusionBlock = seenBusinesses.length > 0
+  ? `\n\nDO NOT include any of these businesses — they have already been surfaced on previous days:\n${seenBusinesses.map(b => `- ${b}`).join('\n')}\n\nPick entirely different businesses.`
+  : ''
 
 // ── Prompt ────────────────────────────────────────────────────────────────────
 
@@ -37,7 +66,7 @@ Your job is to generate a structured daily prep object in JSON with:
 
 All data must be plausible and specific. Use real business names and real LinkedIn profile URLs where you can. For SMEs, focus on trades, salons, restaurants, local services — any category that benefits from local Google traffic.`
 
-const USER = `Generate today's prep data as a valid JSON object. Today is ${TODAY}.
+const USER = `Generate today's prep data as a valid JSON object. Today is ${TODAY}.${exclusionBlock}
 
 Return ONLY valid JSON — no markdown, no explanation, no code blocks. The JSON must match this exact schema:
 
@@ -86,6 +115,9 @@ Return ONLY valid JSON — no markdown, no explanation, no code blocks. The JSON
 
 async function generate() {
   console.log(`[daily-prep] Generating for ${TODAY}…`)
+  if (seenBusinesses.length > 0) {
+    console.log(`[daily-prep] Excluding ${seenBusinesses.length} previously seen businesses`)
+  }
 
   const msg = await client.messages.create({
     model:      'claude-opus-4-6',
@@ -94,9 +126,7 @@ async function generate() {
     messages:   [{ role: 'user', content: USER }],
   })
 
-  const raw = msg.content[0].text.trim()
-
-  // Strip any accidental markdown fences
+  const raw     = msg.content[0].text.trim()
   const cleaned = raw.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim()
 
   let data
@@ -108,12 +138,20 @@ async function generate() {
     process.exit(1)
   }
 
+  // Write daily prep
   writeFileSync(OUT_PATH, JSON.stringify(data, null, 2))
   console.log(`[daily-prep] Written to ${OUT_PATH}`)
 
+  // Update seen-leads — append new business names, deduplicate
+  const newNames   = data.sme_leads.map(l => l.company)
+  const allSeen    = [...new Set([...seenBusinesses, ...newNames])]
+  const seenOutput = { businesses: allSeen, last_updated: TODAY }
+  writeFileSync(SEEN_PATH, JSON.stringify(seenOutput, null, 2))
+  console.log(`[daily-prep] seen-leads.json updated (${allSeen.length} total)`)
+
   // Git commit + push
   try {
-    execSync('git add public/daily-prep.json', { cwd: ROOT, stdio: 'inherit' })
+    execSync('git add public/daily-prep.json public/seen-leads.json', { cwd: ROOT, stdio: 'inherit' })
     execSync(`git commit -m "chore: daily prep update ${TODAY}"`, { cwd: ROOT, stdio: 'inherit' })
     execSync('git push', { cwd: ROOT, stdio: 'inherit' })
     console.log('[daily-prep] Pushed to GitHub')

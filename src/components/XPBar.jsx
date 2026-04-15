@@ -1,3 +1,5 @@
+import { Flame } from 'lucide-react'
+
 const DAILY_XP_TARGET = 200
 const STREAK_MILESTONES = [
   { days: 7,  label: '7 days',  color: 'var(--color-accent)' },
@@ -62,7 +64,7 @@ export default function XPBar({ xpToday, xpTotal, streak }) {
       {/* Streak row */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span style={{ fontSize: 'var(--text-sm)' }}>🔥</span>
+          <Flame size={16} strokeWidth={2} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
           <span
             className="font-medium"
             style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)' }}

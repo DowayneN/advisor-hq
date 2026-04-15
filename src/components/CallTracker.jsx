@@ -322,9 +322,9 @@ export default function CallTracker({ externalCalls = [], onXpEarned }) {
                     </span>
                   )}
                 </div>
-                {call.notes && (
+                {call.notes && (call.notes.length > 0) && (
                   <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: '2px' }}>
-                    {call.notes}
+                    {Array.isArray(call.notes) ? call.notes.map(n => n.text).join(' · ') : call.notes}
                   </p>
                 )}
                 <p style={{ fontSize: '10px', color: 'var(--text-tertiary)', marginTop: '2px' }}>

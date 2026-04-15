@@ -1,6 +1,6 @@
 import { useState } from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 import { getTasksForDay, VENTURES, DAY_NAMES } from '../data/tasks'
-import XPBar from './XPBar'
 import DailyPrep from './DailyPrep'
 
 const PERIODS = ['morning', 'afternoon', 'evening']
@@ -83,7 +83,10 @@ function TaskCard({ task, done, onToggle }) {
               className="text-xs flex items-center gap-1 transition-colors"
               style={{ color: expanded ? 'var(--accent-gold)' : 'var(--text-tertiary)' }}
             >
-              <span>{expanded ? '↑ hide' : '↓ how to do this'}</span>
+              {expanded
+                ? <><ChevronUp size={13} strokeWidth={2} /><span>hide</span></>
+                : <><ChevronDown size={13} strokeWidth={2} /><span>how to do this</span></>
+              }
             </button>
           </div>
         </div>
@@ -152,7 +155,7 @@ function TaskCard({ task, done, onToggle }) {
   )
 }
 
-export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xpTotal, streak, onXpEarned, onCallLogged }) {
+export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xpTotal, streak, onXpEarned, onBonusXpEarned, onCallLogged }) {
   const today = new Date()
   const dayIndex = today.getDay()
   const tasks = getTasksForDay(dayIndex)
@@ -179,9 +182,9 @@ export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xp
   const completionPct = totalTasks > 0 ? Math.round((doneTasks / totalTasks) * 100) : 0
 
   return (
-    <div style={{ maxWidth: '720px' }} className="space-y-5">
-      {/* Daily Prep Panel */}
-      <DailyPrep onXpEarned={onXpEarned} onCallLogged={onCallLogged} />
+    <div style={{ width: '100%' }} className="space-y-5">
+      {/* Daily Prep Panel — full width */}
+      <DailyPrep onXpEarned={onBonusXpEarned || onXpEarned} onCallLogged={onCallLogged} />
 
       {/* Date header */}
       <div className="flex items-start justify-between gap-4 pt-1">
@@ -213,9 +216,6 @@ export default function DailyHQ({ completedTasks, setCompletedTasks, xpToday, xp
           </div>
         </div>
       </div>
-
-      {/* XP Bar */}
-      <XPBar xpToday={xpToday} xpTotal={xpTotal} streak={streak} />
 
       {/* Day progress bar */}
       <div

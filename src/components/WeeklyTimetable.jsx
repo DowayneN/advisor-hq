@@ -17,21 +17,30 @@ export default function WeeklyTimetable({ completedTasks }) {
   const weekOrder = [1, 2, 3, 4, 5, 6, 0]
 
   return (
-    <div style={{ maxWidth: '720px' }} className="space-y-5">
-      <div>
-        <h1
-          className="font-bold"
-          style={{ fontSize: 'var(--text-xl)', color: 'var(--color-text)' }}
-        >
-          Weekly Timetable
-        </h1>
-        <p style={{ color: 'var(--color-text-faint)', fontSize: 'var(--text-sm)', marginTop: '2px' }}>
-          Select a day to see its tasks
-        </p>
+    <div style={{ width: '100%' }} className="space-y-5">
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="font-bold" style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)' }}>
+            Weekly Timetable
+          </h1>
+          <p style={{ color: 'var(--text-tertiary)', fontSize: 'var(--text-sm)', marginTop: '2px' }}>
+            {expandedDay !== null ? `${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][expandedDay]} selected — click again to collapse` : 'Select a day to see its tasks'}
+          </p>
+        </div>
+        {/* Venture legend */}
+        <div className="flex flex-wrap gap-4 justify-end">
+          {Object.entries(VENTURES).map(([key, v]) => (
+            <div key={key} className="flex items-center gap-1.5">
+              <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: v.color }} />
+              <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>{v.tag}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Day cards grid */}
-      <div className="grid grid-cols-7 gap-2">
+      {/* Full-width 7-day grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '12px' }}>
         {weekOrder.map(dayIdx => {
           const tasks = getTasksForDay(dayIdx)
           const schedule = WEEK_SCHEDULE[dayIdx]
@@ -47,23 +56,40 @@ export default function WeeklyTimetable({ completedTasks }) {
               key={dayIdx}
               onClick={() => setExpandedDay(isExpanded ? null : dayIdx)}
               style={{
-                background: isExpanded ? 'var(--color-surface-2)' : 'var(--color-surface)',
-                border: `1px solid ${isToday ? 'var(--color-accent)' : isExpanded ? 'var(--color-border)' : 'var(--color-border-soft)'}`,
+                background: isExpanded ? 'rgba(232,196,104,0.08)' : 'var(--layer-2)',
+                border: `1px solid ${isToday ? 'var(--accent-gold)' : isExpanded ? 'rgba(232,196,104,0.4)' : 'var(--border-subtle)'}`,
                 borderRadius: 'var(--radius-lg)',
-                padding: 'var(--space-3)',
+                padding: 'var(--space-4)',
                 textAlign: 'center',
                 cursor: 'pointer',
-                transition: 'border-color 0.2s ease, background 0.2s ease',
-                boxShadow: isToday ? 'none' : 'var(--shadow-sm)',
+                transition: 'all 0.2s ease',
+                boxShadow: isToday ? 'var(--shadow-gold)' : isExpanded ? 'none' : 'var(--shadow-sm)',
+                minHeight: '130px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+              onMouseEnter={e => {
+                if (!isExpanded) {
+                  e.currentTarget.style.borderColor = 'var(--border-medium)'
+                  e.currentTarget.style.background = 'var(--layer-3)'
+                }
+              }}
+              onMouseLeave={e => {
+                if (!isExpanded) {
+                  e.currentTarget.style.borderColor = isToday ? 'var(--accent-gold)' : 'var(--border-subtle)'
+                  e.currentTarget.style.background = 'var(--layer-2)'
+                }
               }}
             >
               {/* Day name */}
               <div
-                className="font-semibold"
+                className="font-bold"
                 style={{
-                  fontSize: 'var(--text-xs)',
-                  color: isToday ? 'var(--color-accent)' : 'var(--color-text-muted)',
-                  marginBottom: '4px',
+                  fontSize: 'var(--text-base)',
+                  color: isToday ? 'var(--accent-gold)' : isExpanded ? 'var(--text-primary)' : 'var(--text-secondary)',
+                  letterSpacing: '-0.01em',
                 }}
               >
                 {DAY_SHORT[dayIdx]}
@@ -72,70 +98,60 @@ export default function WeeklyTimetable({ completedTasks }) {
               {/* Theme label */}
               <div
                 style={{
-                  fontSize: '0.55rem',
-                  color: 'var(--color-text-faint)',
-                  lineHeight: 1.3,
-                  marginBottom: '8px',
-                  minHeight: '2.2em',
+                  fontSize: 'var(--text-xs)',
+                  color: 'var(--text-tertiary)',
+                  lineHeight: 1.4,
+                  margin: '6px 0',
                 }}
               >
                 {schedule.theme}
               </div>
 
               {/* Venture dots */}
-              <div className="flex flex-wrap justify-center gap-1 mb-2">
+              <div className="flex flex-wrap justify-center gap-1">
                 {schedule.focus.map(v => (
                   <div
                     key={v}
                     title={VENTURES[v].tag}
                     style={{
-                      width: '6px',
-                      height: '6px',
+                      width: '7px',
+                      height: '7px',
                       borderRadius: '50%',
                       background: VENTURES[v].color,
-                      opacity: 0.8,
                     }}
                   />
                 ))}
               </div>
 
-              {/* Progress bar */}
-              <div
-                style={{
-                  height: '3px',
-                  background: 'var(--color-surface-3)',
-                  borderRadius: 'var(--radius-full)',
-                  overflow: 'hidden',
-                }}
-              >
+              {/* Progress */}
+              <div style={{ width: '100%', marginTop: '10px' }}>
                 <div
                   style={{
-                    height: '100%',
-                    width: `${donePct}%`,
-                    background: donePct === 100 ? 'var(--color-success)' : 'var(--color-accent)',
+                    height: '3px',
+                    background: 'var(--layer-3)',
                     borderRadius: 'var(--radius-full)',
+                    overflow: 'hidden',
                   }}
-                />
-              </div>
-              <div style={{ fontSize: '0.55rem', color: 'var(--color-text-faint)', marginTop: '4px' }}>
-                {donePct}%
+                >
+                  <div
+                    style={{
+                      height: '100%',
+                      width: `${donePct}%`,
+                      background: donePct === 100 ? 'var(--success)' : 'var(--accent-gold)',
+                      borderRadius: 'var(--radius-full)',
+                    }}
+                  />
+                </div>
+                <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: '4px' }}>
+                  {donePct}%
+                </div>
               </div>
             </button>
           )
         })}
       </div>
 
-      {/* Venture legend */}
-      <div className="flex flex-wrap gap-4">
-        {Object.entries(VENTURES).map(([key, v]) => (
-          <div key={key} className="flex items-center gap-1.5">
-            <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: v.color }} />
-            <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>{v.tag}</span>
-          </div>
-        ))}
-      </div>
-
-      {/* Expanded day panel */}
+      {/* Expanded day panel — full width below */}
       {expandedDay !== null && (
         <ExpandedDay
           dayIndex={expandedDay}
@@ -153,10 +169,10 @@ function ExpandedDay({ dayIndex, completedTasks }) {
 
   return (
     <div
-      className="animate-in space-y-3"
+      className="animate-in"
       style={{
-        background: 'var(--color-surface)',
-        border: '1px solid var(--color-border-soft)',
+        background: 'var(--layer-2)',
+        border: '1px solid var(--border-subtle)',
         borderRadius: 'var(--radius-xl)',
         padding: 'var(--space-4)',
         boxShadow: 'var(--shadow-sm)',
@@ -165,14 +181,14 @@ function ExpandedDay({ dayIndex, completedTasks }) {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="font-semibold" style={{ color: 'var(--color-text)' }}>
+          <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
             {dayNames[dayIndex]}
           </h3>
-          <p style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+          <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
             {schedule.theme}
           </p>
         </div>
-        <div style={{ fontSize: 'var(--text-xs)', color: 'var(--color-text-faint)' }}>
+        <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
           {tasks.length} tasks
         </div>
       </div>
@@ -180,7 +196,7 @@ function ExpandedDay({ dayIndex, completedTasks }) {
       {/* Task list */}
       <div
         style={{
-          borderTop: '1px solid var(--color-border-soft)',
+          borderTop: '1px solid var(--border-subtle)',
           paddingTop: 'var(--space-3)',
         }}
         className="space-y-2"
@@ -199,14 +215,14 @@ function ExpandedDay({ dayIndex, completedTasks }) {
                   width: '6px',
                   height: '6px',
                   borderRadius: '50%',
-                  background: done ? 'var(--color-text-faint)' : v.color,
+                  background: done ? 'var(--text-tertiary)' : v.color,
                   flexShrink: 0,
                 }}
               />
               <span
                 className="flex-1 text-sm"
                 style={{
-                  color: done ? 'var(--color-text-faint)' : 'var(--color-text-muted)',
+                  color: done ? 'var(--text-tertiary)' : 'var(--text-secondary)',
                   textDecoration: done ? 'line-through' : 'none',
                 }}
               >
@@ -221,7 +237,7 @@ function ExpandedDay({ dayIndex, completedTasks }) {
                 </span>
                 <span
                   className="text-xs font-mono"
-                  style={{ color: 'var(--color-text-faint)' }}
+                  style={{ color: 'var(--text-tertiary)' }}
                 >
                   +{task.xp}
                 </span>

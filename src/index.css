@@ -225,6 +225,13 @@ button:active {
 }
 .xp-pop { animation: xpPop 0.3s var(--ease-out); }
 
+/* ── Desktop 2-column layout for Daily HQ ── */
+@media (min-width: 900px) {
+  .lg-two-col {
+    grid-template-columns: minmax(0, 1fr) 300px !important;
+  }
+}
+
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
