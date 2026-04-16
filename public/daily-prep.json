@@ -1,92 +1,116 @@
 {
-  "date": "2026-04-15",
-  "generated_at": "06:08",
+  "date": "2026-04-16",
+  "generated_at": "06:15",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260415_1",
-      "company": "Venus Nails Bar",
-      "industry": "Nail Salon",
+      "id": "lead_20260416_1",
+      "company": "Hair Bare (Southern) Ltd",
+      "industry": "Hairdressing / Salon",
       "website": null,
-      "phone": "023 8044 5684",
-      "location": "Bitterne, Southampton",
-      "notes": "Active on Facebook and Instagram with 2,000+ followers but no standalone website; missing out on Google local search traffic and unable to showcase services or take direct bookings."
+      "phone": "023 8046 2824",
+      "location": "Bitterne",
+      "notes": "Established Bitterne salon operating exclusively via Facebook and Fresha; no dedicated website means they are invisible to local Google search."
     },
     {
-      "id": "lead_20260415_2",
-      "company": "A.T Nails Spa",
-      "industry": "Nail Salon",
-      "website": null,
-      "phone": null,
-      "location": "Bitterne, Southampton",
-      "notes": "Facebook and Instagram-only presence with no website; relies entirely on Fresha for bookings, leaving significant SEO traffic and brand credibility on the table."
-    },
-    {
-      "id": "lead_20260415_3",
-      "company": "Woolston Barber Shop",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "07838 021711",
-      "location": "Woolston, Southampton",
-      "notes": "Facebook-only business with zero web presence; a simple local barbershop site with pricing, gallery, and online booking would immediately improve walk-in discoverability."
-    },
-    {
-      "id": "lead_20260415_4",
-      "company": "Just Gents",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "023 8022 4356",
-      "location": "Bitterne, Southampton",
-      "notes": "Appears only in third-party directories with no owned website; a branded site would help them compete with newer barbershops opening in the Bitterne area."
-    },
-    {
-      "id": "lead_20260415_5",
-      "company": "Lush Nails & Beauty Bar",
+      "id": "lead_20260416_2",
+      "company": "Be Loved Southampton",
       "industry": "Beauty Salon",
       "website": null,
+      "phone": "023 8178 0230",
+      "location": "Thornhill",
+      "notes": "Active beauty salon with 100+ Fresha reviews and a loyal Facebook following but zero organic search presence due to no website."
+    },
+    {
+      "id": "lead_20260416_3",
+      "company": "SK Dalyan Barber",
+      "industry": "Barbers",
+      "website": null,
       "phone": null,
-      "location": "Shirley, Southampton",
-      "notes": "Registered company operating from Shirley Road with only a Treatwell listing; a standalone website would build brand identity and drive direct bookings away from commission platforms."
+      "location": "Bitterne Village",
+      "notes": "Turkish barber listed only on Yell with no website or social media presence discovered \u2014 strong opportunity for a simple, SEO-ready one-page site."
+    },
+    {
+      "id": "lead_20260416_4",
+      "company": "HG Electrical",
+      "industry": "Electricians",
+      "website": null,
+      "phone": null,
+      "location": "Northam / Southampton City",
+      "notes": "Local domestic and commercial electrician relying solely on Facebook and MyBuilder for leads, with no website to build credibility or capture Google traffic."
+    },
+    {
+      "id": "lead_20260416_5",
+      "company": "Woolston Barber Shop",
+      "industry": "Barbers",
+      "website": null,
+      "phone": "+44 7838 021711",
+      "location": "Woolston",
+      "notes": "Active Woolston barber with an engaged Instagram following (@woolston.barbershop) but no website \u2014 missing every 'barber near me' Google search in the area."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260415_1",
-      "name": "Kevin Ashley",
-      "title": "Branch Partner",
-      "company": "Charters Estate Agents",
-      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254",
-      "reason": "Oversees a 15+ person residential sales team in Southampton at one of Hampshire's largest independent estate agencies (133 staff, 9 branches) \u2014 ideal target for CloseCoach's AI sales coaching."
+      "id": "prospect_20260416_1",
+      "name": "Gareth Shorten",
+      "title": "Head of Sales",
+      "company": "SilberArrows (Independent Mercedes-Benz & AMG Specialist)",
+      "url": "https://www.linkedin.com/in/gareth-shorten-6938a9130/",
+      "reason": "Heads sales at a 43-person independent luxury car dealership in London, managing a team \u2014 ideal candidate to demo AI roleplay coaching for high-value automotive sales."
     },
     {
-      "id": "prospect_20260415_2",
-      "name": "Jonathan Clegg",
+      "id": "prospect_20260416_2",
+      "name": "Brett Foulser",
+      "title": "Sales Director",
+      "company": "Seymours Estate Agents",
+      "url": "https://uk.linkedin.com/in/brettfoulser",
+      "reason": "Sales Director overseeing a 52-person sales department across 13 independent UK estate agent branches \u2014 exactly the multi-branch sales training problem CloseCoach solves."
+    },
+    {
+      "id": "prospect_20260416_3",
+      "name": "Sally Churm",
       "title": "Managing Director",
-      "company": "Hunters Estate Agents Southampton",
-      "url": "https://www.linkedin.com/in/jonathan-clegg-2208098/",
-      "reason": "Runs his own Hunters franchise in Southampton with a dedicated sales and lettings team actively scaling since 2004 \u2014 strong fit for AI tools that sharpen negotiator performance."
-    },
-    {
-      "id": "prospect_20260415_3",
-      "name": "Allen Moore",
-      "title": "Sales Manager",
-      "company": "Solent Motor Homes Limited",
-      "url": "https://uk.linkedin.com/in/allen-m-0b96b4133",
-      "reason": "20-year sales veteran managing a specialist motorhome dealership sales team in the Solent region \u2014 CloseCoach's objection-handling and discovery coaching fits high-value vehicle sales perfectly."
+      "company": "Tudor Employment Agency Ltd",
+      "url": "https://www.linkedin.com/in/sally-churm-frec-certrp-27628415/",
+      "reason": "MD of an 83-employee independent UK recruitment agency with 3 branches \u2014 responsible for consultant sales performance across the group, strong CloseCoach fit."
     }
   ],
   "content_ideas": {
     "dts": [
-      "Short-form video: 'DVSA test wait times just hit 5+ months in [city] \u2014 here's how to swap into a cancelled slot today', showing DTS alert notifications arriving in real-time on screen",
-      "TikTok/Reel: 'POV: You just booked your driving test and your date is 6 months away...' \u2014 relatable learner story arc ending with the DTS date-swap solution and a real testimonial screenshot"
+      {
+        "title": "DVSA Test Wait Times Just Updated \u2014 What Learners Need to Know Right Now",
+        "format": "TikTok / Instagram Reel (30-60 s)",
+        "hook": "React on camera to the latest DVSA area wait-time data, call out the worst-affected centres, and segue into how test-date swapping gets you a slot weeks earlier."
+      },
+      {
+        "title": "Is Swapping Your Driving Test Date Legal? The Truth (No, It's Not a Scam)",
+        "format": "Short-form explainer video or carousel",
+        "hook": "Bust the top myth stopping learners from using DTS \u2014 answer the 'is it allowed?' objection head-on with a DVSA policy reference, then show how the platform works in under 60 seconds."
+      }
     ],
     "athletics": [
-      "60-second track reel: full sprint session from dynamic warm-up to max-effort run, with voiceover coaching on acceleration mechanics, shin angle, and drive phase \u2014 film at the athletics track",
-      "Calisthenics gym clip: L-sit to muscle-up progression breakdown across three difficulty levels (beginner \u2192 intermediate \u2192 advanced), filmed from two angles with form cues overlaid"
+      {
+        "title": "First Sprint Session of the Week \u2014 Track POV",
+        "format": "Instagram Reel / TikTok (phone-recorded, raw)",
+        "hook": "Film warmup drills, 3-4 sprint reps, and a short post-session reaction talking splits and feel \u2014 raw no-edit style performs well for athlete personal brands."
+      },
+      {
+        "title": "3 Calisthenics Moves That Directly Improve Sprint Explosiveness",
+        "format": "Gym clip \u2014 Instagram Reel / YouTube Short",
+        "hook": "Demo explosive push-ups, jump squats, and L-sit to tuck jumps; voice-over links each move to first-step acceleration \u2014 bridges calisthenics audience to sprint content."
+      }
     ],
     "aimybiz": [
-      "LinkedIn post: 'What most sales managers get wrong about onboarding new reps \u2014 and how AI is fixing it', sharing a real stat on ramp time and teasing CloseCoach's scoring rubric as the solution",
-      "LinkedIn video demo (60s): 'Live look at what CloseCoach flags when a sales rep skips discovery questions' \u2014 screen recording of AI coaching feedback running on a mock sales call, posted as a native LinkedIn video"
+      {
+        "title": "I Showed a Sales Manager CloseCoach \u2014 Here Is What Happened",
+        "format": "LinkedIn post with short demo video or screenshot carousel",
+        "hook": "Walk through a 60-second AI roleplay session inside CloseCoach, show the live objection feedback, and end with the manager's reaction \u2014 social proof drives demo requests."
+      },
+      {
+        "title": "Your Sales Team Is Losing Deals Because of This One Mistake (AI Coaching Fixes It)",
+        "format": "LinkedIn thought-leadership post (500-700 words)",
+        "hook": "Open with a stat on deliberate practice in sales, name the mistake (skipping objection rehearsal), and close with a soft pitch for a free CloseCoach trial."
+      }
     ]
   }
 }
