@@ -1,52 +1,52 @@
 {
-  "date": "2026-04-15",
-  "generated_at": "06:08",
+  "date": "2026-04-17",
+  "generated_at": "06:10",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260415_1",
+      "id": "lead_20260417_1",
       "company": "Venus Nails Bar",
-      "industry": "Nail Salon",
+      "industry": "Nail salon / beauty",
       "website": null,
-      "phone": "023 8044 5684",
-      "location": "Bitterne, Southampton",
-      "notes": "Active on Facebook and Instagram with 2,000+ followers but no standalone website; missing out on Google local search traffic and unable to showcase services or take direct bookings."
+      "phone": "+44 7476 539809",
+      "location": "Bitterne, Southampton SO18 5EE",
+      "notes": "No dedicated website \u2014 relies solely on Facebook, Instagram, and Fresha for bookings; prime candidate for a mobile-first local beauty site."
     },
     {
-      "id": "lead_20260415_2",
-      "company": "A.T Nails Spa",
-      "industry": "Nail Salon",
+      "id": "lead_20260417_2",
+      "company": "Ruby's Nails & Beauty",
+      "industry": "Nail salon / beauty",
       "website": null,
-      "phone": null,
-      "location": "Bitterne, Southampton",
-      "notes": "Facebook and Instagram-only presence with no website; relies entirely on Fresha for bookings, leaving significant SEO traffic and brand credibility on the table."
+      "phone": "02380232039",
+      "location": "City Centre, Southampton SO14 1ND",
+      "notes": "City-centre salon with Facebook-only presence and no standalone website; high foot-traffic location that would benefit from Google-indexed booking pages."
     },
     {
-      "id": "lead_20260415_3",
-      "company": "Woolston Barber Shop",
+      "id": "lead_20260417_3",
+      "company": "Bar SO16",
+      "industry": "Pub / bar",
+      "website": "bar-so16.business.site",
+      "phone": "02380320293",
+      "location": "Swaythling, Southampton SO16 3AY",
+      "notes": "Only has a basic Google Business Site \u2014 no real domain or mobile-optimised site \u2014 for a community sports pub that hosts live Sky/TNT Sports events."
+    },
+    {
+      "id": "lead_20260417_4",
+      "company": "Nail Bar Hedge End",
+      "industry": "Nail salon / beauty",
+      "website": null,
+      "phone": "+44 1489 874067",
+      "location": "Hedge End, Southampton SO30 4FN",
+      "notes": "No website at all \u2014 Facebook, Instagram, and Fresha only; growing suburb location with no Google Search presence of their own."
+    },
+    {
+      "id": "lead_20260417_5",
+      "company": "The Business Barbershop Totton",
       "industry": "Barbershop",
       "website": null,
-      "phone": "07838 021711",
-      "location": "Woolston, Southampton",
-      "notes": "Facebook-only business with zero web presence; a simple local barbershop site with pricing, gallery, and online booking would immediately improve walk-in discoverability."
-    },
-    {
-      "id": "lead_20260415_4",
-      "company": "Just Gents",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "023 8022 4356",
-      "location": "Bitterne, Southampton",
-      "notes": "Appears only in third-party directories with no owned website; a branded site would help them compete with newer barbershops opening in the Bitterne area."
-    },
-    {
-      "id": "lead_20260415_5",
-      "company": "Lush Nails & Beauty Bar",
-      "industry": "Beauty Salon",
-      "website": null,
-      "phone": null,
-      "location": "Shirley, Southampton",
-      "notes": "Registered company operating from Shirley Road with only a Treatwell listing; a standalone website would build brand identity and drive direct bookings away from commission platforms."
+      "phone": "02380862575",
+      "location": "Totton, Southampton SO40 3DP",
+      "notes": "Centre-of-Totton barber operating with Facebook as sole web presence; a simple booking-enabled website would instantly improve discoverability."
     }
   ],
   "linkedin_prospects": [
@@ -77,16 +77,40 @@
   ],
   "content_ideas": {
     "dts": [
-      "Short-form video: 'DVSA test wait times just hit 5+ months in [city] \u2014 here's how to swap into a cancelled slot today', showing DTS alert notifications arriving in real-time on screen",
-      "TikTok/Reel: 'POV: You just booked your driving test and your date is 6 months away...' \u2014 relatable learner story arc ending with the DTS date-swap solution and a real testimonial screenshot"
+      {
+        "format": "Short-form video / TikTok / Reel",
+        "title": "DVSA wait times are still 22 weeks \u2014 here's the one move that beats the queue",
+        "hook": "Show a real DTS swap completing in under 60 seconds, overlay live DVSA wait-time data, CTA to drivingtestswap.uk"
+      },
+      {
+        "format": "Reel / TikTok explainer",
+        "title": "DVSA's new rule: you can only swap your test TWICE. Act now before it gets harder.",
+        "hook": "Explain the upcoming DVSA booking restriction (2-swap limit) and position DTS as the smart way to lock in an early date before the rule kicks in"
+      }
     ],
     "athletics": [
-      "60-second track reel: full sprint session from dynamic warm-up to max-effort run, with voiceover coaching on acceleration mechanics, shin angle, and drive phase \u2014 film at the athletics track",
-      "Calisthenics gym clip: L-sit to muscle-up progression breakdown across three difficulty levels (beginner \u2192 intermediate \u2192 advanced), filmed from two angles with form cues overlaid"
+      {
+        "format": "Short gym/track clip (30\u201360 s)",
+        "title": "60-second sprint finisher you can do at any track",
+        "hook": "Film 3 x 100m sprint rounds with rest-timer overlay and form cues to camera; fast-cut edit with music drop"
+      },
+      {
+        "format": "Workout combo clip (60\u201390 s)",
+        "title": "Calisthenics to explosive power: pull-ups \u2192 broad jumps \u2192 30m sprint",
+        "hook": "Superset filmed at park or gym \u2014 show the calisthenics-sprinting link, speak to viewers training for speed and aesthetics"
+      }
     ],
     "aimybiz": [
-      "LinkedIn post: 'What most sales managers get wrong about onboarding new reps \u2014 and how AI is fixing it', sharing a real stat on ramp time and teasing CloseCoach's scoring rubric as the solution",
-      "LinkedIn video demo (60s): 'Live look at what CloseCoach flags when a sales rep skips discovery questions' \u2014 screen recording of AI coaching feedback running on a mock sales call, posted as a native LinkedIn video"
+      {
+        "format": "LinkedIn video / screen-share demo (60\u201390 s)",
+        "title": "I showed a sales manager what CloseCoach does in 90 seconds \u2014 here's their reaction",
+        "hook": "Live demo of a CloseCoach AI roleplay session for a typical estate agent or recruiter objection; end with prospect's response or a screenshot testimonial"
+      },
+      {
+        "format": "LinkedIn carousel or talking-head video",
+        "title": "Your 3-person sales team doesn't need a sales trainer \u2014 they need an AI coach on demand",
+        "hook": "Address cost objection head-on: compare a day-rate sales trainer vs CloseCoach monthly sub, show ROI framing for SME sales managers"
+      }
     ]
   }
 }
