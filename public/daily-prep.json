@@ -1,115 +1,127 @@
 {
-  "date": "2026-04-17",
-  "generated_at": "06:10",
+  "date": "2026-04-18",
+  "generated_at": "06:14",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260417_1",
+      "id": "lead_20260418_1",
       "company": "Venus Nails Bar",
-      "industry": "Nail salon / beauty",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "+44 7476 539809",
-      "location": "Bitterne, Southampton SO18 5EE",
-      "notes": "No dedicated website \u2014 relies solely on Facebook, Instagram, and Fresha for bookings; prime candidate for a mobile-first local beauty site."
+      "phone": "023 8044 5684",
+      "location": "Bitterne, Southampton",
+      "notes": "Operates entirely via Facebook and Fresha bookings with no standalone website; a mobile-optimised site with an online booking widget and gallery would significantly increase Google visibility and direct appointments."
     },
     {
-      "id": "lead_20260417_2",
-      "company": "Ruby's Nails & Beauty",
-      "industry": "Nail salon / beauty",
+      "id": "lead_20260418_2",
+      "company": "Miss Nails",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "02380232039",
-      "location": "City Centre, Southampton SO14 1ND",
-      "notes": "City-centre salon with Facebook-only presence and no standalone website; high foot-traffic location that would benefit from Google-indexed booking pages."
+      "phone": "023 8019 6726",
+      "location": "Shirley, Southampton",
+      "notes": "No dedicated website \u2014 only third-party directory and Fresha listings; a branded site with a menu of services and a built-in booking flow would lift conversion and reduce reliance on aggregator platforms."
     },
     {
-      "id": "lead_20260417_3",
-      "company": "Bar SO16",
-      "industry": "Pub / bar",
-      "website": "bar-so16.business.site",
-      "phone": "02380320293",
-      "location": "Swaythling, Southampton SO16 3AY",
-      "notes": "Only has a basic Google Business Site \u2014 no real domain or mobile-optimised site \u2014 for a community sports pub that hosts live Sky/TNT Sports events."
+      "id": "lead_20260418_3",
+      "company": "Sammy's Cafe",
+      "industry": "Cafe",
+      "website": null,
+      "phone": "023 8051 8870",
+      "location": "Shirley, Southampton",
+      "notes": "Social-media-only presence (Facebook + Instagram); a simple website with menu, opening hours, and Google Maps integration would dramatically improve local SEO and help new customers find them."
     },
     {
-      "id": "lead_20260417_4",
-      "company": "Nail Bar Hedge End",
-      "industry": "Nail salon / beauty",
+      "id": "lead_20260418_4",
+      "company": "Annie's Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "+44 1489 874067",
-      "location": "Hedge End, Southampton SO30 4FN",
-      "notes": "No website at all \u2014 Facebook, Instagram, and Fresha only; growing suburb location with no Google Search presence of their own."
+      "phone": "023 8042 1200",
+      "location": "Woolston, Southampton",
+      "notes": "Family-run traditional British cafe since 1989 with only a Facebook page; a clean, fast-loading website would modernise its online presence and capture the growing Woolston Waterside foot traffic."
     },
     {
-      "id": "lead_20260417_5",
-      "company": "The Business Barbershop Totton",
-      "industry": "Barbershop",
+      "id": "lead_20260418_5",
+      "company": "Woolston Barber Shop",
+      "industry": "Barber",
       "website": null,
-      "phone": "02380862575",
-      "location": "Totton, Southampton SO40 3DP",
-      "notes": "Centre-of-Totton barber operating with Facebook as sole web presence; a simple booking-enabled website would instantly improve discoverability."
+      "phone": "07838 021711",
+      "location": "Woolston, Southampton",
+      "notes": "Active on Facebook and Instagram but has no own website; a one-page barbershop site with walk-in info, price list, and Google Reviews embed would convert mobile searchers looking for 'barber near me'."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260415_1",
-      "name": "Kevin Ashley",
-      "title": "Branch Partner",
-      "company": "Charters Estate Agents",
-      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254",
-      "reason": "Oversees a 15+ person residential sales team across one of Hampshire's largest independent estate agencies — CloseCoach's structured new-hire course (script memorisation, confidence-building, objection handling) would cut his onboarding ramp time and reduce the inconsistency between senior and junior negotiators."
+      "id": "prospect_20260418_1",
+      "name": "Hannah Mollison",
+      "title": "Sales Director",
+      "company": "Workwell Outsourcing",
+      "url": "https://www.linkedin.com/in/hannah-mollison/",
+      "reason": "Leads sales at a back-office outsourcing firm serving 800+ UK recruitment agencies; she understands recruitment sales pain points first-hand and has authority to introduce CloseCoach to her own team and recommend it across her client base."
     },
     {
-      "id": "prospect_20260415_2",
-      "name": "Jonathan Clegg",
-      "title": "Managing Director",
-      "company": "Hunters Estate Agents Southampton",
-      "url": "https://www.linkedin.com/in/jonathan-clegg-2208098/",
-      "reason": "Running a scaling Hunters franchise means he's regularly bringing on new negotiators who need to get up to speed fast — CloseCoach's structured onboarding course gives new hires a repeatable path from script memorisation through to confident live calls, without pulling experienced staff off their desk to babysit them."
+      "id": "prospect_20260418_2",
+      "name": "Mark Webb",
+      "title": "Sales Director",
+      "company": "4Site Recruitment",
+      "url": "https://www.linkedin.com/in/markwebb4947871365/",
+      "reason": "Drives new client acquisition at a specialist construction recruitment agency and is vocal about building high-performing sales teams; he's the exact profile who would trial CloseCoach to sharpen his consultants' pitching and objection handling."
     },
     {
-      "id": "prospect_20260415_3",
-      "name": "Allen Moore",
-      "title": "Sales Manager",
-      "company": "Solent Motor Homes Limited",
-      "url": "https://uk.linkedin.com/in/allen-m-0b96b4133",
-      "reason": "High-value vehicle sales has a long, complex pitch cycle — new reps need to absorb a lot of product and process knowledge before they're effective on the floor. CloseCoach's structured new-hire course builds that foundation systematically (script fluency, discovery techniques, confidence under pressure) so Allen spends less time shadowing new starters and more time closing."
+      "id": "prospect_20260418_3",
+      "name": "Michael Dyble",
+      "title": "Founder & Managing Director",
+      "company": "Dybles Independent Estate Agents",
+      "url": "https://uk.linkedin.com/in/michael-dyble-mnaea-marla-78771720",
+      "reason": "Runs a multi-award-winning independent Winchester estate agency with a small sales and lettings team; as MD he makes all training investment decisions and would value an AI tool that can upskill negotiators without pulling them off the floor."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video / TikTok / Reel",
-        "title": "DVSA wait times are still 22 weeks \u2014 here's the one move that beats the queue",
-        "hook": "Show a real DTS swap completing in under 60 seconds, overlay live DVSA wait-time data, CTA to drivingtestswap.uk"
+        "id": "dts_idea_1",
+        "format": "Short-form video (60s Reel / TikTok)",
+        "title": "DVSA test wait is now 15 weeks \u2014 here's the legal shortcut most learners don't know about",
+        "hook": "Open with the DVSA data (15.1-week average) then cut to a screen recording of a test swap being completed in under 2 minutes on drivingtestswap.uk",
+        "cta": "Link in bio \u2014 get an earlier date today"
       },
       {
-        "format": "Reel / TikTok explainer",
-        "title": "DVSA's new rule: you can only swap your test TWICE. Act now before it gets harder.",
-        "hook": "Explain the upcoming DVSA booking restriction (2-swap limit) and position DTS as the smart way to lock in an early date before the rule kicks in"
+        "id": "dts_idea_2",
+        "format": "Short-form video (30s Reel / TikTok)",
+        "title": "DVSA just changed the rules \u2014 from May 2026 YOU must book your own test",
+        "hook": "Quick explainer on the new May 2026 self-booking rule, then pivot to why that makes finding a good date even harder and how DTS solves it",
+        "cta": "Check drivingtestswap.uk before your date books out"
       }
     ],
     "athletics": [
       {
-        "format": "Short gym/track clip (30\u201360 s)",
-        "title": "60-second sprint finisher you can do at any track",
-        "hook": "Film 3 x 100m sprint rounds with rest-timer overlay and form cues to camera; fast-cut edit with music drop"
+        "id": "ath_idea_1",
+        "format": "Gym clip (30\u201360s Reel)",
+        "title": "Why calisthenics athletes make better sprinters \u2014 proof from my training",
+        "hook": "Side-by-side of a PR pull-up set followed by a sprint start off the blocks; voiceover explains the shoulder-to-hip tension transfer",
+        "cta": "Save this if you want to add 0.1s to your 60m"
       },
       {
-        "format": "Workout combo clip (60\u201390 s)",
-        "title": "Calisthenics to explosive power: pull-ups \u2192 broad jumps \u2192 30m sprint",
-        "hook": "Superset filmed at park or gym \u2014 show the calisthenics-sprinting link, speak to viewers training for speed and aesthetics"
+        "id": "ath_idea_2",
+        "format": "Track clip (60\u201390s Reel)",
+        "title": "My 20-minute sprint acceleration block \u2014 full session breakdown",
+        "hook": "Film the full warm-up, 3x30m flying sprints, and cool-down with split times overlaid; talk through the cues you use for drive phase mechanics",
+        "cta": "Drop your PB in the comments \u2014 let's compare"
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn video / screen-share demo (60\u201390 s)",
-        "title": "I showed a sales manager what CloseCoach does in 90 seconds \u2014 here's their reaction",
-        "hook": "Live demo of a CloseCoach AI roleplay session for a typical estate agent or recruiter objection; end with prospect's response or a screenshot testimonial"
+        "id": "acc_idea_1",
+        "format": "LinkedIn post (text + 1 image or short screen-cap)",
+        "title": "I asked 5 SME sales managers what slows their team down most \u2014 here's what they all said",
+        "hook": "All 5 said the same thing: reps don't get enough realistic practice before real calls. Thread post showing the problem, then CloseCoach as the fix with one concrete stat",
+        "cta": "Drop a comment if your team has the same problem \u2014 I'll share the tool we built"
       },
       {
-        "format": "LinkedIn carousel or talking-head video",
-        "title": "Your 3-person sales team doesn't need a sales trainer \u2014 they need an AI coach on demand",
-        "hook": "Address cost objection head-on: compare a day-rate sales trainer vs CloseCoach monthly sub, show ROI framing for SME sales managers"
+        "id": "acc_idea_2",
+        "format": "LinkedIn video (60\u201390s screen-share demo)",
+        "title": "How CloseCoach runs an AI objection-handling drill in under 3 minutes",
+        "hook": "Record a live demo of a recruitment sales roleplay in CloseCoach \u2014 AI plays the resistant hiring manager, rep handles objections, AI gives instant feedback \u2014 then show the manager dashboard",
+        "cta": "DM me 'DEMO' for a free 14-day trial for your team"
       }
     ]
   }
