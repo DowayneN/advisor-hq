@@ -1,52 +1,52 @@
 {
   "date": "2026-04-19",
-  "generated_at": "06:27",
+  "generated_at": "06:31",
   "source": "scheduled_agent",
   "sme_leads": [
     {
       "id": "lead_20260419_1",
-      "company": "Smart Barbers",
-      "industry": "Barber",
+      "company": "Sammy's Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "07731 342661",
+      "phone": "023 8051 8870",
       "location": "Shirley",
-      "notes": "Fresha-only booking presence with no standalone website, making them invisible to Google search and easy to win over with a simple mobile-first site."
+      "notes": "Operates solely through Facebook and Instagram with no website or domain \u2014 a clear gap for a local cafe wanting to attract walk-ins and online orders."
     },
     {
       "id": "lead_20260419_2",
-      "company": "Razor Barber Southampton",
+      "company": "The Barber Shop",
       "industry": "Barber",
       "website": null,
-      "phone": "023 8052 5386",
+      "phone": "07944 427505",
       "location": "Shirley",
-      "notes": "Active business (200+ Birdeye reviews) trading solely through Fresha and Facebook with zero Google-indexed website, a strong quick-win web dev opportunity."
+      "notes": "Every directory lists their Facebook URL as their 'website' \u2014 no independent domain exists, making them invisible to anyone Googling for a barber in Shirley."
     },
     {
       "id": "lead_20260419_3",
-      "company": "Origin Hair & Beauty",
-      "industry": "Hair & Beauty Salon",
+      "company": "Venus Nails Bar",
+      "industry": "Nail Salon / Beauty",
       "website": null,
-      "phone": "07361 236858",
-      "location": "Shirley",
-      "notes": "Established salon on Shirley High Street relying only on Instagram, Facebook and Fresha \u2014 no website means no SEO and no direct online bookings outside third-party platforms."
+      "phone": "023 8044 5684",
+      "location": "Bitterne",
+      "notes": "Relies entirely on Facebook and Fresha for bookings with no independent website, meaning zero SEO presence and no owned online brand."
     },
     {
       "id": "lead_20260419_4",
-      "company": "Bitterne Barber",
-      "industry": "Barber",
+      "company": "Psiloritis Ida Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "07438 492941",
-      "location": "Bitterne",
-      "notes": "20+ years in business with a 4.7-star Google rating but operating entirely through Facebook, making a professional site a natural credibility upgrade."
+      "phone": "07312 683664",
+      "location": "Woolston",
+      "notes": "Recently registered independent Greek-inspired cafe with presence only on Facebook, Instagram, and automated menu aggregators \u2014 no owned web presence at all."
     },
     {
       "id": "lead_20260419_5",
-      "company": "Ruby's Nails & Beauty Southampton",
-      "industry": "Nail & Beauty Salon",
+      "company": "C. Howe Electrical",
+      "industry": "Electrician",
       "website": null,
-      "phone": "023 8023 2039",
-      "location": "City Centre",
-      "notes": "High-footfall city-centre nail salon listed on Yell and VisitSouthampton but with no owned website, losing direct booking traffic to Facebook and third-party directories."
+      "phone": null,
+      "location": "Portswood",
+      "notes": "NAPIT-registered sole trader listed only on Yell with no own website, severely limiting their ability to generate leads beyond word of mouth and directory listings."
     }
   ],
   "linkedin_prospects": [
@@ -56,7 +56,7 @@
       "title": "Sales Director / Associate Director",
       "company": "Linsco Ltd",
       "url": "https://uk.linkedin.com/in/holly-saywood-b7717ba4",
-      "reason": "Leads a team of 10+ sales consultants at a UK construction recruitment agency (51-200 employees), exactly the high-volume B2B outreach environment where CloseCoach would sharpen closing and objection-handling skills."
+      "reason": "Leads a team of 10+ sales consultants at a UK construction recruitment agency (51-200 employees), ideal for CloseCoach cold-outreach and objection-handling training."
     },
     {
       "id": "prospect_20260419_2",
@@ -64,7 +64,7 @@
       "title": "Sales Manager",
       "company": "Springfield Motor Group",
       "url": "https://www.linkedin.com/in/paul-stead-8501927a/",
-      "reason": "Manages a 7-rep automotive sales team at a North East UK car dealership where monthly targets and face-to-face negotiation make AI-driven sales roleplay training a direct performance lever."
+      "reason": "Manages a 7-rep automotive sales team at a North East UK car dealership where monthly targets and face-to-face negotiation make AI roleplay coaching a direct performance lever."
     },
     {
       "id": "prospect_20260419_3",
@@ -72,7 +72,7 @@
       "title": "Director (Operations & Sales)",
       "company": "Dover Street Insurance Brokers",
       "url": "https://uk.linkedin.com/in/greg-tighe-50809341",
-      "reason": "Oversees a dedicated sales department at a UK SME insurance broker, a relationship-driven sector where CloseCoach's consultative-selling modules would directly improve broker conversion rates."
+      "reason": "Oversees a dedicated sales department at a UK SME insurance broker \u2014 a consultative-selling environment where CloseCoach modules would directly improve broker conversion rates."
     }
   ],
   "content_ideas": {
@@ -80,23 +80,23 @@
       {
         "format": "TikTok / Instagram Reel",
         "title": "DVSA wait times are 6+ months \u2014 here's how to get your test date in weeks",
-        "description": "Screen-record the DTS swap flow from sign-up to confirmed earlier date, narrated over punchy text overlays. Hook learners already frustrated by long waiting lists."
+        "description": "Screen-record the DTS swap flow from sign-up to confirmed earlier date, narrated over punchy text overlays. Hook: learners already frustrated by long waiting lists."
       },
       {
         "format": "Short-form video / caption thread",
         "title": "POV: you passed your driving test 3 months early",
-        "description": "Testimonial-style clip or Twitter/X thread where a real DTS user shares their story of grabbing a cancellation slot \u2014 humanises the product and drives word-of-mouth sign-ups."
+        "description": "Testimonial-style clip or thread where a real DTS user shares their story of grabbing a cancellation slot \u2014 humanises the product and drives word-of-mouth sign-ups."
       }
     ],
     "athletics": [
       {
-        "format": "Instagram / TikTok series (2-part)",
+        "format": "Instagram / TikTok 2-part series",
         "title": "Calisthenics to Sprint Power \u2014 does gym strength carry to the track?",
-        "description": "Film a muscle-up or weighted L-sit session one day, then film a 60m acceleration block the next. Voiceover explaining the hip-flexor and core carry-over \u2014 niche but highly shareable among calisthenics and sprint communities."
+        "description": "Film a muscle-up or weighted L-sit session one day, then a 60m acceleration block the next. Voiceover explaining the hip-flexor and core carry-over \u2014 shareable across calisthenics and sprint communities."
       },
       {
         "format": "60-second Reel",
-        "title": "My pre-sprint activation routine (film at the track)",
+        "title": "My pre-sprint activation routine",
         "description": "Compact warm-up sequence \u2014 hip flexor openers, ankle circles, A-skips, wall drives \u2014 with on-screen labels. Low effort to film, evergreen content, strong save-rate from athletes who want to steal the routine."
       }
     ],
@@ -104,7 +104,7 @@
       {
         "format": "LinkedIn text post",
         "title": "I gave my AI sales coach a cold call script. Here's what it said.",
-        "description": "Share a screenshot of CloseCoach feedback on a real (or demo) cold call script \u2014 highlight one specific insight about pacing, question ratio, or objection handling. Ends with a CTA to try it. Speaks directly to sales managers reviewing team call quality."
+        "description": "Share a screenshot of CloseCoach feedback on a real (or demo) cold call script \u2014 highlight one specific insight on pacing, question ratio, or objection handling. Ends with a CTA to try it. Speaks directly to sales managers reviewing team call quality."
       },
       {
         "format": "LinkedIn native video (90 sec)",
