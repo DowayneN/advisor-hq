@@ -1,127 +1,115 @@
 {
-  "date": "2026-04-18",
-  "generated_at": "06:14",
+  "date": "2026-04-19",
+  "generated_at": "06:27",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260418_1",
-      "company": "Venus Nails Bar",
-      "industry": "Nail Salon",
-      "website": null,
-      "phone": "023 8044 5684",
-      "location": "Bitterne, Southampton",
-      "notes": "Operates entirely via Facebook and Fresha bookings with no standalone website; a mobile-optimised site with an online booking widget and gallery would significantly increase Google visibility and direct appointments."
-    },
-    {
-      "id": "lead_20260418_2",
-      "company": "Miss Nails",
-      "industry": "Nail Salon",
-      "website": null,
-      "phone": "023 8019 6726",
-      "location": "Shirley, Southampton",
-      "notes": "No dedicated website \u2014 only third-party directory and Fresha listings; a branded site with a menu of services and a built-in booking flow would lift conversion and reduce reliance on aggregator platforms."
-    },
-    {
-      "id": "lead_20260418_3",
-      "company": "Sammy's Cafe",
-      "industry": "Cafe",
-      "website": null,
-      "phone": "023 8051 8870",
-      "location": "Shirley, Southampton",
-      "notes": "Social-media-only presence (Facebook + Instagram); a simple website with menu, opening hours, and Google Maps integration would dramatically improve local SEO and help new customers find them."
-    },
-    {
-      "id": "lead_20260418_4",
-      "company": "Annie's Cafe",
-      "industry": "Cafe",
-      "website": null,
-      "phone": "023 8042 1200",
-      "location": "Woolston, Southampton",
-      "notes": "Family-run traditional British cafe since 1989 with only a Facebook page; a clean, fast-loading website would modernise its online presence and capture the growing Woolston Waterside foot traffic."
-    },
-    {
-      "id": "lead_20260418_5",
-      "company": "Woolston Barber Shop",
+      "id": "lead_20260419_1",
+      "company": "Smart Barbers",
       "industry": "Barber",
       "website": null,
-      "phone": "07838 021711",
-      "location": "Woolston, Southampton",
-      "notes": "Active on Facebook and Instagram but has no own website; a one-page barbershop site with walk-in info, price list, and Google Reviews embed would convert mobile searchers looking for 'barber near me'."
+      "phone": "07731 342661",
+      "location": "Shirley",
+      "notes": "Fresha-only booking presence with no standalone website, making them invisible to Google search and easy to win over with a simple mobile-first site."
+    },
+    {
+      "id": "lead_20260419_2",
+      "company": "Razor Barber Southampton",
+      "industry": "Barber",
+      "website": null,
+      "phone": "023 8052 5386",
+      "location": "Shirley",
+      "notes": "Active business (200+ Birdeye reviews) trading solely through Fresha and Facebook with zero Google-indexed website, a strong quick-win web dev opportunity."
+    },
+    {
+      "id": "lead_20260419_3",
+      "company": "Origin Hair & Beauty",
+      "industry": "Hair & Beauty Salon",
+      "website": null,
+      "phone": "07361 236858",
+      "location": "Shirley",
+      "notes": "Established salon on Shirley High Street relying only on Instagram, Facebook and Fresha \u2014 no website means no SEO and no direct online bookings outside third-party platforms."
+    },
+    {
+      "id": "lead_20260419_4",
+      "company": "Bitterne Barber",
+      "industry": "Barber",
+      "website": null,
+      "phone": "07438 492941",
+      "location": "Bitterne",
+      "notes": "20+ years in business with a 4.7-star Google rating but operating entirely through Facebook, making a professional site a natural credibility upgrade."
+    },
+    {
+      "id": "lead_20260419_5",
+      "company": "Ruby's Nails & Beauty Southampton",
+      "industry": "Nail & Beauty Salon",
+      "website": null,
+      "phone": "023 8023 2039",
+      "location": "City Centre",
+      "notes": "High-footfall city-centre nail salon listed on Yell and VisitSouthampton but with no owned website, losing direct booking traffic to Facebook and third-party directories."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260418_1",
-      "name": "Hannah Mollison",
-      "title": "Sales Director",
-      "company": "Workwell Outsourcing",
-      "url": "https://www.linkedin.com/in/hannah-mollison/",
-      "reason": "Leads sales at a back-office outsourcing firm serving 800+ UK recruitment agencies; she understands recruitment sales pain points first-hand and has authority to introduce CloseCoach to her own team and recommend it across her client base."
+      "id": "prospect_20260419_1",
+      "name": "Holly Saywood",
+      "title": "Sales Director / Associate Director",
+      "company": "Linsco Ltd",
+      "url": "https://uk.linkedin.com/in/holly-saywood-b7717ba4",
+      "reason": "Leads a team of 10+ sales consultants at a UK construction recruitment agency (51-200 employees), exactly the high-volume B2B outreach environment where CloseCoach would sharpen closing and objection-handling skills."
     },
     {
-      "id": "prospect_20260418_2",
-      "name": "Mark Webb",
-      "title": "Sales Director",
-      "company": "4Site Recruitment",
-      "url": "https://www.linkedin.com/in/markwebb4947871365/",
-      "reason": "Drives new client acquisition at a specialist construction recruitment agency and is vocal about building high-performing sales teams; he's the exact profile who would trial CloseCoach to sharpen his consultants' pitching and objection handling."
+      "id": "prospect_20260419_2",
+      "name": "Paul Stead",
+      "title": "Sales Manager",
+      "company": "Springfield Motor Group",
+      "url": "https://www.linkedin.com/in/paul-stead-8501927a/",
+      "reason": "Manages a 7-rep automotive sales team at a North East UK car dealership where monthly targets and face-to-face negotiation make AI-driven sales roleplay training a direct performance lever."
     },
     {
-      "id": "prospect_20260418_3",
-      "name": "Michael Dyble",
-      "title": "Founder & Managing Director",
-      "company": "Dybles Independent Estate Agents",
-      "url": "https://uk.linkedin.com/in/michael-dyble-mnaea-marla-78771720",
-      "reason": "Runs a multi-award-winning independent Winchester estate agency with a small sales and lettings team; as MD he makes all training investment decisions and would value an AI tool that can upskill negotiators without pulling them off the floor."
+      "id": "prospect_20260419_3",
+      "name": "Greg Tighe",
+      "title": "Director (Operations & Sales)",
+      "company": "Dover Street Insurance Brokers",
+      "url": "https://uk.linkedin.com/in/greg-tighe-50809341",
+      "reason": "Oversees a dedicated sales department at a UK SME insurance broker, a relationship-driven sector where CloseCoach's consultative-selling modules would directly improve broker conversion rates."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "id": "dts_idea_1",
-        "format": "Short-form video (60s Reel / TikTok)",
-        "title": "DVSA test wait is now 15 weeks \u2014 here's the legal shortcut most learners don't know about",
-        "hook": "Open with the DVSA data (15.1-week average) then cut to a screen recording of a test swap being completed in under 2 minutes on drivingtestswap.uk",
-        "cta": "Link in bio \u2014 get an earlier date today"
+        "format": "TikTok / Instagram Reel",
+        "title": "DVSA wait times are 6+ months \u2014 here's how to get your test date in weeks",
+        "description": "Screen-record the DTS swap flow from sign-up to confirmed earlier date, narrated over punchy text overlays. Hook learners already frustrated by long waiting lists."
       },
       {
-        "id": "dts_idea_2",
-        "format": "Short-form video (30s Reel / TikTok)",
-        "title": "DVSA just changed the rules \u2014 from May 2026 YOU must book your own test",
-        "hook": "Quick explainer on the new May 2026 self-booking rule, then pivot to why that makes finding a good date even harder and how DTS solves it",
-        "cta": "Check drivingtestswap.uk before your date books out"
+        "format": "Short-form video / caption thread",
+        "title": "POV: you passed your driving test 3 months early",
+        "description": "Testimonial-style clip or Twitter/X thread where a real DTS user shares their story of grabbing a cancellation slot \u2014 humanises the product and drives word-of-mouth sign-ups."
       }
     ],
     "athletics": [
       {
-        "id": "ath_idea_1",
-        "format": "Gym clip (30\u201360s Reel)",
-        "title": "Why calisthenics athletes make better sprinters \u2014 proof from my training",
-        "hook": "Side-by-side of a PR pull-up set followed by a sprint start off the blocks; voiceover explains the shoulder-to-hip tension transfer",
-        "cta": "Save this if you want to add 0.1s to your 60m"
+        "format": "Instagram / TikTok series (2-part)",
+        "title": "Calisthenics to Sprint Power \u2014 does gym strength carry to the track?",
+        "description": "Film a muscle-up or weighted L-sit session one day, then film a 60m acceleration block the next. Voiceover explaining the hip-flexor and core carry-over \u2014 niche but highly shareable among calisthenics and sprint communities."
       },
       {
-        "id": "ath_idea_2",
-        "format": "Track clip (60\u201390s Reel)",
-        "title": "My 20-minute sprint acceleration block \u2014 full session breakdown",
-        "hook": "Film the full warm-up, 3x30m flying sprints, and cool-down with split times overlaid; talk through the cues you use for drive phase mechanics",
-        "cta": "Drop your PB in the comments \u2014 let's compare"
+        "format": "60-second Reel",
+        "title": "My pre-sprint activation routine (film at the track)",
+        "description": "Compact warm-up sequence \u2014 hip flexor openers, ankle circles, A-skips, wall drives \u2014 with on-screen labels. Low effort to film, evergreen content, strong save-rate from athletes who want to steal the routine."
       }
     ],
     "aimybiz": [
       {
-        "id": "acc_idea_1",
-        "format": "LinkedIn post (text + 1 image or short screen-cap)",
-        "title": "I asked 5 SME sales managers what slows their team down most \u2014 here's what they all said",
-        "hook": "All 5 said the same thing: reps don't get enough realistic practice before real calls. Thread post showing the problem, then CloseCoach as the fix with one concrete stat",
-        "cta": "Drop a comment if your team has the same problem \u2014 I'll share the tool we built"
+        "format": "LinkedIn text post",
+        "title": "I gave my AI sales coach a cold call script. Here's what it said.",
+        "description": "Share a screenshot of CloseCoach feedback on a real (or demo) cold call script \u2014 highlight one specific insight about pacing, question ratio, or objection handling. Ends with a CTA to try it. Speaks directly to sales managers reviewing team call quality."
       },
       {
-        "id": "acc_idea_2",
-        "format": "LinkedIn video (60\u201390s screen-share demo)",
-        "title": "How CloseCoach runs an AI objection-handling drill in under 3 minutes",
-        "hook": "Record a live demo of a recruitment sales roleplay in CloseCoach \u2014 AI plays the resistant hiring manager, rep handles objections, AI gives instant feedback \u2014 then show the manager dashboard",
-        "cta": "DM me 'DEMO' for a free 14-day trial for your team"
+        "format": "LinkedIn native video (90 sec)",
+        "title": "Watch CloseCoach roleplay a discovery call live",
+        "description": "Screen-record CloseCoach playing the prospect in a discovery call roleplay, with Dowayne as the sales rep. Pause to show the AI feedback panel. Ideal hook for sales managers who want to see AI training in action before committing."
       }
     ]
   }
