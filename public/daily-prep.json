@@ -1,115 +1,116 @@
 {
-  "date": "2026-04-19",
-  "generated_at": "06:31",
+  "date": "2026-04-20",
+  "generated_at": "06:20",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260419_1",
-      "company": "Sammy's Cafe",
-      "industry": "Cafe",
+      "id": "lead_20260420_1",
+      "company": "Franco's Barbers",
+      "industry": "Barber Shop",
       "website": null,
-      "phone": "023 8051 8870",
+      "phone": "02380777179",
       "location": "Shirley",
-      "notes": "Operates solely through Facebook and Instagram with no website or domain \u2014 a clear gap for a local cafe wanting to attract walk-ins and online orders."
+      "notes": "Long-established local barber on Shirley Rd with no standalone website \u2014 relying entirely on Yell and Facebook listings, missing out on local SEO and online bookings."
     },
     {
-      "id": "lead_20260419_2",
-      "company": "The Barber Shop",
-      "industry": "Barber",
-      "website": null,
-      "phone": "07944 427505",
-      "location": "Shirley",
-      "notes": "Every directory lists their Facebook URL as their 'website' \u2014 no independent domain exists, making them invisible to anyone Googling for a barber in Shirley."
-    },
-    {
-      "id": "lead_20260419_3",
+      "id": "lead_20260420_2",
       "company": "Venus Nails Bar",
-      "industry": "Nail Salon / Beauty",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "023 8044 5684",
+      "phone": "02380445684",
       "location": "Bitterne",
-      "notes": "Relies entirely on Facebook and Fresha for bookings with no independent website, meaning zero SEO presence and no owned online brand."
+      "notes": "Active nail bar on Bitterne Road operating solely through Facebook and Instagram with no dedicated website, no online booking flow, and no searchable domain."
     },
     {
-      "id": "lead_20260419_4",
-      "company": "Psiloritis Ida Cafe",
-      "industry": "Cafe",
+      "id": "lead_20260420_3",
+      "company": "Sholing Chef Fish & Chip Shop",
+      "industry": "Takeaway / Food",
       "website": null,
-      "phone": "07312 683664",
-      "location": "Woolston",
-      "notes": "Recently registered independent Greek-inspired cafe with presence only on Facebook, Instagram, and automated menu aggregators \u2014 no owned web presence at all."
+      "phone": "02380441440",
+      "location": "Sholing",
+      "notes": "Established takeaway on Portsmouth Road with no own website \u2014 only visible through Yell and directory scrapes, leaving it invisible to Google Maps searches beyond basic listings."
     },
     {
-      "id": "lead_20260419_5",
-      "company": "C. Howe Electrical",
-      "industry": "Electrician",
+      "id": "lead_20260420_4",
+      "company": "Tanning & Beauty at Studio 7",
+      "industry": "Beauty Salon / Tanning",
       "website": null,
-      "phone": null,
-      "location": "Portswood",
-      "notes": "NAPIT-registered sole trader listed only on Yell with no own website, severely limiting their ability to generate leads beyond word of mouth and directory listings."
+      "phone": "07380985934",
+      "location": "Weston / Bitterne Park",
+      "notes": "Registered limited company offering nails, lashes, and tanning with zero web presence beyond a Facebook page \u2014 a simple booking site would dramatically increase discoverability."
+    },
+    {
+      "id": "lead_20260420_5",
+      "company": "St James Hair & Beauty",
+      "industry": "Hair & Beauty Salon",
+      "website": null,
+      "phone": "02380772763",
+      "location": "Shirley",
+      "notes": "Unisex hair and beauty salon on St James Road listed only in directories and on Facebook \u2014 no mobile-friendly website means it's losing walk-in conversions from Google searches."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260419_1",
-      "name": "Holly Saywood",
-      "title": "Sales Director / Associate Director",
-      "company": "Linsco Ltd",
-      "url": "https://uk.linkedin.com/in/holly-saywood-b7717ba4",
-      "reason": "Leads a team of 10+ sales consultants at a UK construction recruitment agency (51-200 employees), ideal for CloseCoach cold-outreach and objection-handling training."
+      "id": "prospect_20260420_1",
+      "name": "Brett Foulser",
+      "title": "Sales Director",
+      "company": "Seymours Estate Agents",
+      "url": "https://uk.linkedin.com/in/brettfoulser",
+      "reason": "Leads a 52-person sales department across multiple UK estate agency branches \u2014 exactly the mid-size, performance-driven sales team CloseCoach is built for."
     },
     {
-      "id": "prospect_20260419_2",
-      "name": "Paul Stead",
-      "title": "Sales Manager",
-      "company": "Springfield Motor Group",
-      "url": "https://www.linkedin.com/in/paul-stead-8501927a/",
-      "reason": "Manages a 7-rep automotive sales team at a North East UK car dealership where monthly targets and face-to-face negotiation make AI roleplay coaching a direct performance lever."
+      "id": "prospect_20260420_2",
+      "name": "Alexandra King CEPAP MNAEA",
+      "title": "Regional Sales Director",
+      "company": "Andrews Property Group",
+      "url": "https://uk.linkedin.com/in/alexandra-king-cepap-mnaea-b650b0122",
+      "reason": "Regional Sales Director managing multi-branch estate agency sales teams across the UK \u2014 responsible for coaching culture and team performance, a direct CloseCoach use case."
     },
     {
-      "id": "prospect_20260419_3",
-      "name": "Greg Tighe",
-      "title": "Director (Operations & Sales)",
-      "company": "Dover Street Insurance Brokers",
-      "url": "https://uk.linkedin.com/in/greg-tighe-50809341",
-      "reason": "Oversees a dedicated sales department at a UK SME insurance broker \u2014 a consultative-selling environment where CloseCoach modules would directly improve broker conversion rates."
+      "id": "prospect_20260420_3",
+      "name": "Paul Williams",
+      "title": "General Sales Manager",
+      "company": "Volkswagen Commercial Vehicles (ex-Lookers Motor Group)",
+      "url": "https://www.linkedin.com/in/paul-williams-342b32161/",
+      "reason": "Experienced automotive dealership GSM with multi-brand background managing front-line sales reps \u2014 high-pressure quota environment ideal for structured AI sales coaching."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "TikTok / Instagram Reel",
-        "title": "DVSA wait times are 6+ months \u2014 here's how to get your test date in weeks",
-        "description": "Screen-record the DTS swap flow from sign-up to confirmed earlier date, narrated over punchy text overlays. Hook: learners already frustrated by long waiting lists."
+        "format": "Short-form video (TikTok / Reels)",
+        "title": "DVSA wait times are broken \u2014 here's the fastest legal fix",
+        "hook": "Show a DVSA calendar screenshot with a 6-month wait, then cut to a swap confirmation screen, voiceover: 'You don't have to wait that long.'",
+        "cta": "Link in bio to drivingtestswap.uk"
       },
       {
-        "format": "Short-form video / caption thread",
-        "title": "POV: you passed your driving test 3 months early",
-        "description": "Testimonial-style clip or thread where a real DTS user shares their story of grabbing a cancellation slot \u2014 humanises the product and drives word-of-mouth sign-ups."
+        "format": "Twitter/X thread + Reels",
+        "title": "How I moved my driving test 4 months earlier without calling DVSA once",
+        "hook": "Step-by-step walkthrough of how test swapping works \u2014 frame it as a learner's perspective to drive relatability and shares from people in waiting queues."
       }
     ],
     "athletics": [
       {
-        "format": "Instagram / TikTok 2-part series",
-        "title": "Calisthenics to Sprint Power \u2014 does gym strength carry to the track?",
-        "description": "Film a muscle-up or weighted L-sit session one day, then a 60m acceleration block the next. Voiceover explaining the hip-flexor and core carry-over \u2014 shareable across calisthenics and sprint communities."
+        "format": "Instagram / TikTok Reel (30\u201345 sec)",
+        "title": "Track Tuesday: 3 drills I do before every sprint session",
+        "hook": "Film warm-up A-skips, wall drills, and acceleration build-up at the track \u2014 overlay your 40m split times, end with: 'Speed is a skill \u2014 here's how I train mine.'"
       },
       {
-        "format": "60-second Reel",
-        "title": "My pre-sprint activation routine",
-        "description": "Compact warm-up sequence \u2014 hip flexor openers, ankle circles, A-skips, wall drives \u2014 with on-screen labels. Low effort to film, evergreen content, strong save-rate from athletes who want to steal the routine."
+        "format": "Instagram Reel / YouTube Short",
+        "title": "One calisthenics skill I've been grinding for 60 days",
+        "hook": "30-second clip showing progress on a single skill (e.g., front lever, muscle-up, or L-sit to V-sit) filmed in the gym \u2014 day 1 vs. day 60 cut, no commentary needed."
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn text post",
-        "title": "I gave my AI sales coach a cold call script. Here's what it said.",
-        "description": "Share a screenshot of CloseCoach feedback on a real (or demo) cold call script \u2014 highlight one specific insight on pacing, question ratio, or objection handling. Ends with a CTA to try it. Speaks directly to sales managers reviewing team call quality."
+        "format": "LinkedIn video (60\u201390 sec)",
+        "title": "Why your sales team keeps losing deals at the same stage",
+        "hook": "Walk through a real objection scenario, show how CloseCoach gives instant AI feedback on the rep's response \u2014 end with: 'This is what coaching at scale looks like in 2026.'"
       },
       {
-        "format": "LinkedIn native video (90 sec)",
-        "title": "Watch CloseCoach roleplay a discovery call live",
-        "description": "Screen-record CloseCoach playing the prospect in a discovery call roleplay, with Dowayne as the sales rep. Pause to show the AI feedback panel. Ideal hook for sales managers who want to see AI training in action before committing."
+        "format": "LinkedIn carousel post (5\u20137 slides)",
+        "title": "5 signs your SME sales team needs coaching \u2014 not more cold calls",
+        "hook": "Slide 1: bold problem statement. Slides 2\u20136: one sign per slide with a micro-fix. Final slide: CloseCoach CTA with a soft pitch and link to demo or waitlist."
       }
     ]
   }
