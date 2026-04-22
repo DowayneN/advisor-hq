@@ -1,121 +1,115 @@
 {
-  "date": "2026-04-21",
-  "generated_at": "06:25",
+  "date": "2026-04-22",
+  "generated_at": "06:15",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260421_1",
-      "company": "Franco's Barbers",
-      "industry": "Barber Shop",
+      "id": "lead_20260422_1",
+      "company": "329 Cafe & Lounge",
+      "industry": "Cafe / Bar",
       "website": null,
-      "phone": "02380777179",
+      "phone": "023 8122 7076",
       "location": "Shirley",
-      "notes": "No standalone website \u2014 relies solely on Facebook and third-party Fresha booking; a branded single-page site with online booking would immediately elevate their professional presence."
+      "notes": "AfroFusion cafe and bar with a strong following on Facebook and Instagram but zero standalone website \u2014 prime opportunity for a modern, bookings-enabled site."
     },
     {
-      "id": "lead_20260421_2",
-      "company": "Small Fry Fish & Chip Shop",
-      "industry": "Takeaway / Restaurant",
+      "id": "lead_20260422_2",
+      "company": "Egertons Barber Shop",
+      "industry": "Barber",
       "website": null,
-      "phone": "02380637143",
-      "location": "Portswood / Bevois Town",
-      "notes": "One of the only traditional chip shops in the Portswood area with zero web presence \u2014 even a simple one-page site with menu, hours, and Google Maps embed would drive walk-in trade."
+      "phone": "07717 763498",
+      "location": "Bitterne Village",
+      "notes": "Relies solely on a third-party Setmore booking page with no branded website, making it invisible on Google and weak for local SEO."
     },
     {
-      "id": "lead_20260421_3",
-      "company": "Ruby's Nails & Beauty",
-      "industry": "Nail Salon / Beauty",
+      "id": "lead_20260422_3",
+      "company": "CSJ Hair & Turkish Barber",
+      "industry": "Barber / Hair Salon",
       "website": null,
-      "phone": "02380232039",
-      "location": "City Centre",
-      "notes": "City-centre beauty business with no dedicated website; depends entirely on Facebook and Fresha, making it hard for new customers to discover and trust them online."
+      "phone": "023 8043 8805",
+      "location": "Bitterne Village",
+      "notes": "Facebook-only presence for a busy traditional Turkish barber \u2014 no website means no Google visibility and no way to take online bookings."
     },
     {
-      "id": "lead_20260421_4",
-      "company": "Venus Nails Bar",
-      "industry": "Nail Salon / Beauty",
+      "id": "lead_20260422_4",
+      "company": "Classy Nails Shirley",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "02380445684",
-      "location": "Bitterne",
-      "notes": "Established local nail bar with active Facebook following but no website \u2014 strong existing demand that a clean booking-focused site could convert more efficiently."
-    },
-    {
-      "id": "lead_20260421_5",
-      "company": "King Barbers",
-      "industry": "Barber Shop",
-      "website": null,
-      "phone": "02380773952",
+      "phone": "023 8051 1223",
       "location": "Shirley",
-      "notes": "Zero web presence beyond a Facebook page and third-party directory listings \u2014 ideal candidate for a clean barber website with Google Maps integration and a simple booking form."
+      "notes": "Listed only on Fresha and Facebook with no dedicated website, meaning it's invisible to anyone Googling nail salons in Shirley."
+    },
+    {
+      "id": "lead_20260422_5",
+      "company": "SK Dalyan Barber",
+      "industry": "Barber",
+      "website": null,
+      "phone": null,
+      "location": "Bitterne Village",
+      "notes": "Turkish barber with a Yell directory listing and no standalone website \u2014 highly searchable niche in a busy residential area with no digital home base."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260421_1",
-      "name": "Brett Foulser",
-      "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales department across 21 branches \u2014 exactly the mid-market, multi-team structure where CloseCoach delivers measurable ROI on rep onboarding and objection handling."
+      "id": "prospect_20260422_1",
+      "name": "Kevin Ashley",
+      "title": "Branch Partner",
+      "company": "Charters Estate Agents",
+      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254/",
+      "reason": "19-year estate agency veteran who ran his own franchise and served as Area Sales Director at Enfields \u2014 now leading the Southampton office sales team at a growing independent agency, ideal fit for CloseCoach."
     },
     {
-      "id": "prospect_20260421_2",
-      "name": "Michael Prout",
-      "title": "General Sales Manager",
-      "company": "Marshall Motor Group",
-      "url": "https://uk.linkedin.com/in/michael-prout-3bb66aa9",
-      "reason": "Manages a frontline dealership sales team at a large UK car group \u2014 high-volume, competitive automotive sales is a classic use case for AI-driven coaching and rep performance tracking."
+      "id": "prospect_20260422_2",
+      "name": "Simon Norley",
+      "title": "Senior Branch Manager",
+      "company": "Connells",
+      "url": "https://www.linkedin.com/in/simon-norley-37a531137/",
+      "reason": "Senior estate agent branch manager with 20+ years experience overseeing a sales team at one of the UK's largest agency groups \u2014 exactly the profile CloseCoach targets."
     },
     {
-      "id": "prospect_20260421_3",
-      "name": "Andrew Williams",
-      "title": "Sales Manager",
-      "company": "Wessex Garages",
-      "url": "https://www.linkedin.com/in/andrew-williams-19558019a/",
-      "reason": "Sales Manager at a multi-branch regional dealership (Bristol, Cardiff, Gloucester, Newport) \u2014 SME-scale car sales operation with a team of reps that fits the CloseCoach sweet spot perfectly."
+      "id": "prospect_20260422_3",
+      "name": "Richard Bennett",
+      "title": "Department Manager",
+      "company": "Matchtech",
+      "url": "https://uk.linkedin.com/in/richardbennettmtg",
+      "reason": "Department Manager at Matchtech, a specialist STEM recruitment agency, managing consultants with revenue targets \u2014 CloseCoach's role-play and objection-handling tools fit directly into recruitment sales training."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "title": "DVSA wait times right now \u2014 and how to skip the queue",
-        "format": "TikTok / Instagram Reel (60s)",
-        "hook": "Show a live screenshot of DVSA test availability in 3 cities (e.g. Southampton, Birmingham, Manchester) with 10\u201316 week waits, then reveal how DTS users swap into tests in days.",
-        "cta": "Link in bio to drivingtestswap.uk"
+        "format": "Short-form video (TikTok / Reels)",
+        "title": "22 weeks to get your driving test? Here's the legal hack",
+        "hook": "Open with the NAO stat: average UK wait is 22 weeks and won't hit 7 weeks until 2027 \u2014 then pitch DTS as the fastest legal route to an earlier slot."
       },
       {
-        "title": "How I got my driving test in 3 weeks, not 3 months",
-        "format": "TikTok testimonial-style Reel (45\u201360s)",
-        "hook": "First-person walk-through: original test date \u2192 DTS swap notification \u2192 confirmation of new test date. Ends with the pass certificate. Taps into frustration with DVSA delays.",
-        "cta": "Comment 'SWAP' for the link"
+        "format": "Educational post / carousel",
+        "title": "Why DVSA can't fix the test backlog (and what you can do today)",
+        "hook": "Break down the three causes \u2014 COVID backlog, bot-bought slots, examiner shortages \u2014 then position DTS swaps as the only thing learners can actually control."
       }
     ],
     "athletics": [
       {
-        "title": "30-day sprint progression \u2014 filmed at the track",
-        "format": "Weekly mini-series clips (15\u201330s each)",
-        "hook": "Film week 1 sprints, then week 4 side-by-side. Show split times improving. Position Dowayne as a disciplined, methodical athlete with a system \u2014 not just showing off.",
-        "cta": "Follow for week-by-week updates"
+        "format": "Short-form clip (gym / track)",
+        "title": "5am sprint session \u2014 acceleration drills I do every week",
+        "hook": "Raw, unfiltered track clip of block starts and drive-phase drills, ending with a single tip on arm mechanics to boost first-10m speed."
       },
       {
-        "title": "Calisthenics vs gym: which builds more explosive power?",
-        "format": "Talking-head + demo clip (60\u201390s, gym setting)",
-        "hook": "Contrast a machine leg press with a bounding box jump and explosive push-up. Land on the point that bodyweight trains the nervous system differently \u2014 backs up the brand with substance.",
-        "cta": "Save this if you train for speed"
+        "format": "Progress clip (gym)",
+        "title": "30-day calisthenics check-in: what actually changed",
+        "hook": "Side-by-side of a key skill (e.g. muscle-up reps or L-sit hold) at day 1 vs day 30, narrated with the one cue that unlocked the improvement."
       }
     ],
     "aimybiz": [
       {
-        "title": "I ran a live CloseCoach AI roleplay with a sales manager \u2014 here's what happened",
-        "format": "LinkedIn screen-capture video (2\u20133 min)",
-        "hook": "Record a live demo: AI rep throws a common objection ('We already have a training programme'), CloseCoach scores the response, suggests a better answer. Real proof-of-concept for sales leaders scrolling LinkedIn.",
-        "cta": "DM 'DEMO' to try it with your team"
+        "format": "LinkedIn post",
+        "title": "I fed a real sales call transcript into CloseCoach. The feedback was brutal.",
+        "hook": "Share 3 anonymised AI coaching notes from a roleplay session \u2014 specific line-by-line feedback \u2014 then invite sales managers to try a free session."
       },
       {
-        "title": "Why most SME sales training doesn't stick (and what actually works)",
-        "format": "LinkedIn carousel post (6\u20138 slides) or talking-head video",
-        "hook": "Open with a stat: 87% of sales training content is forgotten within a month (Gartner). Walk through why one-off workshops fail, then introduce daily AI roleplay as the habit-based alternative.",
-        "cta": "Link to CloseCoach free trial in comments"
+        "format": "LinkedIn demo video (60-90 sec)",
+        "title": "Watch CloseCoach coach a rep through the price objection in real time",
+        "hook": "Screen-record a live CloseCoach roleplay where the AI flags a weak response and suggests a stronger close \u2014 aimed at heads of sales who train reps manually today."
       }
     ]
   }
