@@ -1,115 +1,121 @@
 {
   "date": "2026-04-24",
-  "generated_at": "06:00",
+  "generated_at": "06:35",
   "source": "scheduled_agent",
   "sme_leads": [
     {
       "id": "lead_20260424_1",
-      "company": "Shirley Carpets & Flooring",
-      "industry": "Flooring / Home Improvements",
+      "company": "Franco's Barbers",
+      "industry": "Barber",
       "website": null,
-      "phone": "023 8077 1234",
-      "location": "Shirley, Southampton SO15",
-      "notes": "No website presence found — entirely reliant on word of mouth and footfall. A simple site with gallery and quote form would capture local search traffic for 'carpet fitters Southampton'."
+      "phone": "+44 23 8077 7179",
+      "location": "Shirley",
+      "notes": "Established barber shop at 293 Shirley Road operating solely on Facebook with zero dedicated website, missing local SEO, Google Maps optimisation, and online booking \u2014 ideal entry-level web build."
     },
     {
       "id": "lead_20260424_2",
-      "company": "Blush Beauty Bar",
-      "industry": "Beauty Salon / Nail & Lash",
-      "website": "blushbeautybar.co.uk",
-      "phone": "023 8055 4890",
-      "location": "Bitterne, Southampton SO18",
-      "notes": "Has a basic site built around 2019 — no mobile optimisation, no online booking, and no price list visible. Fresha competitors in the same postcode are capturing appointment bookings they're missing."
+      "company": "Ruby's Nails & Beauty Southampton",
+      "industry": "Nail & Beauty Salon",
+      "website": null,
+      "phone": "02380232039",
+      "location": "City Centre",
+      "notes": "Active nail salon at 7-9 Pound Tree Road with strong Facebook and Fresha presence but no independent website, meaning they lose organic search traffic to competitors who do have one."
     },
     {
       "id": "lead_20260424_3",
-      "company": "Kosheen Indian Kitchen",
-      "industry": "Restaurant / Takeaway",
+      "company": "Axel Peplow Electrical Contracting",
+      "industry": "Electrician",
       "website": null,
-      "phone": "023 8067 3311",
-      "location": "Portswood, Southampton SO17",
-      "notes": "Listed on Just Eat and Deliveroo but has no owned website. Building a direct ordering page would reduce platform commission costs and give them a Google presence for 'Indian takeaway Portswood'."
+      "phone": null,
+      "location": "Southampton",
+      "notes": "NICEIC-certified electrician marketing exclusively through Facebook with no website at all \u2014 a simple 3-page site with a quote form would dramatically improve credibility and inbound leads."
     },
     {
       "id": "lead_20260424_4",
-      "company": "Chandler's Ford Physio & Sports Clinic",
-      "industry": "Physiotherapy / Health Services",
-      "website": "cfphysio.co.uk",
-      "phone": "023 8026 7450",
-      "location": "Chandler's Ford, Eastleigh SO53",
-      "notes": "Website exists but loads slowly on mobile and has no booking integration — enquiries go via a generic contact form. Competitors using Cliniko or a booking widget are converting better on mobile."
+      "company": "Goran Barbers",
+      "industry": "Barber",
+      "website": null,
+      "phone": "+44 7472 554343",
+      "location": "Woolston",
+      "notes": "Popular Turkish barber at 8A Deacon Road with great reviews on Fresha and Facebook but no owned web presence, making them invisible on Google Search for 'barber Woolston Southampton'."
     },
     {
       "id": "lead_20260424_5",
-      "company": "Totton Tyres & MOT",
-      "industry": "Auto Services / Garage",
+      "company": "George's Cafe & Restaurant",
+      "industry": "Cafe / Restaurant",
       "website": null,
-      "phone": "023 8086 2219",
-      "location": "Totton, Southampton SO40",
-      "notes": "Google Maps listing only — no website, no reviews beyond a handful. A one-page site with MOT booking, pricing, and a review funnel would dominate local search for 'MOT Totton' quickly."
+      "phone": "+44 23 8077 1158",
+      "location": "Shirley",
+      "notes": "Loved local cafe at 9 Church Street with only Facebook and third-party directory listings \u2014 a simple site with a menu, opening hours, and Google Maps embed would convert foot-traffic searches immediately."
     }
   ],
   "linkedin_prospects": [
     {
       "id": "prospect_20260424_1",
-      "name": "Mark Hendley",
-      "title": "Head of Sales",
-      "company": "Connells Estate Agents — Hampshire",
-      "url": "https://linkedin.com/in/mark-hendley-sales",
-      "reason": "Manages a team of 6–10 negotiators across multiple Hampshire branches. Estate agency sales teams have high turnover and inconsistent objection handling — CloseCoach's roleplay module maps directly to the viewings-to-offer conversion gap he'd be measured on."
+      "name": "Stuart Milton",
+      "title": "Sales Manager",
+      "company": "Glyn Hopkin Kia Romford",
+      "url": "https://www.linkedin.com/in/stuart-milton-10a9b212/",
+      "reason": "Manages a sales team at one of the UK's prominent Kia franchises with over a decade in car sales management \u2014 exactly the SME sales leader CloseCoach is built for."
     },
     {
       "id": "prospect_20260424_2",
-      "name": "Sarah Okafor",
-      "title": "Sales Director",
-      "company": "Meridian Business Finance",
-      "url": "https://linkedin.com/in/sarah-okafor-finance",
-      "reason": "Leads a team of commercial finance brokers and recently posted about onboarding two new consultants. New-hire ramp time is the exact pain CloseCoach addresses — her post signals she's actively thinking about sales enablement."
+      "name": "Mark Hobson",
+      "title": "Used Car Sales Manager",
+      "company": "Group 1 Automotive (Manchester Volkswagen)",
+      "url": "https://www.linkedin.com/in/mark-hobson-7039b61a1/",
+      "reason": "17-year automotive sales veteran managing a used car sales team at a major VW dealership group \u2014 high-volume, target-driven environment where AI roleplay coaching would cut ramp time fast."
     },
     {
       "id": "prospect_20260424_3",
-      "name": "James Whitfield",
+      "name": "Hayden Gissing",
       "title": "Branch Manager",
-      "company": "Pentagon Motor Group",
-      "url": "https://linkedin.com/in/james-whitfield-automotive",
-      "reason": "Runs a mid-size dealership with 8–12 sales executives; dealership groups are under margin pressure as EV transitions slow footfall. CloseCoach objection-handling training around finance packages and part-exchange conversations is a direct fit for his team's biggest conversion leaks."
+      "company": "Bourne Estate Agents",
+      "url": "https://www.linkedin.com/in/hayden-gissing-899b74160/",
+      "reason": "Branch Manager with a decade of property sales experience at a Hampshire & Surrey estate agency, overseeing a team of negotiators \u2014 a natural fit for CloseCoach's objection-handling and valuation-pitch training modules."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "platform": "TikTok / Instagram Reels",
-        "title": "DVSA just cancelled 40,000 tests — here's how to get one in 2 weeks",
-        "format": "Talking-head hook (5s urgency stat) → screen-record of DTS swap flow → CTA overlay; keep it under 45 seconds."
+        "platform": "TikTok / Reels",
+        "title": "DVSA wait times just hit 20+ weeks \u2014 here's how to skip the queue legally",
+        "hook": "Show a DVSA booking screen with a distant test date, cut to DrivingTestSwap finding an earlier slot. Voiceover: 'You don't have to wait months for your driving test.' End with CTA to drivingtestswap.uk.",
+        "format": "60-second short-form"
       },
       {
-        "platform": "TikTok",
-        "title": "POV: you swapped your test date and passed 6 weeks earlier than planned",
-        "format": "UGC-style reaction video using a real user success story as text overlay with celebratory audio; encourage comments tagging someone who needs a test date."
+        "platform": "TikTok / Reels / YouTube Shorts",
+        "title": "The driving test hack nobody talks about (and it's completely legal)",
+        "hook": "Start with the pain of waiting \u2014 nervous learner, long DVSA queue \u2014 then flip to the swap: someone picks up a cancelled test date in hours. Show the platform in screen-record. End with 'Link in bio.'",
+        "format": "45-second short-form with screen recording"
       }
     ],
     "athletics": [
       {
-        "platform": "Instagram Reels",
-        "title": "The 3-drill sprint warm-up that changed my acceleration off the blocks",
-        "format": "Wide-angle gym or track footage, split into 3 short clips with text labels per drill; voiceover explaining each cue; no music keeps it educational."
+        "platform": "Instagram Reels / TikTok",
+        "title": "From zero to muscle-up \u2014 30-day calisthenics progression",
+        "hook": "Film a side-by-side or time-lapse of the same movement drill across 30 days at the gym. Add caption overlay: 'Consistency > motivation every time.' Ends on the clean rep.",
+        "format": "30-60 second Reel"
       },
       {
-        "platform": "TikTok",
-        "title": "Why most people never get faster (it's not effort)",
-        "format": "Talking-head monologue on the difference between speed work and fitness — contrarian hook, ends with 'save this if you train' CTA to drive algorithm saves."
+        "platform": "Instagram Reels / TikTok",
+        "title": "Track day sprint session \u2014 slow-mo breakdowns",
+        "hook": "Film sprint drills at the track with phone or GoPro in slow-mo. Overlay tips: drive phase, arm mechanics, stride length. Caption: 'Speed is built in the off-season.' Shows Dowayne as a credible athlete brand.",
+        "format": "60-90 second Reel with slow-mo cuts"
       }
     ],
     "aimybiz": [
       {
-        "platform": "LinkedIn (native video)",
-        "title": "I put a sales rep through 5 common objections using AI — here's what happened",
-        "format": "Screen-record of a CloseCoach session with commentary overlay; show the rep improving across 3 rounds; end with before/after score card as a native video or carousel."
+        "platform": "LinkedIn Video",
+        "title": "I gave my sales team an AI coach for 30 days \u2014 here's what changed",
+        "hook": "Open with a stat or a story (e.g. 'Our reps were losing deals at the objection stage, every single week'). Walk through how CloseCoach works with a quick demo. End with a call for sales managers to DM for early access.",
+        "format": "2-3 minute talking-head video with screen demo"
       },
       {
-        "platform": "LinkedIn (text post)",
-        "title": "Your newest sales hire will quit within 90 days if you don't do this one thing",
-        "format": "Hook-first text post about ramp time and early confidence; weave in the AI roleplay angle in paragraph 3; CTA is a DM or comment 'COACH' to get a demo link."
+        "platform": "LinkedIn Carousel Post",
+        "title": "5 objections your sales team is losing to right now (slide 5 shows the fix)",
+        "hook": "Carousel covering the 5 most common objections in recruitment/estate agency/car sales. Each slide names the objection, shows a weak vs. strong response. Slide 5 reveals CloseCoach as the training tool that drills these daily.",
+        "format": "6-slide LinkedIn carousel"
       }
     ]
   }
