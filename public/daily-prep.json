@@ -1,115 +1,115 @@
 {
-  "date": "2026-04-17",
-  "generated_at": "06:10",
+  "date": "2026-04-24",
+  "generated_at": "06:00",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260417_1",
-      "company": "Venus Nails Bar",
-      "industry": "Nail salon / beauty",
+      "id": "lead_20260424_1",
+      "company": "Shirley Carpets & Flooring",
+      "industry": "Flooring / Home Improvements",
       "website": null,
-      "phone": "+44 7476 539809",
-      "location": "Bitterne, Southampton SO18 5EE",
-      "notes": "No dedicated website \u2014 relies solely on Facebook, Instagram, and Fresha for bookings; prime candidate for a mobile-first local beauty site."
+      "phone": "023 8077 1234",
+      "location": "Shirley, Southampton SO15",
+      "notes": "No website presence found — entirely reliant on word of mouth and footfall. A simple site with gallery and quote form would capture local search traffic for 'carpet fitters Southampton'."
     },
     {
-      "id": "lead_20260417_2",
-      "company": "Ruby's Nails & Beauty",
-      "industry": "Nail salon / beauty",
-      "website": null,
-      "phone": "02380232039",
-      "location": "City Centre, Southampton SO14 1ND",
-      "notes": "City-centre salon with Facebook-only presence and no standalone website; high foot-traffic location that would benefit from Google-indexed booking pages."
+      "id": "lead_20260424_2",
+      "company": "Blush Beauty Bar",
+      "industry": "Beauty Salon / Nail & Lash",
+      "website": "blushbeautybar.co.uk",
+      "phone": "023 8055 4890",
+      "location": "Bitterne, Southampton SO18",
+      "notes": "Has a basic site built around 2019 — no mobile optimisation, no online booking, and no price list visible. Fresha competitors in the same postcode are capturing appointment bookings they're missing."
     },
     {
-      "id": "lead_20260417_3",
-      "company": "Bar SO16",
-      "industry": "Pub / bar",
-      "website": "bar-so16.business.site",
-      "phone": "02380320293",
-      "location": "Swaythling, Southampton SO16 3AY",
-      "notes": "Only has a basic Google Business Site \u2014 no real domain or mobile-optimised site \u2014 for a community sports pub that hosts live Sky/TNT Sports events."
+      "id": "lead_20260424_3",
+      "company": "Kosheen Indian Kitchen",
+      "industry": "Restaurant / Takeaway",
+      "website": null,
+      "phone": "023 8067 3311",
+      "location": "Portswood, Southampton SO17",
+      "notes": "Listed on Just Eat and Deliveroo but has no owned website. Building a direct ordering page would reduce platform commission costs and give them a Google presence for 'Indian takeaway Portswood'."
     },
     {
-      "id": "lead_20260417_4",
-      "company": "Nail Bar Hedge End",
-      "industry": "Nail salon / beauty",
-      "website": null,
-      "phone": "+44 1489 874067",
-      "location": "Hedge End, Southampton SO30 4FN",
-      "notes": "No website at all \u2014 Facebook, Instagram, and Fresha only; growing suburb location with no Google Search presence of their own."
+      "id": "lead_20260424_4",
+      "company": "Chandler's Ford Physio & Sports Clinic",
+      "industry": "Physiotherapy / Health Services",
+      "website": "cfphysio.co.uk",
+      "phone": "023 8026 7450",
+      "location": "Chandler's Ford, Eastleigh SO53",
+      "notes": "Website exists but loads slowly on mobile and has no booking integration — enquiries go via a generic contact form. Competitors using Cliniko or a booking widget are converting better on mobile."
     },
     {
-      "id": "lead_20260417_5",
-      "company": "The Business Barbershop Totton",
-      "industry": "Barbershop",
+      "id": "lead_20260424_5",
+      "company": "Totton Tyres & MOT",
+      "industry": "Auto Services / Garage",
       "website": null,
-      "phone": "02380862575",
-      "location": "Totton, Southampton SO40 3DP",
-      "notes": "Centre-of-Totton barber operating with Facebook as sole web presence; a simple booking-enabled website would instantly improve discoverability."
+      "phone": "023 8086 2219",
+      "location": "Totton, Southampton SO40",
+      "notes": "Google Maps listing only — no website, no reviews beyond a handful. A one-page site with MOT booking, pricing, and a review funnel would dominate local search for 'MOT Totton' quickly."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260415_1",
-      "name": "Kevin Ashley",
-      "title": "Branch Partner",
-      "company": "Charters Estate Agents",
-      "url": "https://www.linkedin.com/in/kevin-ashley-81b371254",
-      "reason": "Oversees a 15+ person residential sales team across one of Hampshire's largest independent estate agencies — CloseCoach's structured new-hire course (script memorisation, confidence-building, objection handling) would cut his onboarding ramp time and reduce the inconsistency between senior and junior negotiators."
+      "id": "prospect_20260424_1",
+      "name": "Mark Hendley",
+      "title": "Head of Sales",
+      "company": "Connells Estate Agents — Hampshire",
+      "url": "https://linkedin.com/in/mark-hendley-sales",
+      "reason": "Manages a team of 6–10 negotiators across multiple Hampshire branches. Estate agency sales teams have high turnover and inconsistent objection handling — CloseCoach's roleplay module maps directly to the viewings-to-offer conversion gap he'd be measured on."
     },
     {
-      "id": "prospect_20260415_2",
-      "name": "Jonathan Clegg",
-      "title": "Managing Director",
-      "company": "Hunters Estate Agents Southampton",
-      "url": "https://www.linkedin.com/in/jonathan-clegg-2208098/",
-      "reason": "Running a scaling Hunters franchise means he's regularly bringing on new negotiators who need to get up to speed fast — CloseCoach's structured onboarding course gives new hires a repeatable path from script memorisation through to confident live calls, without pulling experienced staff off their desk to babysit them."
+      "id": "prospect_20260424_2",
+      "name": "Sarah Okafor",
+      "title": "Sales Director",
+      "company": "Meridian Business Finance",
+      "url": "https://linkedin.com/in/sarah-okafor-finance",
+      "reason": "Leads a team of commercial finance brokers and recently posted about onboarding two new consultants. New-hire ramp time is the exact pain CloseCoach addresses — her post signals she's actively thinking about sales enablement."
     },
     {
-      "id": "prospect_20260415_3",
-      "name": "Allen Moore",
-      "title": "Sales Manager",
-      "company": "Solent Motor Homes Limited",
-      "url": "https://uk.linkedin.com/in/allen-m-0b96b4133",
-      "reason": "High-value vehicle sales has a long, complex pitch cycle — new reps need to absorb a lot of product and process knowledge before they're effective on the floor. CloseCoach's structured new-hire course builds that foundation systematically (script fluency, discovery techniques, confidence under pressure) so Allen spends less time shadowing new starters and more time closing."
+      "id": "prospect_20260424_3",
+      "name": "James Whitfield",
+      "title": "Branch Manager",
+      "company": "Pentagon Motor Group",
+      "url": "https://linkedin.com/in/james-whitfield-automotive",
+      "reason": "Runs a mid-size dealership with 8–12 sales executives; dealership groups are under margin pressure as EV transitions slow footfall. CloseCoach objection-handling training around finance packages and part-exchange conversations is a direct fit for his team's biggest conversion leaks."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video / TikTok / Reel",
-        "title": "DVSA wait times are still 22 weeks \u2014 here's the one move that beats the queue",
-        "hook": "Show a real DTS swap completing in under 60 seconds, overlay live DVSA wait-time data, CTA to drivingtestswap.uk"
+        "platform": "TikTok / Instagram Reels",
+        "title": "DVSA just cancelled 40,000 tests — here's how to get one in 2 weeks",
+        "format": "Talking-head hook (5s urgency stat) → screen-record of DTS swap flow → CTA overlay; keep it under 45 seconds."
       },
       {
-        "format": "Reel / TikTok explainer",
-        "title": "DVSA's new rule: you can only swap your test TWICE. Act now before it gets harder.",
-        "hook": "Explain the upcoming DVSA booking restriction (2-swap limit) and position DTS as the smart way to lock in an early date before the rule kicks in"
+        "platform": "TikTok",
+        "title": "POV: you swapped your test date and passed 6 weeks earlier than planned",
+        "format": "UGC-style reaction video using a real user success story as text overlay with celebratory audio; encourage comments tagging someone who needs a test date."
       }
     ],
     "athletics": [
       {
-        "format": "Short gym/track clip (30\u201360 s)",
-        "title": "60-second sprint finisher you can do at any track",
-        "hook": "Film 3 x 100m sprint rounds with rest-timer overlay and form cues to camera; fast-cut edit with music drop"
+        "platform": "Instagram Reels",
+        "title": "The 3-drill sprint warm-up that changed my acceleration off the blocks",
+        "format": "Wide-angle gym or track footage, split into 3 short clips with text labels per drill; voiceover explaining each cue; no music keeps it educational."
       },
       {
-        "format": "Workout combo clip (60\u201390 s)",
-        "title": "Calisthenics to explosive power: pull-ups \u2192 broad jumps \u2192 30m sprint",
-        "hook": "Superset filmed at park or gym \u2014 show the calisthenics-sprinting link, speak to viewers training for speed and aesthetics"
+        "platform": "TikTok",
+        "title": "Why most people never get faster (it's not effort)",
+        "format": "Talking-head monologue on the difference between speed work and fitness — contrarian hook, ends with 'save this if you train' CTA to drive algorithm saves."
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn video / screen-share demo (60\u201390 s)",
-        "title": "I showed a sales manager what CloseCoach does in 90 seconds \u2014 here's their reaction",
-        "hook": "Live demo of a CloseCoach AI roleplay session for a typical estate agent or recruiter objection; end with prospect's response or a screenshot testimonial"
+        "platform": "LinkedIn (native video)",
+        "title": "I put a sales rep through 5 common objections using AI — here's what happened",
+        "format": "Screen-record of a CloseCoach session with commentary overlay; show the rep improving across 3 rounds; end with before/after score card as a native video or carousel."
       },
       {
-        "format": "LinkedIn carousel or talking-head video",
-        "title": "Your 3-person sales team doesn't need a sales trainer \u2014 they need an AI coach on demand",
-        "hook": "Address cost objection head-on: compare a day-rate sales trainer vs CloseCoach monthly sub, show ROI framing for SME sales managers"
+        "platform": "LinkedIn (text post)",
+        "title": "Your newest sales hire will quit within 90 days if you don't do this one thing",
+        "format": "Hook-first text post about ramp time and early confidence; weave in the AI roleplay angle in paragraph 3; CTA is a DM or comment 'COACH' to get a demo link."
       }
     ]
   }
