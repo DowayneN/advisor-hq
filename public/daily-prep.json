@@ -1,121 +1,121 @@
 {
-  "date": "2026-04-23",
-  "generated_at": "06:29",
+  "date": "2026-04-24",
+  "generated_at": "06:35",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260423_1",
-      "company": "Hair Bare (Southern) Ltd",
-      "industry": "Hair Salon",
+      "id": "lead_20260424_1",
+      "company": "Franco's Barbers",
+      "industry": "Barber",
       "website": null,
-      "phone": "023 8046 2824",
-      "location": "Bitterne, Southampton SO18 5TQ",
-      "notes": "Unisex hair salon operating solely via Facebook and Fresha bookings with no dedicated website, missing out on local organic search traffic."
+      "phone": "+44 23 8077 7179",
+      "location": "Shirley",
+      "notes": "Established barber shop at 293 Shirley Road operating solely on Facebook with zero dedicated website, missing local SEO, Google Maps optimisation, and online booking \u2014 ideal entry-level web build."
     },
     {
-      "id": "lead_20260423_2",
-      "company": "Origin Hair & Beauty Ltd",
-      "industry": "Hair & Beauty Salon",
+      "id": "lead_20260424_2",
+      "company": "Ruby's Nails & Beauty Southampton",
+      "industry": "Nail & Beauty Salon",
       "website": null,
-      "phone": "023 8070 4426",
-      "location": "Shirley, Southampton SO16 4FB",
-      "notes": "Active on Facebook and Instagram but lacks a standalone site; Shirley High Street footfall makes a conversion-optimised website a strong opportunity."
+      "phone": "02380232039",
+      "location": "City Centre",
+      "notes": "Active nail salon at 7-9 Pound Tree Road with strong Facebook and Fresha presence but no independent website, meaning they lose organic search traffic to competitors who do have one."
     },
     {
-      "id": "lead_20260423_3",
-      "company": "AKN Plumbing and Heating",
-      "industry": "Plumbing & Heating",
+      "id": "lead_20260424_3",
+      "company": "Axel Peplow Electrical Contracting",
+      "industry": "Electrician",
       "website": null,
       "phone": null,
-      "notes": "Family-run Southampton plumber relying entirely on Facebook with no website \u2014 no phone number publicly listed, making them virtually unfindable by new customers online.",
-      "location": "Coxford, Southampton"
+      "location": "Southampton",
+      "notes": "NICEIC-certified electrician marketing exclusively through Facebook with no website at all \u2014 a simple 3-page site with a quote form would dramatically improve credibility and inbound leads."
     },
     {
-      "id": "lead_20260423_4",
-      "company": "Kate's Cafe Lounge",
+      "id": "lead_20260424_4",
+      "company": "Goran Barbers",
+      "industry": "Barber",
+      "website": null,
+      "phone": "+44 7472 554343",
+      "location": "Woolston",
+      "notes": "Popular Turkish barber at 8A Deacon Road with great reviews on Fresha and Facebook but no owned web presence, making them invisible on Google Search for 'barber Woolston Southampton'."
+    },
+    {
+      "id": "lead_20260424_5",
+      "company": "George's Cafe & Restaurant",
       "industry": "Cafe / Restaurant",
       "website": null,
-      "phone": "023 8058 1872",
-      "location": "Portswood, Southampton SO17 2NF",
-      "notes": "Well-reviewed local cafe with Facebook and Deliveroo presence but no own domain, losing branded visibility and direct table bookings to competitors."
-    },
-    {
-      "id": "lead_20260423_5",
-      "company": "At Sis' Hair & Beauty Salon",
-      "industry": "Hair & Beauty Salon",
-      "website": null,
-      "phone": "023 8022 7656",
-      "location": "London Road, Southampton SO15 2FB",
-      "notes": "Social-media-only salon on London Road with active Facebook and Instagram but no own website, limiting discovery beyond existing followers."
+      "phone": "+44 23 8077 1158",
+      "location": "Shirley",
+      "notes": "Loved local cafe at 9 Church Street with only Facebook and third-party directory listings \u2014 a simple site with a menu, opening hours, and Google Maps embed would convert foot-traffic searches immediately."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260423_1",
-      "name": "Brett Foulser",
-      "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person estate agency sales team across 20 offices \u2014 exactly the high-rejection, relationship-driven environment CloseCoach is built to improve."
-    },
-    {
-      "id": "prospect_20260423_2",
-      "name": "Matthew Williams",
+      "id": "prospect_20260424_1",
+      "name": "Stuart Milton",
       "title": "Sales Manager",
-      "company": "Cameron Motor Group (Volkswagen)",
-      "url": "https://www.linkedin.com/in/matthew-williams-905ab91a2/",
-      "reason": "23-year tenure at a family-owned dealership signals an invested culture \u2014 a sales manager this loyal will prioritise tools that sharpen the team's closing skills."
+      "company": "Glyn Hopkin Kia Romford",
+      "url": "https://www.linkedin.com/in/stuart-milton-10a9b212/",
+      "reason": "Manages a sales team at one of the UK's prominent Kia franchises with over a decade in car sales management \u2014 exactly the SME sales leader CloseCoach is built for."
     },
     {
-      "id": "prospect_20260423_3",
-      "name": "Kieran Mathieson",
-      "title": "Consultant",
-      "company": "Integro Partners (Recruitment)",
-      "url": "https://uk.linkedin.com/in/kieran-mathieson-71b004162",
-      "reason": "Recruitment consultancy in property and financial services with a team of phone-based sales reps \u2014 high call volume roles that benefit directly from AI objection-handling practice."
+      "id": "prospect_20260424_2",
+      "name": "Mark Hobson",
+      "title": "Used Car Sales Manager",
+      "company": "Group 1 Automotive (Manchester Volkswagen)",
+      "url": "https://www.linkedin.com/in/mark-hobson-7039b61a1/",
+      "reason": "17-year automotive sales veteran managing a used car sales team at a major VW dealership group \u2014 high-volume, target-driven environment where AI roleplay coaching would cut ramp time fast."
+    },
+    {
+      "id": "prospect_20260424_3",
+      "name": "Hayden Gissing",
+      "title": "Branch Manager",
+      "company": "Bourne Estate Agents",
+      "url": "https://www.linkedin.com/in/hayden-gissing-899b74160/",
+      "reason": "Branch Manager with a decade of property sales experience at a Hampshire & Surrey estate agency, overseeing a team of negotiators \u2014 a natural fit for CloseCoach's objection-handling and valuation-pitch training modules."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Instagram / TikTok Reel",
-        "title": "You're waiting 22 weeks for your driving test \u2014 here's the hack",
-        "hook": "Show the DVSA wait-time map, cut to a learner getting a test 3 weeks sooner via a swap. Caption: 'DVSA says 22 weeks. We found one in 3. Here's how.'",
-        "cta": "Link in bio to drivingtestswap.uk"
+        "platform": "TikTok / Reels",
+        "title": "DVSA wait times just hit 20+ weeks \u2014 here's how to skip the queue legally",
+        "hook": "Show a DVSA booking screen with a distant test date, cut to DrivingTestSwap finding an earlier slot. Voiceover: 'You don't have to wait months for your driving test.' End with CTA to drivingtestswap.uk.",
+        "format": "60-second short-form"
       },
       {
-        "format": "Short-form post (Instagram / X)",
-        "title": "DVSA's new cancellation rule just created more free slots \u2014 here's why",
-        "hook": "From April 2025 learners must give 10 working days notice to cancel \u2014 meaning last-minute drops flood the system. Post explains how DTS alerts you the second a slot appears near you.",
-        "cta": "Sign up for instant alerts at drivingtestswap.uk"
+        "platform": "TikTok / Reels / YouTube Shorts",
+        "title": "The driving test hack nobody talks about (and it's completely legal)",
+        "hook": "Start with the pain of waiting \u2014 nervous learner, long DVSA queue \u2014 then flip to the swap: someone picks up a cancelled test date in hours. Show the platform in screen-record. End with 'Link in bio.'",
+        "format": "45-second short-form with screen recording"
       }
     ],
     "athletics": [
       {
-        "format": "Instagram Reel / TikTok",
-        "title": "Week 8 of my front lever progression \u2014 gym session clip",
-        "hook": "Film the tuck \u2192 advanced tuck \u2192 full front lever attempt. Overlay text: 'Nobody talks about how long this actually takes.' Raw, unfiltered gym footage performs well.",
-        "cta": "Follow for weekly calisthenics progress updates"
+        "platform": "Instagram Reels / TikTok",
+        "title": "From zero to muscle-up \u2014 30-day calisthenics progression",
+        "hook": "Film a side-by-side or time-lapse of the same movement drill across 30 days at the gym. Add caption overlay: 'Consistency > motivation every time.' Ends on the clean rep.",
+        "format": "30-60 second Reel"
       },
       {
-        "format": "Track Reel (15\u201330 sec)",
-        "title": "Wednesday sprint session \u2014 60m slow-mo start",
-        "hook": "Slow-motion drive phase into full acceleration, finish with stopwatch. Caption: 'Speed is a skill. This is my Wednesday.' Simple, repeatable series format.",
-        "cta": "Comment your sprint PB below"
+        "platform": "Instagram Reels / TikTok",
+        "title": "Track day sprint session \u2014 slow-mo breakdowns",
+        "hook": "Film sprint drills at the track with phone or GoPro in slow-mo. Overlay tips: drive phase, arm mechanics, stride length. Caption: 'Speed is built in the off-season.' Shows Dowayne as a credible athlete brand.",
+        "format": "60-90 second Reel with slow-mo cuts"
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn Post + short screen-record clip",
-        "title": "Your reps don't need more leads. They need to stop fumbling the ones they have.",
-        "hook": "Opens with a relatable lost-sale story, pivots to showing a 60-second CloseCoach objection drill. Ends: 'We built CloseCoach so your team practices on AI before they lose a real deal.'",
-        "cta": "Drop a comment or DM for a free team demo"
+        "platform": "LinkedIn Video",
+        "title": "I gave my sales team an AI coach for 30 days \u2014 here's what changed",
+        "hook": "Open with a stat or a story (e.g. 'Our reps were losing deals at the objection stage, every single week'). Walk through how CloseCoach works with a quick demo. End with a call for sales managers to DM for early access.",
+        "format": "2-3 minute talking-head video with screen demo"
       },
       {
-        "format": "LinkedIn Carousel (5 slides)",
-        "title": "3 signs your sales team needs training \u2014 not more cold calls",
-        "hook": "Slide 1: stat on SME sales conversion rates. Slides 2\u20134: common objections reps fumble (no budget / send me info / not interested). Slide 5: how CloseCoach builds the muscle memory to handle each one.",
-        "cta": "Link to AIMyBiz / CloseCoach demo booking"
+        "platform": "LinkedIn Carousel Post",
+        "title": "5 objections your sales team is losing to right now (slide 5 shows the fix)",
+        "hook": "Carousel covering the 5 most common objections in recruitment/estate agency/car sales. Each slide names the objection, shows a weak vs. strong response. Slide 5 reveals CloseCoach as the training tool that drills these daily.",
+        "format": "6-slide LinkedIn carousel"
       }
     ]
   }
