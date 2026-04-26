@@ -1,121 +1,133 @@
 {
-  "date": "2026-04-25",
-  "generated_at": "06:13",
+  "date": "2026-04-26",
+  "generated_at": "06:29",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260425_1",
-      "company": "Franco's Barbers",
-      "industry": "Barber / Men's Grooming",
+      "id": "lead_20260426_1",
+      "company": "Woolston Barber Shop",
+      "industry": "Barber / Hair",
       "website": null,
-      "phone": "023 8077 7179",
-      "location": "Shirley",
-      "notes": "Established barber shop operating solely through Fresha booking and directory listings with no standalone website, leaving them invisible to walk-in search traffic."
+      "phone": "+44 7838 021711",
+      "location": "Woolston, Southampton",
+      "notes": "Social-media only presence (Facebook + Instagram @woolston.barbershop) with zero standalone website \u2014 a simple mobile-friendly booking site would immediately outperform competitors on Google."
     },
     {
-      "id": "lead_20260425_2",
-      "company": "King Turkish Barber",
-      "industry": "Barber / Men's Grooming",
-      "website": null,
-      "phone": "023 8077 3952",
-      "location": "Shirley",
-      "notes": "Popular Turkish barber with 294+ reviews on Birdeye but no owned website \u2014 all bookings funnelled through Fresha and a Facebook page, so a professional site would capture direct organic search."
+      "id": "lead_20260426_2",
+      "company": "Bitterne Barber Shop",
+      "industry": "Barber / Hair",
+      "website": "https://leafy-bubblegum-8430d4.netlify.app",
+      "phone": "+44 7438 492941",
+      "location": "Bitterne Village, Southampton",
+      "notes": "Current 'website' is an amateur Netlify placeholder page \u2014 no SEO, no booking, no branding \u2014 easy upgrade pitch to a proper mobile site."
     },
     {
-      "id": "lead_20260425_3",
-      "company": "K T Nails",
-      "industry": "Nail Salon / Beauty",
-      "website": null,
-      "phone": "023 8043 4068",
-      "location": "Woolston",
-      "notes": "Active nail salon with Instagram presence and Fresha bookings but no dedicated website, making it hard for new customers to find services, pricing or photos outside of third-party apps."
-    },
-    {
-      "id": "lead_20260425_4",
-      "company": "Venus Nails Bar",
-      "industry": "Nail Salon / Beauty",
-      "website": null,
-      "phone": "+44 7476 539809",
-      "location": "Bitterne",
-      "notes": "Nail bar marketing exclusively through Facebook with no standalone site, missing out on Google Maps organic traffic and any customers who do not use social media."
-    },
-    {
-      "id": "lead_20260425_5",
-      "company": "A.T Nails Spa",
-      "industry": "Nail Salon / Beauty",
+      "id": "lead_20260426_3",
+      "company": "329 Cafe & Lounge",
+      "industry": "Cafe / Restaurant",
       "website": null,
       "phone": null,
-      "location": "Bitterne",
-      "notes": "Newer nail spa relying only on Facebook, Instagram and Fresha \u2014 no website means no SEO presence and no way to showcase treatments or pricing on an owned channel."
+      "location": "Shirley, Southampton",
+      "notes": "Afro-fusion cafe operating solely through Facebook and Instagram with no website; strong social engagement suggests an audience ready to convert through a proper online home."
+    },
+    {
+      "id": "lead_20260426_4",
+      "company": "Franco's Barbers",
+      "industry": "Barber / Hair",
+      "website": null,
+      "phone": "+44 23 8077 7179",
+      "location": "Shirley, Southampton",
+      "notes": "Long-established local barber listed on Fresha and Facebook but with no dedicated website \u2014 a local SEO-optimised site would help capture walk-in and search traffic in a busy Shirley high street area."
+    },
+    {
+      "id": "lead_20260426_5",
+      "company": "MAD Cafe and Deli",
+      "industry": "Cafe / Deli",
+      "website": null,
+      "phone": "02380 638646",
+      "location": "Freemantle, Southampton",
+      "notes": "Well-reviewed Portuguese family cafe with a Facebook page and TripAdvisor presence but no dedicated website \u2014 a menu-forward site with click-to-call would boost local discovery and lunchtime trade."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260425_1",
-      "name": "Brett Foulser",
-      "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales department across multiple estate agency branches in the South East, making him an ideal CloseCoach buyer who already manages structured sales training needs at scale."
+      "id": "prospect_20260426_1",
+      "name": "Emma Ellis",
+      "title": "Sales Manager",
+      "company": "Hunters Estate Agents",
+      "url": "https://uk.linkedin.com/in/emma-ellis-ba970090",
+      "reason": "Manages an active branch sales team at a major UK estate agency franchise \u2014 exactly the profile that would use CloseCoach to sharpen objection-handling and speed up offer conversion."
     },
     {
-      "id": "prospect_20260425_2",
-      "name": "Jason Smith",
-      "title": "Sales Director",
-      "company": "Hawthorns Cars Limited",
-      "url": "https://uk.linkedin.com/in/jason-smith-83321a167",
-      "reason": "Sales Director at an independent used-car dealership in Farnham, Surrey \u2014 small hands-on sales team where AI-driven objection coaching and closing practice via CloseCoach would directly impact conversion rates."
+      "id": "prospect_20260426_2",
+      "name": "Simon Norley",
+      "title": "Senior Branch Manager",
+      "company": "Connells Estate Agents",
+      "url": "https://www.linkedin.com/in/simon-norley-37a531137/",
+      "reason": "20+ years in estate agency and now leads a multi-rep branch at a top-10 UK chain \u2014 senior enough to buy training tools and experienced enough to recognise the value of AI-driven coaching for his team."
     },
     {
-      "id": "prospect_20260425_3",
-      "name": "Holly Saywood",
-      "title": "Sales Director",
-      "company": "Linsco Ltd",
-      "url": "https://uk.linkedin.com/in/holly-saywood-b7717ba4",
-      "reason": "Sales Director at a UK construction recruitment agency with 25+ sales consultants and a public focus on team performance, making her a strong fit for a scalable AI sales coaching tool like CloseCoach."
+      "id": "prospect_20260426_3",
+      "name": "Daryl Atkinson",
+      "title": "Sales Professional",
+      "company": "Leaders Ltd (estate agents)",
+      "url": "https://www.linkedin.com/in/daryl-atkinson-24224bb5/",
+      "reason": "Based in the Greater Southampton Area at Leaders Ltd, a regional estate agency with multiple branches \u2014 local proximity makes him a warm outreach target for CloseCoach demos."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "TikTok / Instagram Reel",
-        "title": "DVSA wait times are hitting 6+ months \u2014 here's how to swap your test date in under 10 minutes",
-        "hook": "Open with a screenshot of a real DVSA booking screen showing a 6-month wait, then cut to the DrivingTestSwap flow in real time.",
-        "cta": "Link in bio \u2014 swap your test date today"
+        "id": "dts_idea_1",
+        "format": "Short-form video / TikTok / Reel",
+        "title": "DVSA Wait Times Right Now \u2014 Where's the Shortest Queue in the UK?",
+        "hook": "Show a heatmap or list of UK test-centre wait times; reveal 2-3 cities where waits have surged vs. eased",
+        "cta": "Drop your test centre in the comments \u2014 I'll tell you if it's worth swapping",
+        "why": "Exploits search intent around DVSA delays; positions DTS as the authority on test-date intelligence"
       },
       {
-        "format": "TikTok / YouTube Short",
-        "title": "POV: You passed your driving test 3 months early because of a test date swap",
-        "hook": "First-person POV of opening a 'Test Date Available' notification, accepting the swap, and cutting to a 'I passed!' reaction clip or graphic.",
-        "cta": "Don't wait 6 months \u2014 swap your date at drivingtestswap.uk"
+        "id": "dts_idea_2",
+        "format": "60-second explainer Reel / YouTube Short",
+        "title": "What Is a Driving Test Date Swap? (How to Skip the Queue Legally)",
+        "hook": "Open with 'DVSA says your test is in 4 months\u2026 but it doesn't have to be'",
+        "cta": "Link in bio to grab an earlier date today via DTS",
+        "why": "Targets the moment of frustration after a learner gets their test booking confirmation; drives direct sign-ups"
       }
     ],
     "athletics": [
       {
-        "format": "Instagram Reel / TikTok series",
-        "title": "Weekly calisthenics progression: filmed at the gym tracking pull-up or muscle-up journey week by week",
-        "hook": "Day 1 vs Week 8 split-screen \u2014 same exercise, visible strength gain, minimal editing needed.",
-        "cta": "Follow for weekly updates"
+        "id": "athletics_idea_1",
+        "format": "Training day Reel (gym + track combo)",
+        "title": "Calisthenics Complex \u2192 Sprint Intervals \u2014 Full Training Session",
+        "hook": "Film the warm-up pull/push complex in the gym, then cut to track sprint starts \u2014 raw, no music bed",
+        "cta": "Follow for weekly training logs",
+        "why": "Shows the unique hybrid training style; relatability of real effort (not highlights-only) builds loyal fitness audience"
       },
       {
-        "format": "Instagram Reel / TikTok",
-        "title": "Sprint technique breakdown: slow-motion track clip comparing good vs. bad acceleration mechanics",
-        "hook": "Film your 40m sprint from the side in slow-mo, overlay text callouts on foot strike, arm drive and forward lean.",
-        "cta": "Save this if you want to run faster"
+        "id": "athletics_idea_2",
+        "format": "Talking-head / voiceover Reel",
+        "title": "Why I Train Sprints AND Calisthenics (The Method Most Athletes Miss)",
+        "hook": "Start mid-sprint on the track, freeze-frame, voiceover explains the 'power-to-weight' philosophy",
+        "cta": "Save this if you want to run faster without adding bulk",
+        "why": "Educational angle drives saves and shares, boosting algorithm reach beyond existing followers"
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn text post + 60-second screen recording",
-        "title": "What if your sales team had an AI coach available at 2am before a big pitch?",
-        "hook": "Post the question as a LinkedIn hook, then drop a screen recording of CloseCoach handling a cold-call objection in real time \u2014 no voiceover needed.",
-        "cta": "Comment 'DEMO' and I'll send you a free trial link"
+        "id": "aimybiz_idea_1",
+        "format": "LinkedIn demo video (screen + voiceover)",
+        "title": "Watch CloseCoach Give a Sales Rep Live Objection Feedback in Real Time",
+        "hook": "Open on a recorded sales call snippet, then overlay the AI coaching pop-ups appearing as the rep speaks",
+        "cta": "Comment 'DEMO' and I'll send you a free trial link",
+        "why": "Shows the product in action rather than describing it \u2014 highest-converting format for B2B SaaS to sales managers on LinkedIn"
       },
       {
-        "format": "LinkedIn native video (90 seconds)",
-        "title": "Watch CloseCoach coach a rep through a pricing objection \u2014 live, no script",
-        "hook": "Open with 'Most sales managers don't have time to roleplay with every rep. Here's what we built instead.' then show the rep-AI interaction.",
-        "cta": "Tag a sales manager who needs this"
+        "id": "aimybiz_idea_2",
+        "format": "LinkedIn text post + carousel",
+        "title": "3 Objections Your Sales Team Is Losing Right Now (And How to Fix Them Fast)",
+        "hook": "'Price is too high.' 'I need to think about it.' 'Send me an email.' \u2014 your team is hearing these every day. Here's what the top 10% say back.",
+        "cta": "CloseCoach trains reps to handle all three automatically \u2014 DM me to see how",
+        "why": "Pain-point content that resonates with sales managers and generates qualified DM requests without a hard pitch"
       }
     ]
   }
