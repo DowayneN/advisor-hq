@@ -1,115 +1,133 @@
 {
-  "date": "2026-04-27",
-  "generated_at": "06:30",
+  "date": "2026-04-28",
+  "generated_at": "06:28",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260427_1",
-      "company": "Smart Barbers",
-      "industry": "Barber Shop",
+      "id": "lead_20260428_1",
+      "company": "Sammys Cafe Shirley",
+      "industry": "Cafe / Coffee Shop",
       "website": null,
-      "phone": "07710 153153",
+      "phone": "023 8051 8870",
       "location": "Shirley",
-      "notes": "Listed only on Fresha booking platform with no standalone website; active local barber on busy Shirley Road with strong walk-in trade that a clean mobile-first site could convert to repeat bookings."
+      "notes": "Active only on Facebook and Instagram; no dedicated website, making it a strong candidate for a conversion-focused small business site."
     },
     {
-      "id": "lead_20260427_2",
-      "company": "Goran Barbers",
-      "industry": "Barber Shop",
+      "id": "lead_20260428_2",
+      "company": "Kate's Cafe Lounge",
+      "industry": "Cafe / Restaurant",
       "website": null,
-      "phone": "+447472554343",
-      "location": "Woolston",
-      "notes": "Operates solely through a Facebook page (100081921828768) with no website; neighbourhood barber in Woolston with strong community following that a simple site with online booking would serve well."
+      "phone": "023 8058 1872",
+      "location": "Portswood",
+      "notes": "Well-reviewed local cafe at 227 Portswood Road with no standalone website \u2014 relies entirely on Facebook and third-party directories."
     },
     {
-      "id": "lead_20260427_3",
-      "company": "Ruby's Nails & Beauty Southampton",
-      "industry": "Nail & Beauty Salon",
+      "id": "lead_20260428_3",
+      "company": "329 Cafe & Lounge",
+      "industry": "AfroFusion Restaurant / Bar",
       "website": null,
-      "phone": "02380232039",
-      "location": "City Centre",
-      "notes": "Relies on Facebook and Fresha listings with no owned website; city-centre nail salon whose target audience of young professionals expects a polished online presence with a booking flow."
-    },
-    {
-      "id": "lead_20260427_4",
-      "company": "AGA Unisex Hairdressers",
-      "industry": "Hair Salon",
-      "website": null,
-      "phone": "07895339721",
-      "location": "Freemantle",
-      "notes": "Presence limited to Facebook page and Fresha; independent unisex salon on Shirley Road that could convert far more local search traffic with a simple website showing services and prices."
-    },
-    {
-      "id": "lead_20260427_5",
-      "company": "Origin Hair & Beauty",
-      "industry": "Hair & Beauty Salon",
-      "website": null,
-      "phone": "02380704426",
+      "phone": null,
       "location": "Shirley",
-      "notes": "12-year-old Shirley salon with active Instagram and Facebook but no owned website; the established reputation and loyal clientele make it ripe for a professional site that builds credibility beyond social media."
+      "notes": "Newer Nigerian-fusion restaurant at 329 Shirley Road operating exclusively through Facebook and Linktree; no dedicated website to drive bookings or menu discovery."
+    },
+    {
+      "id": "lead_20260428_4",
+      "company": "Official Beauty CEO",
+      "industry": "Beauty Salon / Nail & Lash Studio",
+      "website": null,
+      "phone": "07927 629888",
+      "location": "Northam",
+      "notes": "Beauty studio at Unit 5 Radcliffe Court, Northam, with only a basic auto-generated SiteLift placeholder page \u2014 effectively no real web presence and a prime candidate for a proper booking-enabled site."
+    },
+    {
+      "id": "lead_20260428_5",
+      "company": "CSJ Hair and Turkish Barber",
+      "industry": "Barber / Unisex Hairdresser",
+      "website": null,
+      "phone": "023 8043 8805",
+      "location": "Bitterne",
+      "notes": "Traditional Turkish barber and unisex salon at 12 West End Road, Bitterne; listed on Yell with no website, Facebook-only presence limits discovery for walk-in and new customers."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260427_1",
-      "name": "Emma Ellis",
-      "title": "Sales Manager",
-      "company": "Hunters Estate Agents",
-      "url": "https://uk.linkedin.com/in/emma-ellis-ba970090",
-      "reason": "Branch-level sales manager at a franchised UK estate agency network with multiple reps per branch \u2014 exactly the team size CloseCoach targets for structured sales training."
+      "id": "prospect_20260428_1",
+      "name": "Darren Moore",
+      "title": "Recruitment Director",
+      "company": "Rayner Personnel",
+      "url": "https://uk.linkedin.com/in/dmooreryp",
+      "reason": "Leads a specialist property-recruitment sales team placing estate agents across Essex and East London \u2014 a consultative, target-driven environment where CloseCoach's objection-handling and pipeline drills would directly lift biller performance."
     },
     {
-      "id": "prospect_20260427_2",
-      "name": "Mark Webb",
-      "title": "Sales Director",
-      "company": "4Site Recruitment",
-      "url": "https://www.linkedin.com/in/markwebb4947871365/",
-      "reason": "Drives a construction-sector recruitment sales team of client managers and consultants; vocal on LinkedIn about developing reps and hitting targets, making him a natural audience for an AI sales coaching tool."
+      "id": "prospect_20260428_2",
+      "name": "Peter Graham",
+      "title": "Branch Sales Manager",
+      "company": "Leaders (Estate Agents)",
+      "url": "https://www.linkedin.com/in/peter-graham-88a379a1/",
+      "reason": "Branch Sales Manager at Leaders' Hampshire/Southampton operation \u2014 oversees a local residential sales team where AI-assisted roleplay coaching could sharpen valuation pitch conversion and vendor objection handling."
     },
     {
-      "id": "prospect_20260427_3",
-      "name": "Jeff Wheeler",
-      "title": "Sales Manager",
-      "company": "Big Motoring World Group",
-      "url": "https://www.linkedin.com/in/jeff-wheeler-22047519b/",
-      "reason": "Leads a high-volume used-car sales floor where objection handling and follow-up consistency are daily pain points \u2014 a strong fit for CloseCoach's AI-driven roleplay training."
+      "id": "prospect_20260428_3",
+      "name": "Jamie Bond",
+      "title": "Branch Manager",
+      "company": "Howden Insurance Local UK",
+      "url": "https://www.linkedin.com/in/jamie-bond-13a91527a/",
+      "reason": "Branch Manager at Howden Insurance Local UK in Alton, Hampshire, running a small commercial insurance sales team \u2014 cross-sell and cold-approach skills are perennial gaps in insurance brokerages that CloseCoach is built to fix."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "platform": "TikTok / Instagram Reels",
-        "title": "DVSA Wait Times Just Hit 6+ Months \u2014 Here's the Legal Shortcut",
-        "hook": "Screen-record a live DVSA booking page showing 2026 test availability, then explain the test-swap mechanism, ending with a CTA to DrivingTestSwap.uk."
+        "id": "dts_idea_1",
+        "format": "TikTok / Instagram Reel (60s)",
+        "title": "DVSA just admitted the 7-week target is dead \u2014 here's how to skip the queue anyway",
+        "hook": "On-screen graphic: 'Average wait: 22 weeks' fades in, then 'or... 3 weeks with a swap'",
+        "caption_cue": "DVSA confirmed this week they won't hit their summer target. Learners are waiting 22+ weeks. DrivingTestSwap finds cancellations so you don't have to. Link in bio.",
+        "cta": "Visit drivingtestswap.uk"
       },
       {
-        "platform": "YouTube Shorts / TikTok",
-        "title": "I Got My Driving Test 3 Months Earlier \u2014 Here's Exactly How",
-        "hook": "First-person testimonial-style walkthrough of how a swap works from alert to confirmed date, with step-by-step screen capture of the platform."
+        "id": "dts_idea_2",
+        "format": "TikTok POV / Voiceover Reel (30s)",
+        "title": "POV: You just moved your driving test 3 months earlier",
+        "hook": "Start with phone notification sound, show a mock 'test date confirmed' message, then relief reaction",
+        "caption_cue": "The feeling when DrivingTestSwap alerts you to a cancellation at your nearest centre. Stop refreshing the DVSA booking page manually. Let the swap work for you.",
+        "cta": "Sign up free at drivingtestswap.uk"
       }
     ],
     "athletics": [
       {
-        "platform": "Instagram Reels / TikTok",
-        "title": "60m Sprint PR Attempt \u2014 Raw Track Session Footage",
-        "hook": "Unedited 60m start-to-finish clip with slow-mo replay, split time overlay, and a brief post-run breakdown of what fired vs what needs work."
+        "id": "athletics_idea_1",
+        "format": "Weekly Progress Series \u2014 Track Reel (45s)",
+        "title": "30-Day Sprint + Calisthenics Combo: Week 1 baseline",
+        "hook": "Film Dowayne at the track doing 3x30m sprints + 10 explosive pull-ups; overlay split time in text",
+        "caption_cue": "Week 1 baseline locked in. 30 days of pairing heavy calisthenics with short sprints to test how upper-body power transfers to start speed. Following along? Drop your 30m time below.",
+        "cta": "Follow for weekly updates"
       },
       {
-        "platform": "Instagram Reels / TikTok",
-        "title": "Calisthenics Strength Series: The Muscle-Up Progression Nobody Talks About",
-        "hook": "3-clip progression showing the false-grip pull, the transition drill, and full muscle-up, filmed at the gym with concise coaching cues as on-screen text."
+        "id": "athletics_idea_2",
+        "format": "Gym Tutorial Reel (60s)",
+        "title": "The pull-up \u2192 sprint finisher that's changing my acceleration",
+        "hook": "Start mid-set on a weighted pull-up, cut immediately to 20m sprint \u2014 show the neural connection",
+        "caption_cue": "Most sprinters only train legs. I've been pairing max-effort pull-up sets with 20m acceleration runs and the carry-over to drive phase is real. Here's the exact protocol I use.",
+        "cta": "Save this and try it next session"
       }
     ],
     "aimybiz": [
       {
-        "platform": "LinkedIn Carousel",
-        "title": "5 Objection Handling Mistakes Your Sales Reps Are Making Right Now",
-        "hook": "Slide-by-slide breakdown of common SME sales objections with the wrong response vs the CloseCoach-trained response; ends with a soft CTA to demo CloseCoach."
+        "id": "aimybiz_idea_1",
+        "format": "LinkedIn Talking-Head Video (90s) or Carousel Post",
+        "title": "I gave a 12-person sales team 30 days with an AI coach \u2014 here's what changed",
+        "hook": "Open with a stat: 'Their close rate went from 18% to 27% in 4 weeks' \u2014 then explain CloseCoach's roleplay drill format",
+        "caption_cue": "Sales managers: your reps aren't losing deals because they don't know the product. They're losing them because they freeze under pressure. CloseCoach runs unlimited AI-powered objection drills so they're battle-tested before every real call. Here's what 30 days looked like for one team...",
+        "cta": "Comment 'DEMO' and I'll send you a free trial link"
       },
       {
-        "platform": "LinkedIn Video Post",
-        "title": "We Ran AI Sales Roleplay With a 6-Person Team \u2014 Here's What the Data Said",
-        "hook": "90-second screen-share demo of a CloseCoach session showing a rep's objection handling score before and after, framed as a case-study teaser to drive demo requests."
+        "id": "aimybiz_idea_2",
+        "format": "LinkedIn Text Post with bullet breakdown",
+        "title": "3 objections your reps are losing on right now (and the AI drill that fixes each one)",
+        "hook": "'We're already using someone else.' 'Now isn't a good time.' 'Send me some info.' \u2014 your reps hear these daily and they're still fumbling them.",
+        "caption_cue": "Here are the 3 most common deal-killing objections in B2B sales and exactly how CloseCoach trains reps to handle each one through repetition \u2014 not scripts. [Bullet 1] 'We use someone else' \u2192 reframe drill. [Bullet 2] 'Not right now' \u2192 urgency builder drill. [Bullet 3] 'Just send info' \u2192 commitment micro-ask drill.",
+        "cta": "Tag a sales manager who needs to see this"
       }
     ]
   }
