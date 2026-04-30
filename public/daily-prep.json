@@ -1,115 +1,115 @@
 {
-  "date": "2026-04-29",
-  "generated_at": "06:34",
+  "date": "2026-04-30",
+  "generated_at": "06:35",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260429_1",
-      "company": "Chic Beauty",
-      "industry": "Beauty Salon",
-      "website": null,
-      "phone": null,
-      "location": "Hedge End, Southampton",
-      "notes": "Home-based beauty salon operating entirely through Facebook (chicbeautyroom) with no standalone website \u2014 prime candidate for a professional site with online booking."
-    },
-    {
-      "id": "lead_20260429_2",
-      "company": "SK Dalyan Barber",
+      "id": "lead_20260430_1",
+      "company": "Franco's Barbers",
       "industry": "Barbershop",
       "website": null,
-      "phone": null,
-      "location": "Bitterne, Southampton",
-      "notes": "Turkish barber listed only on Yell with no own website; local walk-in trade could be boosted significantly with an online presence and booking system."
+      "phone": "023 8077 7179",
+      "location": "Shirley",
+      "notes": "Active on Facebook and Fresha booking only \u2014 no owned website; a clean one-pager with an online booking widget would immediately professionalise their presence."
     },
     {
-      "id": "lead_20260429_3",
-      "company": "Smart Barbers",
+      "id": "lead_20260430_2",
+      "company": "King Barbers",
       "industry": "Barbershop",
       "website": null,
-      "phone": null,
-      "location": "Shirley, Southampton",
-      "notes": "Barbershop on Shirley Rd with Facebook and Fresha profiles but no dedicated website or custom domain \u2014 easy upsell for a simple brochure + booking site."
+      "phone": "023 8077 3952",
+      "location": "Shirley",
+      "notes": "Facebook and Instagram only; no dedicated domain; a simple website with booking and a gallery of cuts would help convert walk-ins into repeat clients."
     },
     {
-      "id": "lead_20260429_4",
-      "company": "Origin Hair & Beauty",
-      "industry": "Hair & Beauty Salon",
+      "id": "lead_20260430_3",
+      "company": "Sammy's Cafe",
+      "industry": "Cafe",
       "website": null,
-      "phone": "02380704426",
-      "location": "Shirley, Southampton",
-      "notes": "Active on Facebook, Instagram and Yell but lacks its own website domain; strong local reputation with 100+ reviews makes it a credible inbound prospect."
+      "phone": "023 8051 8870",
+      "location": "Shirley",
+      "notes": "Facebook and Instagram presence only; a landing page with menu, opening hours and a Google Maps embed would boost local search discovery."
     },
     {
-      "id": "lead_20260429_5",
-      "company": "Kate's Caf\u00e9 Lounge",
-      "industry": "Caf\u00e9 / Restaurant",
-      "website": "https://kates-cafe-lounge.weeblyte.com/",
-      "phone": "02380581872",
-      "location": "Portswood, Southampton",
-      "notes": "Running on a free Weeblyte template with no custom domain and poor mobile optimisation \u2014 an easy win for a modern, conversion-focused rebuild."
+      "id": "lead_20260430_4",
+      "company": "Jasmine Nails",
+      "industry": "Nail Salon",
+      "website": null,
+      "phone": "07848 821284",
+      "location": "City Centre (SO14)",
+      "notes": "Listed only on Fresha and Instagram \u2014 no owned domain; a website with portfolio gallery and direct booking would elevate credibility and reduce Fresha commission dependency."
+    },
+    {
+      "id": "lead_20260430_5",
+      "company": "Piggys Bistro Cafe",
+      "industry": "Cafe / Restaurant",
+      "website": null,
+      "phone": "023 8039 0037",
+      "location": "Woolston",
+      "notes": "Award-winning family cafe with Facebook and Instagram only; a website with menu, story, and email sign-up could grow their regulars base and reduce reliance on social algorithms."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260429_1",
-      "name": "Brett Foulser",
+      "id": "prospect_20260430_1",
+      "name": "Dylan Turner",
       "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales department across 20 estate agency offices \u2014 exactly the multi-branch, high-volume sales environment CloseCoach was built to train."
+      "company": "Islington Motor Group",
+      "url": "https://www.linkedin.com/in/dylan-turner-3479ba1aa/",
+      "reason": "Leads an 11-person sales team at a 23-employee UK car dealership in Trowbridge \u2014 ideal target for AI sales coaching at exactly the right company size."
     },
     {
-      "id": "prospect_20260429_2",
-      "name": "Neil Harrison",
-      "title": "Sales Manager",
-      "company": "Burns Garages Ltd",
-      "url": "https://www.linkedin.com/in/neil-harrison-74a568194/",
-      "reason": "Long-tenured sales manager at a family-run Ford dealership in Crewe \u2014 small, independent team that would benefit from structured AI-led sales coaching to improve close rates."
+      "id": "prospect_20260430_2",
+      "name": "Jack Holmes",
+      "title": "Branch Manager",
+      "company": "Allen & Harris Estate Agents",
+      "url": "https://www.linkedin.com/in/jack-holmes-45700a200/",
+      "reason": "Branch manager overseeing a team of property sales consultants at a UK regional estate agency \u2014 decision-maker for team-level sales training."
     },
     {
-      "id": "prospect_20260429_3",
-      "name": "Peter Griffin",
-      "title": "Senior Sales Manager",
-      "company": "Essex Auto Group",
-      "url": "https://www.linkedin.com/in/peter-griffin-14399b13b/",
-      "reason": "Senior sales manager at an independent UK car group managing a frontline sales team \u2014 strong ICP fit for CloseCoach's objection-handling and deal-closing modules."
+      "id": "prospect_20260430_3",
+      "name": "Dane Herridge",
+      "title": "Associate Director",
+      "company": "Robertson Sumner",
+      "url": "https://www.linkedin.com/in/daneherridge/",
+      "reason": "Directs a team of sales and recruitment consultants at a UK IT recruitment boutique \u2014 manages the exact high-activity sales team structure CloseCoach is built for."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video (TikTok / Instagram Reel)",
-        "title": "15 weeks to get a driving test \u2014 here's the hack",
-        "hook": "Open with the DVSA stat (avg 15.1 week wait, some areas 20+ weeks), then reveal that cancelled slots are released daily and show how DTS catches them automatically. CTA: 'stop refreshing DVSA \u2014 let DTS do it for you.'"
+        "platform": "TikTok / Instagram Reels",
+        "hook": "DVSA test wait times are 6+ months in your area \u2014 here's how to skip the queue legally",
+        "format": "60-second screen-share showing real wait times on the DVSA booking portal, then revealing DrivingTestSwap.uk as the solution"
       },
       {
-        "format": "Educational carousel / thread",
-        "title": "DVSA changed the booking rules in 2026 \u2014 what every learner needs to know",
-        "hook": "Explain the new learner-only booking rule (instructors can no longer book on behalf of pupils) and how this creates more last-minute cancellations that DTS is perfectly positioned to catch."
+        "platform": "TikTok / YouTube Shorts",
+        "hook": "Someone just cancelled their driving test \u2014 you could have grabbed it in 60 seconds",
+        "format": "Behind-the-scenes story clip showing a real swap notification and how quickly a learner can claim a cancelled slot"
       }
     ],
     "athletics": [
       {
-        "format": "Gym clip series (30\u201360 sec Reels)",
-        "title": "Calisthenics progression \u2014 Week X check-in",
-        "hook": "Film a weekly skill update (muscle-up, planche lean, L-sit hold) showing measurable progress; pair with VO narrating the training principle behind it. Low-cost, high-authenticity content."
+        "platform": "Instagram Reels / TikTok",
+        "hook": "Full sprint session at the track: 6x60m intervals with coaching commentary",
+        "format": "Filmed track workout from wide angle + close-up, voice-over with form cues and time splits"
       },
       {
-        "format": "Track training clip",
-        "title": "Top 3 sprint drills that improved my acceleration off the blocks",
-        "hook": "Film 3 specific acceleration drills (A-skips, resisted sprints, wall drives) at the track with split-time comparisons; end with a 'try this in your next session' CTA to drive engagement and saves."
+        "platform": "Instagram Reels / TikTok",
+        "hook": "90-day calisthenics pull-up progression: from 3 to 15",
+        "format": "Monthly check-in clips edited together showing visible strength gains at the gym, with rep counts overlaid"
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn text post",
-        "title": "Your sales reps are practising objection handling on your best prospects \u2014 there's a better way",
-        "hook": "Open with a stat or a relatable scenario ('How many deals has your team lost this month to 'I need to think about it'?'), then introduce CloseCoach as the AI sparring partner that lets reps rehearse before the real call. End with a soft CTA to DM for a demo."
+        "platform": "LinkedIn Video",
+        "hook": "Live demo: CloseCoach gives real-time objection-handling feedback during a mock sales call",
+        "format": "Screen-record or talking-head showing the AI coaching overlay in action \u2014 targeted at heads of sales and sales managers"
       },
       {
-        "format": "LinkedIn video (90 sec demo)",
-        "title": "I asked CloseCoach to roleplay the toughest sales objection \u2014 here's what happened",
-        "hook": "Screen-record or film a live CloseCoach session handling a difficult objection ('your price is too high'), narrate the AI's coaching feedback in real time, and close with 'imagine your team doing this 10 times before their Monday morning calls.'"
+        "platform": "LinkedIn Carousel",
+        "hook": "3 mistakes sales managers make when onboarding new reps (and how AI training fixes them)",
+        "format": "5-slide carousel with concrete examples and a CloseCoach CTA on the final slide \u2014 optimised for LinkedIn algorithm reach"
       }
     ]
   }
