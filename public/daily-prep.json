@@ -1,115 +1,127 @@
 {
-  "date": "2026-04-30",
-  "generated_at": "06:35",
+  "date": "2026-05-01",
+  "generated_at": "06:40",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260430_1",
-      "company": "Franco's Barbers",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "023 8077 7179",
-      "location": "Shirley",
-      "notes": "Active on Facebook and Fresha booking only \u2014 no owned website; a clean one-pager with an online booking widget would immediately professionalise their presence."
-    },
-    {
-      "id": "lead_20260430_2",
-      "company": "King Barbers",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "023 8077 3952",
-      "location": "Shirley",
-      "notes": "Facebook and Instagram only; no dedicated domain; a simple website with booking and a gallery of cuts would help convert walk-ins into repeat clients."
-    },
-    {
-      "id": "lead_20260430_3",
-      "company": "Sammy's Cafe",
+      "id": "lead_20260501_1",
+      "company": "Sammy's Cafe Shirley",
       "industry": "Cafe",
       "website": null,
       "phone": "023 8051 8870",
-      "location": "Shirley",
-      "notes": "Facebook and Instagram presence only; a landing page with menu, opening hours and a Google Maps embed would boost local search discovery."
+      "location": "Shirley, Southampton",
+      "notes": "Facebook/Instagram-only presence with no dedicated website, leaving it invisible in Google search despite an established local following."
     },
     {
-      "id": "lead_20260430_4",
-      "company": "Jasmine Nails",
-      "industry": "Nail Salon",
+      "id": "lead_20260501_2",
+      "company": "Goran Barbers",
+      "industry": "Barber",
       "website": null,
-      "phone": "07848 821284",
-      "location": "City Centre (SO14)",
-      "notes": "Listed only on Fresha and Instagram \u2014 no owned domain; a website with portfolio gallery and direct booking would elevate credibility and reduce Fresha commission dependency."
+      "phone": "07472 554343",
+      "location": "Woolston (SO19), Southampton",
+      "notes": "Relies entirely on third-party booking platforms (Fresha, Booksy) and Facebook with no owned domain, making a simple branded site an easy upsell."
     },
     {
-      "id": "lead_20260430_5",
-      "company": "Piggys Bistro Cafe",
-      "industry": "Cafe / Restaurant",
+      "id": "lead_20260501_3",
+      "company": "CSJ Hair and Turkish Barber",
+      "industry": "Barber / Hair Salon",
       "website": null,
-      "phone": "023 8039 0037",
-      "location": "Woolston",
-      "notes": "Award-winning family cafe with Facebook and Instagram only; a website with menu, story, and email sign-up could grow their regulars base and reduce reliance on social algorithms."
+      "phone": "023 8043 8805",
+      "location": "Bitterne, Southampton",
+      "notes": "Dual unisex salon with fixed premises and Facebook/Instagram presence only \u2014 no website means zero organic local search visibility."
+    },
+    {
+      "id": "lead_20260501_4",
+      "company": "Egerton's Barbershop",
+      "industry": "Barber",
+      "website": null,
+      "phone": "07717 763498",
+      "location": "Bitterne Village, Southampton",
+      "notes": "Uses Setmore, Nearcut, and Fresha booking pages but has no owned website domain, a strong candidate for a branded site that builds trust."
+    },
+    {
+      "id": "lead_20260501_5",
+      "company": "Ken The Plumber Ltd",
+      "industry": "Plumber",
+      "website": null,
+      "phone": "023 8046 6789",
+      "location": "West End, Southampton",
+      "notes": "Over 1,500 Checkatrade reviews and 10+ years trading but no own website \u2014 a high-credibility tradesperson who'd benefit from direct lead capture without third-party fees."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260430_1",
-      "name": "Dylan Turner",
+      "id": "prospect_20260501_1",
+      "name": "Mark Webb",
       "title": "Sales Director",
-      "company": "Islington Motor Group",
-      "url": "https://www.linkedin.com/in/dylan-turner-3479ba1aa/",
-      "reason": "Leads an 11-person sales team at a 23-employee UK car dealership in Trowbridge \u2014 ideal target for AI sales coaching at exactly the right company size."
+      "company": "4Site Recruitment",
+      "url": "https://www.linkedin.com/in/markwebb4947871365/",
+      "reason": "Sales Director leading Client Directors and Consultants at a ~50-person UK construction recruitment agency \u2014 ideal for CloseCoach call coaching to sharpen consultant pitches."
     },
     {
-      "id": "prospect_20260430_2",
-      "name": "Jack Holmes",
+      "id": "prospect_20260501_2",
+      "name": "Chris Wallis",
+      "title": "Sales Director",
+      "company": "ASA Recruitment",
+      "url": "https://www.linkedin.com/in/chris-wallis-38b0594/",
+      "reason": "Heads sales across multiple Scottish offices at an established recruitment agency where CloseCoach could standardise rep performance and accelerate consultant onboarding."
+    },
+    {
+      "id": "prospect_20260501_3",
+      "name": "Jacqui Laycock",
       "title": "Branch Manager",
-      "company": "Allen & Harris Estate Agents",
-      "url": "https://www.linkedin.com/in/jack-holmes-45700a200/",
-      "reason": "Branch manager overseeing a team of property sales consultants at a UK regional estate agency \u2014 decision-maker for team-level sales training."
-    },
-    {
-      "id": "prospect_20260430_3",
-      "name": "Dane Herridge",
-      "title": "Associate Director",
-      "company": "Robertson Sumner",
-      "url": "https://www.linkedin.com/in/daneherridge/",
-      "reason": "Directs a team of sales and recruitment consultants at a UK IT recruitment boutique \u2014 manages the exact high-activity sales team structure CloseCoach is built for."
+      "company": "City & County Estate Agents",
+      "url": "https://www.linkedin.com/in/jacqui-laycock-4761a5b3/",
+      "reason": "Branch Manager at a long-established independent estate agency with a small sales and lettings team \u2014 CloseCoach could replicate top-performer behaviours and lift valuation conversion rates."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "platform": "TikTok / Instagram Reels",
-        "hook": "DVSA test wait times are 6+ months in your area \u2014 here's how to skip the queue legally",
-        "format": "60-second screen-share showing real wait times on the DVSA booking portal, then revealing DrivingTestSwap.uk as the solution"
+        "id": "content_dts_20260501_1",
+        "format": "Short-form video (TikTok / Reel)",
+        "title": "DVSA wait times just hit a record high \u2014 here's how to skip the queue",
+        "hook": "Open with the current DVSA average wait time stat, then demo the swap flow in 30 seconds.",
+        "cta": "Link in bio \u2014 swap your test date today"
       },
       {
-        "platform": "TikTok / YouTube Shorts",
-        "hook": "Someone just cancelled their driving test \u2014 you could have grabbed it in 60 seconds",
-        "format": "Behind-the-scenes story clip showing a real swap notification and how quickly a learner can claim a cancelled slot"
+        "id": "content_dts_20260501_2",
+        "format": "Story-format TikTok / Reel",
+        "title": "POV: You just moved your driving test from August to next week",
+        "hook": "Notification sound + booking screen reveal + countdown timer \u2014 emotionally driven, shareable.",
+        "cta": "Comment 'SWAP' and I'll send you the link"
       }
     ],
     "athletics": [
       {
-        "platform": "Instagram Reels / TikTok",
-        "hook": "Full sprint session at the track: 6x60m intervals with coaching commentary",
-        "format": "Filmed track workout from wide angle + close-up, voice-over with form cues and time splits"
+        "id": "content_athletics_20260501_1",
+        "format": "Track clip (Reel / YouTube Short)",
+        "title": "5-min warm-up \u2192 max effort 60m sprint \u2014 track session SO15",
+        "hook": "Show warm-up, effort face, slow-mo replay, split time overlay. Caption: 'Train fast, think fast.'",
+        "cta": "Drop your 60m time below"
       },
       {
-        "platform": "Instagram Reels / TikTok",
-        "hook": "90-day calisthenics pull-up progression: from 3 to 15",
-        "format": "Monthly check-in clips edited together showing visible strength gains at the gym, with rep counts overlaid"
+        "id": "content_athletics_20260501_2",
+        "format": "Calisthenics clip (Reel / YouTube Short)",
+        "title": "Muscle-up to L-sit combo \u2014 park bars, no gym needed",
+        "hook": "30-second clean execution clip, caption: 'Discipline > motivation. Every time.'",
+        "cta": "Save this for your next outdoor session"
       }
     ],
     "aimybiz": [
       {
-        "platform": "LinkedIn Video",
-        "hook": "Live demo: CloseCoach gives real-time objection-handling feedback during a mock sales call",
-        "format": "Screen-record or talking-head showing the AI coaching overlay in action \u2014 targeted at heads of sales and sales managers"
+        "id": "content_aimybiz_20260501_1",
+        "format": "LinkedIn post",
+        "title": "We ran 50 sales calls through our AI coach \u2014 here are the 3 phrases destroying conversions",
+        "hook": "Data-led hook with specific phrases, end with a CloseCoach CTA for a free audit.",
+        "cta": "DM me 'AUDIT' and I'll send you a free call analysis"
       },
       {
-        "platform": "LinkedIn Carousel",
-        "hook": "3 mistakes sales managers make when onboarding new reps (and how AI training fixes them)",
-        "format": "5-slide carousel with concrete examples and a CloseCoach CTA on the final slide \u2014 optimised for LinkedIn algorithm reach"
+        "id": "content_aimybiz_20260501_2",
+        "format": "LinkedIn video (60 sec)",
+        "title": "What if every rep on your team had a personal coach on every call?",
+        "hook": "Screen-share demo of CloseCoach analysing a roleplay call, tag sales managers in comments.",
+        "cta": "Comment 'COACH' to see a live demo for your team"
       }
     ]
   }
