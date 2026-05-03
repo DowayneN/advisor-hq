@@ -1,127 +1,115 @@
 {
-  "date": "2026-05-02",
-  "generated_at": "06:09",
+  "date": "2026-05-03",
+  "generated_at": "06:20",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260502_1",
-      "company": "SAUCE Kebab & Pizza",
-      "industry": "Restaurant / Takeaway",
+      "id": "lead_20260503_1",
+      "company": "The Business Barbershop",
+      "industry": "Barber",
       "website": null,
-      "phone": "02380360417",
-      "location": "City Centre, SO14",
-      "notes": "Family-run kebab & pizza spot at 27-29 Queensway with 5-star food hygiene and strong footfall but no independent website \u2014 only a Facebook page, leaving them invisible on Google Search."
+      "phone": "023 8086 2575",
+      "location": "Totton",
+      "notes": "Facebook-only presence (no dedicated website found); a tidy local barbershop serving Totton town centre that would benefit from a professional site to capture Google search traffic."
     },
     {
-      "id": "lead_20260502_2",
-      "company": "Classy Nails",
+      "id": "lead_20260503_2",
+      "company": "Franco's Barbers",
+      "industry": "Barber",
+      "website": null,
+      "phone": "023 8077 7179",
+      "location": "Shirley",
+      "notes": "Listed only on Fresha, Facebook, and Yell with no owned website; a long-established Shirley Road barber that is invisible on Google search to new local customers."
+    },
+    {
+      "id": "lead_20260503_3",
+      "company": "Kate's Cafe Lounge",
+      "industry": "Cafe",
+      "website": null,
+      "phone": "023 8058 1872",
+      "location": "Portswood",
+      "notes": "Operates via Facebook and Instagram only with no standalone website; popular dog-friendly cafe near the university that is missing organic search discovery."
+    },
+    {
+      "id": "lead_20260503_4",
+      "company": "Miss Nails",
       "industry": "Beauty / Nail Salon",
       "website": null,
-      "phone": "02380511223",
-      "location": "Shirley, SO15",
-      "notes": "Established nail bar on Shirley High Street with an active Facebook following but no owned domain, so they can't capture organic search traffic or take online bookings independently."
+      "phone": "023 8019 6726",
+      "location": "Shirley",
+      "notes": "Bookings handled through Fresha and Facebook with no owned domain; a busy nail bar on Shirley High Street that could drive repeat bookings through a branded site."
     },
     {
-      "id": "lead_20260502_3",
-      "company": "A.T Nails Spa",
-      "industry": "Beauty / Nail Salon",
+      "id": "lead_20260503_5",
+      "company": "Cherrywood Kitchen",
+      "industry": "Cafe / Brunch Restaurant",
       "website": null,
-      "phone": null,
-      "location": "Bitterne Village, SO18",
-      "notes": "Busy nail spa on Bitterne Road operating solely through Facebook and Instagram with no website, meaning they rely entirely on social algorithms for discovery and have no SEO presence."
-    },
-    {
-      "id": "lead_20260502_4",
-      "company": "Legacy Barbers",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": "02380774043",
-      "location": "Millbrook, SO15",
-      "notes": "Independent barbershop on Millbrook Road West with strong Booksy reviews but no owned website \u2014 a professional site with online booking would significantly lift their Google Maps ranking."
-    },
-    {
-      "id": "lead_20260502_5",
-      "company": "Egerton's Barbershop",
-      "industry": "Barbershop",
-      "website": null,
-      "phone": null,
-      "location": "Bitterne Village, SO19",
-      "notes": "Well-reviewed traditional barbershop on Peartree Avenue using only Setmore and Nearcut for bookings with no branded website, making them difficult for new customers to find and trust online."
+      "phone": "023 8045 4775",
+      "location": "Netley",
+      "notes": "Gluten-free brunch cafe listed only on Facebook and third-party review sites; rated 5-star on TripAdvisor but has no website to capture direct bookings or showcase their menu."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260502_1",
-      "name": "Nigel Wilkinson",
-      "title": "Branch Manager",
-      "company": "Arch Insurance UK (Regional Division)",
-      "url": "https://www.linkedin.com/in/nigel-wilkinson-a757617/",
-      "reason": "Leads a branch sales team at a specialist UK insurance broker and reports directly to a Sales Director \u2014 exactly the mid-size team profile where CloseCoach's AI roleplay would sharpen objection handling and conversion rates."
+      "id": "prospect_20260503_1",
+      "name": "Brett Foulser",
+      "title": "Sales Director",
+      "company": "Seymours Estate Agents",
+      "url": "https://uk.linkedin.com/in/brettfoulser",
+      "reason": "Leads a 52-person sales team across 20 offices at a UK estate agency \u2014 exactly the SME sales structure CloseCoach is built for."
     },
     {
-      "id": "prospect_20260502_2",
-      "name": "Emma Ellis",
+      "id": "prospect_20260503_2",
+      "name": "Grainne Kelly",
       "title": "Sales Manager",
-      "company": "Hunters Estate Agents",
-      "url": "https://www.linkedin.com/in/emma-ellis-ba970090/",
-      "reason": "Sales Manager at a franchise estate agency known for high-volume residential transactions \u2014 coaching her team on valuation pitches and vendor objections is a direct CloseCoach use case."
+      "company": "Direct Medics Healthcare Recruitment",
+      "url": "https://www.linkedin.com/in/grainne-kelly-55a3006a/",
+      "reason": "Senior sales manager at a UK healthcare recruitment agency with a consultative sales team that would benefit from AI-assisted objection-handling coaching."
     },
     {
-      "id": "prospect_20260502_3",
-      "name": "Paul Taylor",
-      "title": "Branch Manager",
-      "company": "Reeds Rains Estate Agents",
-      "url": "https://www.linkedin.com/in/paul-taylor-652058144/",
-      "reason": "15 years in estate agency management running a branch with a permanent sales team \u2014 the kind of hands-on manager who would trial AI sales training to reduce onboarding time for new negotiators."
+      "id": "prospect_20260503_3",
+      "name": "Daniel Blackshields",
+      "title": "Sales Manager",
+      "company": "Read Hyundai Burton (Read Motor Group)",
+      "url": "https://uk.linkedin.com/in/daniel-blackshields-a110b2108",
+      "reason": "Manages a 12-person dealership sales team at a single-site car dealership \u2014 prime CloseCoach target with high staff turnover and repetitive objection scenarios."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "id": "dts_idea_1",
-        "format": "Short-form video (TikTok / Instagram Reels)",
-        "title": "DVSA wait times are insane right now \u2014 here's the legal hack",
-        "hook": "Open with a screenshot of a 26-week wait, then cut to a swap completing in 48 hours via drivingtestswap.uk",
-        "cta": "Link in bio \u2014 get your test 10+ weeks sooner"
+        "format": "Short-form video (TikTok / Reels)",
+        "title": "Southampton Maybush test centre: 20-week wait \u2014 here's how to skip the queue",
+        "hook": "Open with the DVSA booking screen showing a test date in late 2026, then cut to drivingtestswap.uk confirming a swap within days. Tap into the frustration of learners already booked and waiting."
       },
       {
-        "id": "dts_idea_2",
-        "format": "Twitter/X thread + LinkedIn post",
-        "title": "Cancelling vs swapping your driving test \u2014 the cost nobody talks about",
-        "hook": "Break down the financial and time cost of cancelling (lost fee, re-book queue) versus swapping (no re-queue, keep your prep momentum), positioning DTS as the smart move",
-        "cta": "Visit drivingtestswap.uk before you cancel"
+        "format": "Short-form explainer (YouTube Shorts / Reels)",
+        "title": "Why DVSA waiting times hit 20+ weeks \u2014 and the legal trick most learners don't know",
+        "hook": "Use on-screen text showing the worst UK waiting times (Bolton 23 wks, Southampton 20 wks) then explain the DVSA's own cancellation-swap system and how DTS automates it, ending with a CTA."
       }
     ],
     "athletics": [
       {
-        "id": "athletics_idea_1",
-        "format": "Short-form video (Instagram Reels / YouTube Shorts)",
-        "title": "30-day calisthenics progression \u2014 week 1 to week 4 side-by-side",
-        "hook": "Film each week at the gym: L-sit hold \u2192 tuck planche attempt \u2192 muscle-up progress; compress into a 60-second split-screen clip",
-        "cta": "Follow for the weekly check-in"
+        "format": "Training clip (Instagram Reels / TikTok)",
+        "title": "Calisthenics to sprint carryover \u2014 what the gym reps are doing to my start",
+        "hook": "Film a superset of weighted pull-ups or ring dips in the gym, then cut to the track showing a 30m acceleration split \u2014 let the numbers do the talking."
       },
       {
-        "id": "athletics_idea_2",
-        "format": "Short-form video (TikTok / Instagram Reels)",
-        "title": "My track sprint warm-up routine in under 90 seconds",
-        "hook": "Film at the track: dynamic drills, A-skips, acceleration ramp-up, then the first flying 30m \u2014 raw and uncut",
-        "cta": "Drop your PB in the comments"
+        "format": "Slow-mo track clip (Instagram / TikTok)",
+        "title": "Track Tuesday: breaking down my drive phase",
+        "hook": "Slow-motion footage of the first 10m of a sprint with text overlays calling out foot strike, hip height, and arm drive \u2014 positions Dowayne as a knowledgeable athlete-creator."
       }
     ],
     "aimybiz": [
       {
-        "id": "aimybiz_idea_1",
-        "format": "LinkedIn post (text + carousel)",
-        "title": "We ran a 3-week CloseCoach pilot with a 5-person estate agency sales team. Here's what changed.",
-        "hook": "Open with a before/after metric (e.g. cold-call conversion rate), then walk through 3 specific objection scenarios the AI coached them on \u2014 ends with a CTA to book a free team demo",
-        "cta": "Comment 'DEMO' and I'll send you the link"
+        "format": "LinkedIn video post",
+        "title": "I let an AI coach handle objection training for our sales team for 30 days \u2014 here's what changed",
+        "hook": "Screen-record a CloseCoach session (prospect persona + live objection response + AI feedback) then cut to a before/after on a simple metric like objection-to-close rate. Tag relevant sales leaders."
       },
       {
-        "id": "aimybiz_idea_2",
-        "format": "LinkedIn video (2-minute screen recording demo)",
-        "title": "What does AI sales coaching actually look like? [CloseCoach 2-min demo]",
-        "hook": "Screen-record a live roleplay session: rep gets an objection, AI gives instant feedback on tone, pacing and reframe \u2014 targeted at sales managers tired of inconsistent 1-to-1 coaching",
-        "cta": "Try it free with your team at closecoach.io"
+        "format": "LinkedIn text post",
+        "title": "3 objection-handling mistakes I hear from SME sales reps every week",
+        "hook": "Share three real (anonymised) patterns \u2014 e.g. over-explaining, premature discounting, not asking 'why' \u2014 then close with: 'We built CloseCoach specifically to fix these. DM me if you want to see it in action.'"
       }
     ]
   }
