@@ -1,115 +1,115 @@
 {
-  "date": "2026-05-03",
-  "generated_at": "06:20",
+  "date": "2026-05-04",
+  "generated_at": "06:32",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260503_1",
-      "company": "The Business Barbershop",
-      "industry": "Barber",
-      "website": null,
-      "phone": "023 8086 2575",
-      "location": "Totton",
-      "notes": "Facebook-only presence (no dedicated website found); a tidy local barbershop serving Totton town centre that would benefit from a professional site to capture Google search traffic."
-    },
-    {
-      "id": "lead_20260503_2",
+      "id": "lead_20260504_1",
       "company": "Franco's Barbers",
       "industry": "Barber",
       "website": null,
-      "phone": "023 8077 7179",
+      "phone": "02380777179",
       "location": "Shirley",
-      "notes": "Listed only on Fresha, Facebook, and Yell with no owned website; a long-established Shirley Road barber that is invisible on Google search to new local customers."
+      "notes": "No own-domain website \u2014 relies on Fresha and Facebook only; a simple booking site would immediately differentiate them on Shirley Road."
     },
     {
-      "id": "lead_20260503_3",
-      "company": "Kate's Cafe Lounge",
-      "industry": "Cafe",
+      "id": "lead_20260504_2",
+      "company": "Eighty 9 Barber Co",
+      "industry": "Barber",
       "website": null,
-      "phone": "023 8058 1872",
-      "location": "Portswood",
-      "notes": "Operates via Facebook and Instagram only with no standalone website; popular dog-friendly cafe near the university that is missing organic search discovery."
+      "phone": "07563686254",
+      "location": "Bitterne",
+      "notes": "Facebook and third-party booking platforms only \u2014 a branded site with online booking would convert local foot traffic to appointments."
     },
     {
-      "id": "lead_20260503_4",
-      "company": "Miss Nails",
-      "industry": "Beauty / Nail Salon",
+      "id": "lead_20260504_3",
+      "company": "Topps Barbers",
+      "industry": "Barber",
       "website": null,
-      "phone": "023 8019 6726",
+      "phone": "02380337744",
       "location": "Shirley",
-      "notes": "Bookings handled through Fresha and Facebook with no owned domain; a busy nail bar on Shirley High Street that could drive repeat bookings through a branded site."
+      "notes": "No own-domain site; relying solely on Fresha and directories with no brand control \u2014 local SEO-optimised site could grow visibility fast."
     },
     {
-      "id": "lead_20260503_5",
-      "company": "Cherrywood Kitchen",
-      "industry": "Cafe / Brunch Restaurant",
+      "id": "lead_20260504_4",
+      "company": "KT Nails",
+      "industry": "Nail Salon",
       "website": null,
-      "phone": "023 8045 4775",
-      "location": "Netley",
-      "notes": "Gluten-free brunch cafe listed only on Facebook and third-party review sites; rated 5-star on TripAdvisor but has no website to capture direct bookings or showcase their menu."
+      "phone": "02380434068",
+      "location": "Woolston",
+      "notes": "Instagram and Fresha only with no dedicated website; a gallery-style site with online booking would attract more clients in Woolston."
+    },
+    {
+      "id": "lead_20260504_5",
+      "company": "Goran Barbers",
+      "industry": "Barber",
+      "website": null,
+      "phone": "07472554343",
+      "location": "Sholing",
+      "notes": "Facebook and Fresha listings only with no branded website \u2014 a professional site with price list and booking link would stand out in SO19."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260503_1",
+      "id": "prospect_20260504_1",
       "name": "Brett Foulser",
       "title": "Sales Director",
       "company": "Seymours Estate Agents",
       "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales team across 20 offices at a UK estate agency \u2014 exactly the SME sales structure CloseCoach is built for."
+      "reason": "Leads a 52-person sales team across 20 Surrey estate agency offices \u2014 ideal buyer for AI sales coaching at scale within an SME multi-branch model."
     },
     {
-      "id": "prospect_20260503_2",
-      "name": "Grainne Kelly",
-      "title": "Sales Manager",
-      "company": "Direct Medics Healthcare Recruitment",
-      "url": "https://www.linkedin.com/in/grainne-kelly-55a3006a/",
-      "reason": "Senior sales manager at a UK healthcare recruitment agency with a consultative sales team that would benefit from AI-assisted objection-handling coaching."
+      "id": "prospect_20260504_2",
+      "name": "Mark Webb",
+      "title": "Sales Director",
+      "company": "4Site Recruitment",
+      "url": "https://www.linkedin.com/in/markwebb4947871365/",
+      "reason": "Oversees a 5-person construction recruitment sales team in London \u2014 exactly the tight-knit SME sales team size CloseCoach targets for productivity uplift."
     },
     {
-      "id": "prospect_20260503_3",
-      "name": "Daniel Blackshields",
+      "id": "prospect_20260504_3",
+      "name": "Michael Smith",
       "title": "Sales Manager",
-      "company": "Read Hyundai Burton (Read Motor Group)",
-      "url": "https://uk.linkedin.com/in/daniel-blackshields-a110b2108",
-      "reason": "Manages a 12-person dealership sales team at a single-site car dealership \u2014 prime CloseCoach target with high staff turnover and repetitive objection scenarios."
+      "company": "EMG Motor Group",
+      "url": "https://uk.linkedin.com/in/michael-smith-66a195110",
+      "reason": "Manages multi-site car dealership sales across East Anglia (122-person group) \u2014 high-volume, target-driven environment where AI sales coaching delivers fast ROI."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video (TikTok / Reels)",
-        "title": "Southampton Maybush test centre: 20-week wait \u2014 here's how to skip the queue",
-        "hook": "Open with the DVSA booking screen showing a test date in late 2026, then cut to drivingtestswap.uk confirming a swap within days. Tap into the frustration of learners already booked and waiting."
+        "format": "Short-form video / Twitter thread",
+        "title": "DVSA waiting times mapped \u2014 why your test date is months away",
+        "hook": "Post a heat-map graphic of current DVSA wait times by city, ending with 'here's how people are skipping the queue legally with test-date swaps' and a link to drivingtestswap.uk."
       },
       {
-        "format": "Short-form explainer (YouTube Shorts / Reels)",
-        "title": "Why DVSA waiting times hit 20+ weeks \u2014 and the legal trick most learners don't know",
-        "hook": "Use on-screen text showing the worst UK waiting times (Bolton 23 wks, Southampton 20 wks) then explain the DVSA's own cancellation-swap system and how DTS automates it, ending with a CTA."
+        "format": "TikTok / Instagram Reel",
+        "title": "I got my driving test 9 weeks earlier \u2014 here's how",
+        "hook": "Testimonial-style POV walk-through of the test-swap process, building trust and urgency for learners stuck on long DVSA waiting lists."
       }
     ],
     "athletics": [
       {
-        "format": "Training clip (Instagram Reels / TikTok)",
-        "title": "Calisthenics to sprint carryover \u2014 what the gym reps are doing to my start",
-        "hook": "Film a superset of weighted pull-ups or ring dips in the gym, then cut to the track showing a 30m acceleration split \u2014 let the numbers do the talking."
+        "format": "Instagram Reel / TikTok",
+        "title": "Morning sprint drill at the track \u2014 60 seconds of real reps",
+        "hook": "Raw clip of block starts or acceleration drills with a voiceover on the one form cue Dowayne is drilling that session."
       },
       {
-        "format": "Slow-mo track clip (Instagram / TikTok)",
-        "title": "Track Tuesday: breaking down my drive phase",
-        "hook": "Slow-motion footage of the first 10m of a sprint with text overlays calling out foot strike, hip height, and arm drive \u2014 positions Dowayne as a knowledgeable athlete-creator."
+        "format": "Gym clip series",
+        "title": "Calisthenics weekly check-in \u2014 can I hit a muscle-up by June?",
+        "hook": "Weekly 30-second progress clip tracking a specific calisthenics goal, building an audience that follows the journey and returns weekly."
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn video post",
-        "title": "I let an AI coach handle objection training for our sales team for 30 days \u2014 here's what changed",
-        "hook": "Screen-record a CloseCoach session (prospect persona + live objection response + AI feedback) then cut to a before/after on a simple metric like objection-to-close rate. Tag relevant sales leaders."
+        "format": "LinkedIn text post",
+        "title": "Your sales team is role-playing in 2010. AI just changed the game.",
+        "hook": "Challenge post for sales managers: expose the gap in outdated training methods, then soft-introduce CloseCoach as the alternative \u2014 ends with a question to spark comments."
       },
       {
-        "format": "LinkedIn text post",
-        "title": "3 objection-handling mistakes I hear from SME sales reps every week",
-        "hook": "Share three real (anonymised) patterns \u2014 e.g. over-explaining, premature discounting, not asking 'why' \u2014 then close with: 'We built CloseCoach specifically to fix these. DM me if you want to see it in action.'"
+        "format": "LinkedIn native video",
+        "title": "60-second live CloseCoach demo \u2014 watch it coach a cold call in real time",
+        "hook": "Screen-record or phone camera showing CloseCoach analysing a sales rep's pitch and giving instant AI feedback, narrated by Dowayne."
       }
     ]
   }
