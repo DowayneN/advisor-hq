@@ -1,127 +1,121 @@
 {
-  "date": "2026-05-05",
-  "generated_at": "06:13",
+  "date": "2026-05-06",
+  "generated_at": "06:16",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260505_1",
-      "company": "Tailored Gentleman Barbers",
-      "industry": "Barber / Men's Grooming",
+      "id": "lead_20260506_1",
+      "company": "At Sis' Hair & Beauty",
+      "industry": "Hair & Beauty Salon",
       "website": null,
-      "phone": "02380554678",
-      "location": "Bitterne Triangle, Southampton",
-      "notes": "Facebook-only presence with no dedicated website; a clean booking-enabled site would immediately lift walk-in conversion and online discoverability for a two-chair shop in a busy residential triangle."
+      "phone": "023 8022 7656",
+      "location": "Shirley / City Centre, Southampton",
+      "notes": "Active on Facebook and Instagram but has no standalone website \u2014 a professional site would immediately separate them from local competitors and drive organic bookings."
     },
     {
-      "id": "lead_20260505_2",
-      "company": "Venus Nails Bar",
-      "industry": "Nail Salon / Beauty",
+      "id": "lead_20260506_2",
+      "company": "George's Cafe & Restaurant",
+      "industry": "Cafe / Restaurant",
       "website": null,
-      "phone": "02380445684",
-      "location": "Bitterne Road, Bitterne, Southampton",
-      "notes": "Operates entirely through Facebook and third-party directory listings; a branded website with online booking and a gallery of nail sets would differentiate it from the cluster of rival salons on the same road."
-    },
-    {
-      "id": "lead_20260505_3",
-      "company": "CSJ Hair & Turkish Barber",
-      "industry": "Barber / Hairdresser",
-      "website": null,
-      "phone": "02380438805",
-      "location": "West End Road, Bitterne, Southampton",
-      "notes": "Two-location Turkish barber with Facebook-only visibility and no website; a bilingual site with service menu and click-to-book would serve both its English and Turkish-speaking clientele while capturing organic search traffic."
-    },
-    {
-      "id": "lead_20260505_4",
-      "company": "Origin Hair & Beauty Ltd",
-      "industry": "Hair Salon / Beauty",
-      "website": null,
-      "phone": "02380704426",
-      "location": "Shirley High Street, Shirley, Southampton",
-      "notes": "Relies entirely on Yell, Fresha, and Instagram for online presence with no owned website; owning their own domain with integrated booking would reduce platform fees and build a direct client relationship."
-    },
-    {
-      "id": "lead_20260505_5",
-      "company": "Hair and Beauty By Natalie",
-      "industry": "Beauty Salon / Therapist",
-      "website": null,
-      "phone": null,
+      "phone": "023 8077 1158",
       "location": "Shirley, Southampton",
-      "notes": "Solo beauty therapist running her business entirely through Facebook with no website or booking system; a one-page site with a booking widget and treatment menu would professionalise her brand and reduce no-shows."
+      "notes": "Appears only on third-party review directories (TripAdvisor, Yelp, Wheree) with no owner-controlled website, leaving them with zero SEO ownership and no way to promote specials or take bookings online."
+    },
+    {
+      "id": "lead_20260506_3",
+      "company": "CSJ Hair & Turkish Barber",
+      "industry": "Barber / Hair Salon",
+      "website": null,
+      "phone": "023 8043 8805",
+      "location": "Bitterne, Southampton",
+      "notes": "Two locations (Bitterne and Forest Hills) run entirely off Facebook pages with no website \u2014 a simple multi-location site would legitimise the brand and capture walk-in and appointment traffic from local searches."
+    },
+    {
+      "id": "lead_20260506_4",
+      "company": "Bitterne Barber",
+      "industry": "Barber",
+      "website": null,
+      "phone": "07438 492941",
+      "location": "Bitterne Village, Southampton",
+      "notes": "Relies only on a Facebook page and a Fresha booking link with no branded website, meaning they lose customers who search 'barber near me' and don't find a credible result."
+    },
+    {
+      "id": "lead_20260506_5",
+      "company": "Hair Bare (Southern) Ltd",
+      "industry": "Hair Salon",
+      "website": null,
+      "phone": "023 8046 2824",
+      "location": "Thornhill / Bitterne, Southampton",
+      "notes": "Established salon listed across third-party directories and Fresha but without its own domain \u2014 a branded site with online booking would consolidate their digital presence and stop revenue leaking to competitors."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260505_1",
-      "name": "Jack Yeats",
+      "id": "prospect_20260506_1",
+      "name": "Brett Foulser",
+      "title": "Sales Director",
+      "company": "Seymours Estate Agents",
+      "url": "https://uk.linkedin.com/in/brettfoulser",
+      "reason": "Leads a 52-person sales operation across 20 branches of an established Surrey estate agency \u2014 exactly the scale where consistent AI-driven objection handling and call coaching could measurably lift conversion rates."
+    },
+    {
+      "id": "prospect_20260506_2",
+      "name": "Sam Spence",
       "title": "Sales Manager",
-      "company": "Breeze Motor Group",
-      "url": "https://www.linkedin.com/in/jack-yeats-813b79110/",
-      "reason": "Sales Manager at a multi-site VW/Suzuki dealership group in Dorset/Hampshire; oversees a team of sales executives making him a textbook CloseCoach prospect \u2014 car dealership sales training is a high-value vertical."
+      "company": "James Anderson Estate Agents",
+      "url": "https://www.linkedin.com/in/sam-spence-abb10062/",
+      "reason": "Sales Manager at an award-winning South West London estate agency (Best Small Agent 2019) with an active sales team \u2014 a motivated manager already focused on performance who would respond to a tool that shortens the coaching feedback loop."
     },
     {
-      "id": "prospect_20260505_2",
-      "name": "Russell Burrington",
-      "title": "Branch Owner",
-      "company": "EweMove Sales and Lettings (North Devon)",
-      "url": "https://www.linkedin.com/in/russell-burrington-12565711/",
-      "reason": "Owner-operator of a franchise estate/letting agency with a five-person team handling sales and property management; fits the SME profile perfectly and would benefit from AI-assisted objection-handling and follow-up training."
-    },
-    {
-      "id": "prospect_20260505_3",
-      "name": "Rob Scott MBA FCMI",
-      "title": "Managing Director",
-      "company": "Aaron Wallis Sales Recruitment",
-      "url": "https://www.linkedin.com/in/robscottsalesrecruiter/",
-      "reason": "MD of a UK-wide sales recruitment agency with four regional branches; both manages an internal BD/sales team and places salespeople for clients, making him a dual opportunity \u2014 direct user and potential referral partner for CloseCoach."
+      "id": "prospect_20260506_3",
+      "name": "Ursula Colman",
+      "title": "Recruitment Director & Founder",
+      "company": "Arius Recruit",
+      "url": "https://www.linkedin.com/in/ursula-colman-40101913a/",
+      "reason": "Runs a specialist UK tech-sales recruitment agency, places and manages sales leaders daily, and was ranked No. 28 in Europe's Top 100 Recruitment Leaders (Spring 2026) \u2014 a high-credibility prospect who both uses and sells to sales teams and could be a powerful CloseCoach advocate."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "id": "dts_idea_1",
-        "format": "Short-form video (Reels / TikTok)",
-        "title": "The DVSA Wait Time Map: Which areas have the longest test queues right now?",
-        "hook": "Show a heatmap of UK test centre wait times, narrate the worst regions, then cut to 'here's how DTS users jumped the queue'.",
-        "cta": "Link in bio to drivingtestswap.uk"
+        "format": "Short-form video / TikTok & Instagram Reel",
+        "title": "21 Weeks vs 3 Weeks \u2014 The Driving Test Gap No One Talks About",
+        "hook": "Open with the DVSA stat: national average wait is now 21.2 weeks. Cut to a learner who swapped to a test in under 3 weeks. End with a DTS CTA. Film angle: screen-record the DTS swap process over a voiceover.",
+        "platform": "TikTok, Instagram Reels, YouTube Shorts"
       },
       {
-        "id": "dts_idea_2",
-        "format": "Short-form video / testimonial Reel",
-        "title": "I got my driving test 8 weeks earlier than DVSA offered \u2014 here's exactly how",
-        "hook": "Learner-POV story: screenshot of a 14-week DVSA wait, then step-by-step of setting a DTS swap alert, ending with the pass certificate.",
-        "cta": "Comment 'SWAP' for the link"
+        "format": "Explainer carousel / LinkedIn + Instagram post",
+        "title": "DVSA's New 2026 Booking Rules \u2014 What Every Learner Needs to Know",
+        "hook": "Break down the March 2026 DVSA rule changes (restricted rebooking, 3-nearest-centre rule from June 2026) in a 5-slide carousel. Slide 5 positions DTS as the legal, stress-free workaround. Strong shareability among instructors and parents.",
+        "platform": "Instagram, LinkedIn, Facebook Groups (learner driver communities)"
       }
     ],
     "athletics": [
       {
-        "id": "athletics_idea_1",
-        "format": "Gym clip (60-second Reel)",
-        "title": "3 calisthenics moves that directly improve your sprint start",
-        "hook": "Film explosive push-ups, jump squats, and single-leg bounds in the gym, with a quick cut showing the transfer to track starts.",
-        "cta": "Save this if you train speed and bodyweight"
+        "format": "Short-form clip series (film at track)",
+        "title": "Sprint Drill Progression \u2014 3 Drills to Run Faster in 10 Minutes",
+        "hook": "Film 3 drills back-to-back at the track: A-skips \u2192 wall drives \u2192 fly 20m. Caption each with a coaching cue. Punchy, educational, repeatable format for a weekly series.",
+        "platform": "TikTok, Instagram Reels, YouTube Shorts"
       },
       {
-        "id": "athletics_idea_2",
-        "format": "Track vlog / data post",
-        "title": "I tested whether 4 weeks of calisthenics actually changed my sprint time",
-        "hook": "Film a timed 60m sprint before and after a calisthenics block, show the stopwatch comparison on screen, talk through what moved the needle.",
-        "cta": "Follow for the next block update"
+        "format": "Gym circuit clip",
+        "title": "Calisthenics + Sprint Combo \u2014 How I Train Speed & Strength in One Session",
+        "hook": "Film a single training block: pull-up/dip superset followed by explosive broad jumps or box jumps, finished with a short sprint. Narrate the reasoning \u2014 strength fuels speed. Shows the brand's dual identity (calisthenics + sprints).",
+        "platform": "Instagram Reels, TikTok, YouTube Shorts"
       }
     ],
     "aimybiz": [
       {
-        "id": "aimybiz_idea_1",
-        "format": "LinkedIn video (2-3 min demo)",
-        "title": "I showed a sales manager how CloseCoach handles objections in real time \u2014 watch his reaction",
-        "hook": "Record a live screen demo with a real SME sales manager, let the AI coach respond to a common objection like 'your price is too high', capture the unscripted reaction.",
-        "cta": "Comment 'DEMO' and I'll send you a free trial link"
+        "format": "LinkedIn video (screen-record demo)",
+        "title": "What Happens When You Role-Play a Cold Call With AI?",
+        "hook": "60-second screen-record of a live CloseCoach session \u2014 show a tough sales objection ('I'm not interested'), the AI pushing back in real time, and the rep adapting. Caption: 'Your team can do this 50 times before Monday's calls. No manager time required.'",
+        "platform": "LinkedIn (native video outperforms links)"
       },
       {
-        "id": "aimybiz_idea_2",
-        "format": "LinkedIn text post / carousel",
-        "title": "Why 90% of SME sales reps lose deals in the follow-up (and the 3-step fix)",
-        "hook": "Open with a stat about lost deals post-demo, break down the three follow-up mistakes, then position CloseCoach as the tool that trains reps on each one.",
-        "cta": "Drop a comment if your team struggles with follow-up \u2014 I'll share what's working"
+        "format": "LinkedIn text post (thought leadership)",
+        "title": "The Problem With Sales Coaching in 2026",
+        "hook": "Open with: 'Most sales managers review calls after the deal is lost. By then it's too late.' Unpack why reactive coaching doesn't move the needle, then position CloseCoach as proactive rep training. End with: 'Want to see what a 10-minute AI practice session looks like for your team? DM me.'",
+        "platform": "LinkedIn"
       }
     ]
   }
