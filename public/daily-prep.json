@@ -1,121 +1,115 @@
 {
-  "date": "2026-05-06",
-  "generated_at": "06:16",
+  "date": "2026-05-07",
+  "generated_at": "06:10",
   "source": "scheduled_agent",
   "sme_leads": [
     {
-      "id": "lead_20260506_1",
-      "company": "At Sis' Hair & Beauty",
-      "industry": "Hair & Beauty Salon",
+      "id": "lead_20260507_1",
+      "company": "Miss Nails",
+      "industry": "Nail Bar / Beauty",
       "website": null,
-      "phone": "023 8022 7656",
-      "location": "Shirley / City Centre, Southampton",
-      "notes": "Active on Facebook and Instagram but has no standalone website \u2014 a professional site would immediately separate them from local competitors and drive organic bookings."
+      "phone": "02380196726",
+      "location": "Shirley",
+      "notes": "Family-run nail bar with no dedicated website \u2014 operates solely on Fresha and Instagram, leaving them invisible to organic Google searches."
     },
     {
-      "id": "lead_20260506_2",
-      "company": "George's Cafe & Restaurant",
-      "industry": "Cafe / Restaurant",
-      "website": null,
-      "phone": "023 8077 1158",
-      "location": "Shirley, Southampton",
-      "notes": "Appears only on third-party review directories (TripAdvisor, Yelp, Wheree) with no owner-controlled website, leaving them with zero SEO ownership and no way to promote specials or take bookings online."
-    },
-    {
-      "id": "lead_20260506_3",
-      "company": "CSJ Hair & Turkish Barber",
-      "industry": "Barber / Hair Salon",
-      "website": null,
-      "phone": "023 8043 8805",
-      "location": "Bitterne, Southampton",
-      "notes": "Two locations (Bitterne and Forest Hills) run entirely off Facebook pages with no website \u2014 a simple multi-location site would legitimise the brand and capture walk-in and appointment traffic from local searches."
-    },
-    {
-      "id": "lead_20260506_4",
-      "company": "Bitterne Barber",
+      "id": "lead_20260507_2",
+      "company": "Jane's Barber Shop",
       "industry": "Barber",
       "website": null,
-      "phone": "07438 492941",
-      "location": "Bitterne Village, Southampton",
-      "notes": "Relies only on a Facebook page and a Fresha booking link with no branded website, meaning they lose customers who search 'barber near me' and don't find a credible result."
+      "phone": "02380558777",
+      "location": "Portswood",
+      "notes": "Long-established barber whose own domain (janesbarbershop.co.uk) is currently offline \u2014 active customer base with zero working web presence."
     },
     {
-      "id": "lead_20260506_5",
-      "company": "Hair Bare (Southern) Ltd",
-      "industry": "Hair Salon",
+      "id": "lead_20260507_3",
+      "company": "Classy Nails",
+      "industry": "Nail Bar / Beauty",
       "website": null,
-      "phone": "023 8046 2824",
-      "location": "Thornhill / Bitterne, Southampton",
-      "notes": "Established salon listed across third-party directories and Fresha but without its own domain \u2014 a branded site with online booking would consolidate their digital presence and stop revenue leaking to competitors."
+      "phone": null,
+      "location": "Shirley",
+      "notes": "Nail salon trading solely through Facebook and Fresha with no owned domain \u2014 unfindable outside those platforms, strong fit for a simple booking-optimised site."
+    },
+    {
+      "id": "lead_20260507_4",
+      "company": "SK Dalyan Barber",
+      "industry": "Barber",
+      "website": null,
+      "phone": null,
+      "location": "Bitterne",
+      "notes": "Turkish barber listed only on Yell.com with no website or social profile found \u2014 prime candidate for a branded one-page site with an online booking button."
+    },
+    {
+      "id": "lead_20260507_5",
+      "company": "Egerton's Barbershop",
+      "industry": "Barber",
+      "website": null,
+      "phone": "07717763498",
+      "location": "Bitterne Village",
+      "notes": "Well-reviewed barber with no owned domain \u2014 relies on a Setmore booking link and Fresha, a professional site would consolidate their strong reputation."
     }
   ],
   "linkedin_prospects": [
     {
-      "id": "prospect_20260506_1",
-      "name": "Brett Foulser",
-      "title": "Sales Director",
-      "company": "Seymours Estate Agents",
-      "url": "https://uk.linkedin.com/in/brettfoulser",
-      "reason": "Leads a 52-person sales operation across 20 branches of an established Surrey estate agency \u2014 exactly the scale where consistent AI-driven objection handling and call coaching could measurably lift conversion rates."
-    },
-    {
-      "id": "prospect_20260506_2",
-      "name": "Sam Spence",
+      "id": "prospect_20260507_1",
+      "name": "Tim Foster",
       "title": "Sales Manager",
-      "company": "James Anderson Estate Agents",
-      "url": "https://www.linkedin.com/in/sam-spence-abb10062/",
-      "reason": "Sales Manager at an award-winning South West London estate agency (Best Small Agent 2019) with an active sales team \u2014 a motivated manager already focused on performance who would respond to a tool that shortens the coaching feedback loop."
+      "company": "Stanford Estate Agents",
+      "url": "https://uk.linkedin.com/in/tim-foster-09a53ab2",
+      "reason": "Southampton-area estate agency sales manager likely running a team of 3+ negotiators \u2014 exactly the SME sales leadership profile CloseCoach is built for."
     },
     {
-      "id": "prospect_20260506_3",
-      "name": "Ursula Colman",
-      "title": "Recruitment Director & Founder",
-      "company": "Arius Recruit",
-      "url": "https://www.linkedin.com/in/ursula-colman-40101913a/",
-      "reason": "Runs a specialist UK tech-sales recruitment agency, places and manages sales leaders daily, and was ranked No. 28 in Europe's Top 100 Recruitment Leaders (Spring 2026) \u2014 a high-credibility prospect who both uses and sells to sales teams and could be a powerful CloseCoach advocate."
+      "id": "prospect_20260507_2",
+      "name": "Rob Scott",
+      "title": "Managing Director",
+      "company": "Aaron Wallis Sales Recruitment",
+      "url": "https://www.linkedin.com/in/robscottsalesrecruiter/",
+      "reason": "Runs a UK sales recruitment agency of ~12 consultants whose revenue is entirely commission-driven \u2014 high incentive to sharpen objection handling and pitch skills with AI coaching."
+    },
+    {
+      "id": "prospect_20260507_3",
+      "name": "Jeff Wheeler",
+      "title": "Sales Manager",
+      "company": "Big Motoring World Group",
+      "url": "https://www.linkedin.com/in/jeff-wheeler-22047519b/",
+      "reason": "Car dealership sales manager overseeing a team of executives in a high-volume, high-rejection environment \u2014 ideal use case for CloseCoach's AI drill-based training."
     }
   ],
   "content_ideas": {
     "dts": [
       {
-        "format": "Short-form video / TikTok & Instagram Reel",
-        "title": "21 Weeks vs 3 Weeks \u2014 The Driving Test Gap No One Talks About",
-        "hook": "Open with the DVSA stat: national average wait is now 21.2 weeks. Cut to a learner who swapped to a test in under 3 weeks. End with a DTS CTA. Film angle: screen-record the DTS swap process over a voiceover.",
-        "platform": "TikTok, Instagram Reels, YouTube Shorts"
+        "format": "Short-form video (TikTok / Reels)",
+        "title": "DVSA wait times are broken \u2014 here's how learners are getting tests 3 months early",
+        "hook": "Open with a screenshot of a 6-month DVSA wait, then explain how DTS lets you claim a cancelled slot in days \u2014 end with a CTA to drivingtestswap.uk."
       },
       {
-        "format": "Explainer carousel / LinkedIn + Instagram post",
-        "title": "DVSA's New 2026 Booking Rules \u2014 What Every Learner Needs to Know",
-        "hook": "Break down the March 2026 DVSA rule changes (restricted rebooking, 3-nearest-centre rule from June 2026) in a 5-slide carousel. Slide 5 positions DTS as the legal, stress-free workaround. Strong shareability among instructors and parents.",
-        "platform": "Instagram, LinkedIn, Facebook Groups (learner driver communities)"
+        "format": "Short-form video / Twitter thread",
+        "title": "POV: I got my driving test 4 months earlier using a swap",
+        "hook": "First-person narration of the swap process \u2014 show the notification, the booking confirmation, and the test day \u2014 authentic social proof content."
       }
     ],
     "athletics": [
       {
-        "format": "Short-form clip series (film at track)",
-        "title": "Sprint Drill Progression \u2014 3 Drills to Run Faster in 10 Minutes",
-        "hook": "Film 3 drills back-to-back at the track: A-skips \u2192 wall drives \u2192 fly 20m. Caption each with a coaching cue. Punchy, educational, repeatable format for a weekly series.",
-        "platform": "TikTok, Instagram Reels, YouTube Shorts"
+        "format": "Gym clip (Reels / TikTok)",
+        "title": "Week 1 vs Week 8 \u2014 what consistent calisthenics training actually looks like",
+        "hook": "Side-by-side or cut comparison of a pull-up, muscle-up, or L-sit at two time points \u2014 let the visual progression do the talking."
       },
       {
-        "format": "Gym circuit clip",
-        "title": "Calisthenics + Sprint Combo \u2014 How I Train Speed & Strength in One Session",
-        "hook": "Film a single training block: pull-up/dip superset followed by explosive broad jumps or box jumps, finished with a short sprint. Narrate the reasoning \u2014 strength fuels speed. Shows the brand's dual identity (calisthenics + sprints).",
-        "platform": "Instagram Reels, TikTok, YouTube Shorts"
+        "format": "Track clip (Reels / TikTok)",
+        "title": "3 sprint drills that fixed my acceleration off the blocks",
+        "hook": "Film slo-mo starts at the track and narrate the coaching cue behind each drill \u2014 positions Dowayne as a credible sprint coach as well as athlete."
       }
     ],
     "aimybiz": [
       {
-        "format": "LinkedIn video (screen-record demo)",
-        "title": "What Happens When You Role-Play a Cold Call With AI?",
-        "hook": "60-second screen-record of a live CloseCoach session \u2014 show a tough sales objection ('I'm not interested'), the AI pushing back in real time, and the rep adapting. Caption: 'Your team can do this 50 times before Monday's calls. No manager time required.'",
-        "platform": "LinkedIn (native video outperforms links)"
+        "format": "LinkedIn text post",
+        "title": "Your sales team isn't losing deals on price \u2014 it's collapsing at the objection",
+        "hook": "Post about the one objection stage where most SME sales reps lose the deal, then introduce CloseCoach as the AI practice tool that closes the gap."
       },
       {
-        "format": "LinkedIn text post (thought leadership)",
-        "title": "The Problem With Sales Coaching in 2026",
-        "hook": "Open with: 'Most sales managers review calls after the deal is lost. By then it's too late.' Unpack why reactive coaching doesn't move the needle, then position CloseCoach as proactive rep training. End with: 'Want to see what a 10-minute AI practice session looks like for your team? DM me.'",
-        "platform": "LinkedIn"
+        "format": "LinkedIn demo video (60 sec)",
+        "title": "We ran a sales manager through 5 AI role-play calls \u2014 here's what changed",
+        "hook": "Record a 60-second CloseCoach walkthrough showing a live objection-handling session, with before/after commentary from the sales manager."
       }
     ]
   }
