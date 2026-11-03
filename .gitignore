@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables — never commit API keys
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Personal documents kept alongside the app, never published
+*.pdf
+*.zip
+*-playbook.html
+meeting-playbooks.html
+greece-*.html
+elegant-design-system/
