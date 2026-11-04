@@ -16,6 +16,10 @@ A few details that keep it reliable:
 - **No repeats.** Every business the model has suggested is stored in `public/seen-leads.json` and passed back as an exclusion list on the next run.
 - **Local state.** Pipelines, metrics and progress are saved in the browser with a small `useLocalStorage` hook.
 
+## Private data
+
+Personal tabs (job shortlist, goals) and the content plan live in `src/private/`, which is gitignored here and kept in a separate private repo. `src/privateModules.js` loads whatever is in that folder at build time. In a fresh clone without it, those tabs show an empty state and everything else works.
+
 ## Stack
 
 React 18, Vite, Tailwind CSS, Node.js, Anthropic SDK.

@@ -1,0 +1,58 @@
+{
+  "statuses": [
+    { "id": "idea", "label": "Idea" },
+    { "id": "scripted", "label": "Scripted" },
+    { "id": "recorded", "label": "Recorded" },
+    { "id": "edited", "label": "Edited" },
+    { "id": "posted", "label": "Posted" }
+  ],
+  "structure": [
+    { "id": "hook", "label": "Hook", "seconds": "0 to 15s", "guide": "One line that names the tension. Say the surprising thing first, explain later." },
+    { "id": "story", "label": "Story beat", "seconds": "15s to 2 min", "guide": "What happened, in order. One moment, one decision, real stakes for getting CloseCoach to a first paying customer." },
+    { "id": "demo", "label": "Demo or proof", "seconds": "2 to 6 min", "guide": "Show it. A call recording, a screen, a number. Proof beats claims." },
+    { "id": "lesson", "label": "Lesson", "seconds": "6 to 8 min", "guide": "The one thing a non-technical business owner or sales manager can take away and use." },
+    { "id": "cta", "label": "Call to action", "seconds": "last 20s", "guide": "One ask only. Follow the journey, or, if you run a sales team, reply about the pilot." }
+  ],
+  "cuts": [
+    { "id": "youtube", "label": "YouTube long-form", "aspect": "16:9", "size": "1920x1080", "length": "8 to 12 min", "notes": "Full five-beat structure. Hook lands before the intro sting. Chapters at each beat." },
+    { "id": "shorts", "label": "Shorts / Reels / TikTok", "aspect": "9:16", "size": "1080x1920", "length": "30 to 50s", "notes": "2 or 3 per recording. Each short is one beat: open on its own hook, end on a one-line lesson. Stack captions always on." },
+    { "id": "linkedin", "label": "LinkedIn clip", "aspect": "1:1", "size": "1080x1080", "length": "60 to 90s", "notes": "Story beat plus lesson, aimed at sales managers. Captions on (most people watch muted). Post text carries the full story." }
+  ],
+  "thumbnail": {
+    "size": "1280x720",
+    "rules": [
+      "Face on the left third, looking at the text or the object. Real expression, no fake shock.",
+      "3 to 5 words of text on the right two thirds. Huge, heavy weight, readable at phone size.",
+      "One proof element: a number, a call bubble, or a screenshot crop. Never more than one.",
+      "CloseCoach navy background with one cyan or blue highlight on the key word.",
+      "Text must not repeat the title. The title and thumbnail tell two halves of one story."
+    ]
+  },
+  "captions": {
+    "style": "Stack",
+    "rules": [
+      "The word being spoken sits in the centre of the frame, large, bold and in white.",
+      "The two or three words just spoken sit above it, smaller and faded.",
+      "The next two or three words sit below it, smaller and fainter still.",
+      "Key words (numbers, names, the punchline) switch to CloseCoach cyan.",
+      "Long-form: captions sit in the lower third, so they don't cover the face. Shorts: centre of frame."
+    ]
+  },
+  "broll": {
+    "rules": [
+      "Every beat gets at least one cutaway. Plan it in the script, not in the edit.",
+      "Painted images: generate one illustrated still per idea (a metaphor, not a literal screenshot) and let Remotion pan and zoom it slowly.",
+      "Screen recordings for anything real: the app, a dashboard, the code. Real beats illustrated when it's proof.",
+      "Hold each cutaway 2 to 5 seconds. Return to the face for the lesson and the call to action."
+    ]
+  },
+  "videoFormat": {
+    "rules": [
+      "Record once, landscape 4K or 1080p, eye-level camera, mic in shot is fine.",
+      "Say the hook first, before any intro. The intro sting comes after the hook.",
+      "Lower third with name and title the first time you appear in each cut.",
+      "Call demos use the transcript-bubble overlay: AI prospect on the left, rep on the right.",
+      "End every cut with the outro card and one call to action."
+    ]
+  }
+}

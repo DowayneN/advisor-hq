@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { RefreshCw, Radio, TrendingUp, Eye, Clock, ExternalLink } from 'lucide-react'
 import { METRICS_DEFINITIONS } from '../data/metrics'
 import MetricInput from './MetricInput'
+import { usePlausible } from '../hooks/usePlausible'
 
 function ProgressBar({ current, target, color }) {
   const pct = Math.min(100, Math.round((current / target) * 100))
@@ -38,6 +40,148 @@ function ventureOverallPct(ventureKey, metrics) {
   const vals = metrics[ventureKey] || {}
   const pcts = def.fields.map(f => Math.min(100, ((vals[f.key] ?? f.current) / f.target) * 100))
   return Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length)
+}
+
+function DTSTrafficWidget() {
+  const { stats, realtime, sources, loading, error, lastUpdated, refetch } = usePlausible()
+
+  const fmt = v => v == null ? '—' : Number(v).toLocaleString()
+  const fmtDuration = secs => {
+    if (secs == null) return '—'
+    const m = Math.floor(secs / 60)
+    const s = secs % 60
+    return m > 0 ? `${m}m ${s}s` : `${s}s`
+  }
+  const timeAgo = lastUpdated
+    ? `${Math.round((Date.now() - lastUpdated) / 1000)}s ago`
+    : null
+
+  const accent = 'var(--venture-dts)'
+  const accentDim = 'var(--venture-dts-dim)'
+
+  return (
+    <div style={{
+      background: 'var(--layer-2)',
+      border: '1px solid var(--border-subtle)',
+      borderRadius: 'var(--radius-lg)',
+      padding: 'var(--space-3)',
+      boxShadow: 'var(--shadow-sm)',
+    }}>
+
+      {/* Header */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-3)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ width: 8, height: 8, borderRadius: '50%', background: accent }} />
+          <span style={{ fontSize: 'var(--text-sm)', fontWeight: 700, color: 'var(--text-primary)' }}>
+            DTS Live Traffic
+          </span>
+          {/* Realtime pulse */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: '5px',
+            background: realtime > 0 ? 'rgba(52,211,153,0.1)' : 'var(--layer-3)',
+            border: `1px solid ${realtime > 0 ? 'rgba(52,211,153,0.3)' : 'var(--border-subtle)'}`,
+            borderRadius: 'var(--radius-full)',
+            padding: '2px 8px',
+          }}>
+            <Radio size={9} strokeWidth={2} style={{ color: realtime > 0 ? 'var(--success)' : 'var(--text-tertiary)' }} />
+            <span style={{ fontSize: '10px', fontFamily: 'var(--font-mono)', color: realtime > 0 ? 'var(--success)' : 'var(--text-tertiary)', fontWeight: 600 }}>
+              {realtime ?? '—'} online
+            </span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          {timeAgo && (
+            <span style={{ fontSize: '10px', color: 'var(--text-tertiary)' }}>
+              updated {timeAgo}
+            </span>
+          )}
+          <button
+            onClick={refetch}
+            title="Refresh"
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '2px', color: 'var(--text-tertiary)', display: 'flex', alignItems: 'center' }}
+          >
+            <RefreshCw size={11} strokeWidth={2} />
+          </button>
+          <a
+            href="https://plausible.io/drivingtestswap.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Open Plausible"
+            style={{ color: 'var(--text-tertiary)', display: 'flex', alignItems: 'center' }}
+          >
+            <ExternalLink size={11} strokeWidth={2} />
+          </a>
+        </div>
+      </div>
+
+      {loading && (
+        <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', textAlign: 'center', padding: 'var(--space-3) 0' }}>
+          Loading…
+        </p>
+      )}
+
+      {error && (
+        <p style={{ fontSize: 'var(--text-xs)', color: 'var(--danger)', padding: 'var(--space-2) 0' }}>
+          {error}
+        </p>
+      )}
+
+      {!loading && !error && stats && (
+        <>
+          {/* Stat row */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '6px', marginBottom: 'var(--space-3)' }}>
+            {[
+              { icon: TrendingUp, label: 'Visitors',  value: fmt(stats.visitors?.value),                       note: '30 days' },
+              { icon: Eye,        label: 'Pageviews', value: fmt(stats.pageviews?.value),                      note: '30 days' },
+              { icon: Radio,      label: 'Bounce',    value: stats.bounce_rate?.value != null ? `${stats.bounce_rate.value}%` : '—', note: 'rate' },
+              { icon: Clock,      label: 'Avg. Time', value: fmtDuration(stats.visit_duration?.value),         note: 'on site' },
+            ].map(s => (
+              <div key={s.label} style={{
+                background: 'var(--layer-3)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: 'var(--radius-md)',
+                padding: '8px',
+                textAlign: 'center',
+              }}>
+                <div style={{ fontSize: 'var(--text-sm)', fontWeight: 700, color: accent, fontFamily: 'var(--font-mono)', marginBottom: '2px' }}>
+                  {s.value}
+                </div>
+                <div style={{ fontSize: '9px', color: 'var(--text-tertiary)', letterSpacing: '0.04em' }}>
+                  {s.label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Top sources */}
+          {sources.length > 0 && (
+            <div>
+              <div style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-tertiary)', marginBottom: '6px' }}>
+                Top Sources
+              </div>
+              {sources.map((src, i) => {
+                const maxV = sources[0]?.visitors || 1
+                const pct  = Math.round((src.visitors / maxV) * 100)
+                return (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '5px' }}>
+                    <span style={{ fontSize: '10px', color: 'var(--text-secondary)', minWidth: '110px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                      {src.source}
+                    </span>
+                    <div style={{ flex: 1, height: '3px', background: 'var(--layer-3)', borderRadius: 'var(--radius-full)', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${pct}%`, background: accent, borderRadius: 'var(--radius-full)' }} />
+                    </div>
+                    <span style={{ fontSize: '10px', fontFamily: 'var(--font-mono)', color: accent, minWidth: '16px', textAlign: 'right' }}>
+                      {src.visitors}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  )
 }
 
 export default function MissionControl({ metrics, setMetrics }) {
@@ -233,6 +377,11 @@ export default function MissionControl({ metrics, setMetrics }) {
             )
           })}
         </div>
+
+      {/* Live Traffic — DTS */}
+      <div style={{ marginTop: 'var(--space-4)' }}>
+        <DTSTrafficWidget />
+      </div>
 
       {/* Edit modal */}
       {editing && editingData && (

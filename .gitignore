@@ -36,3 +36,6 @@ npm-debug.log*
 meeting-playbooks.html
 greece-*.html
 elegant-design-system/
+
+# Personal data, backed up to the private advisor-hq-private repo
+src/private/

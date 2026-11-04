@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import {
   ChevronDown, ChevronUp,
   Phone, FileText, Globe,
   ThumbsUp, RotateCcw, XCircle, PhoneMissed,
-  MessageSquare, Edit3, RotateCw,
+  MessageSquare, Edit3, RotateCw, ShieldAlert, User,
 } from 'lucide-react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
 import { fetchDailyPrep, OUTCOME_CONFIG } from '../data/dailyPrep'
+import { useEffect } from 'react'
 
 const OUTCOME_ICONS = {
   interested: ThumbsUp,
@@ -17,9 +18,9 @@ const OUTCOME_ICONS = {
 
 const VENTURE_LABELS = { dts: 'DTS', athletics: 'Athletics', aimybiz: 'AIMyBiz' }
 const VENTURE_COLORS = {
-  dts:       { color: 'var(--venture-dts)',      dim: 'var(--venture-dts-dim)' },
-  athletics: { color: 'var(--venture-athletics)', dim: 'var(--venture-athletics-dim)' },
-  aimybiz:   { color: 'var(--venture-aimybiz)',   dim: 'var(--venture-aimybiz-dim)' },
+  dts:       { color: 'var(--venture-dts)',       dim: 'var(--venture-dts-dim)' },
+  athletics: { color: 'var(--venture-athletics)',  dim: 'var(--venture-athletics-dim)' },
+  aimybiz:   { color: 'var(--venture-aimybiz)',    dim: 'var(--venture-aimybiz-dim)' },
 }
 
 const noteInputStyle = {
@@ -39,33 +40,130 @@ function todayKey() {
   return new Date().toISOString().split('T')[0]
 }
 
-function generateCallScript(lead) {
+// ── Objection data ────────────────────────────────────────────────────────────
+
+const OBJECTIONS = [
+  {
+    trigger: "We're too busy right now",
+    response: "Completely understand — that's actually a good sign. Would it be alright if I put something together and sent it over so you can look at it when things calm down?",
+  },
+  {
+    trigger: "We get enough customers already",
+    response: "That's great to hear — honestly. Right now you're mainly relying on people who already know you. A website means Google sends you people who've never heard of you — so you'd get to be pickier about who you take on.",
+    followUp: "If word of mouth only: \"The only thing I'd flag is what happens when those referrals slow down. Worth having as a safety net at least.\"",
+  },
+  {
+    trigger: "We already have someone doing our social media",
+    response: "That's good — social is great for keeping existing customers warm. A website does something different though — it catches people actively searching right now who've never come across you before. The two work together rather than replacing each other.",
+  },
+  {
+    trigger: "We had a website before and it didn't do anything",
+    response: "Can I ask what happened with it? Most of the time when I hear that, it's because it wasn't built to show up on Google — so no one ever found it. That's the bit I specifically focus on. Would it be worth seeing what that looks like?",
+  },
+  {
+    trigger: "How much does it cost?",
+    response: "Honestly I'd rather show you what it could look like first — then we can talk about that. I don't want to give you a number before you've seen anything concrete. If it looks right for the business, the price conversation is usually pretty quick.",
+  },
+  {
+    trigger: "You need to speak to my partner / business partner",
+    response: "Completely fair — can I put something together for both of you to look at? That way you've got something concrete to show them rather than having to explain it second-hand. What's the best email to send it to?",
+  },
+  {
+    trigger: "Just send me a leaflet / email",
+    response: "Of course — what's the best email? I'll put together something specific to your business rather than a generic one, so it's actually worth looking at.",
+  },
+  {
+    trigger: "We pride ourselves on personal touch / reputation",
+    response: "That comes through and it's a good thing — it means you've got something worth showing people. A website doesn't replace that. It just makes sure people who've never heard of you can find you in the first place. Right now if someone Googles you and there's no site, they've already moved on before they even get to experience what you offer.",
+  },
+  {
+    trigger: "I've had pitches like this before / not interested",
+    response: "No worries at all — appreciate you taking the time. Can I just ask, is it more that the timing isn't right, or is it genuinely just not something that feels relevant for the business right now?",
+    followUp: "Timing → \"Totally fine — would it be alright to try you again in a few weeks?\" | Not relevant → \"Fair enough — out of curiosity, how do most of your new customers find you at the moment?\" [Often reverses the objection naturally.]",
+  },
+]
+
+// ── Script generators ─────────────────────────────────────────────────────────
+
+function generateGoodBadScript(lead) {
+  const industry  = lead.industry?.toLowerCase() || 'business'
+  const company   = lead.company || 'your business'
+  const area      = lead.location?.split(',')[0] || 'the area'
+  const firstName = lead.owner_name ? lead.owner_name.split(' ')[0] : null
+  const greeting  = firstName ? `Hi ${firstName}` : 'Hi'
+  const openLine  = firstName
+    ? `Hey, is that ${firstName}? / Could I speak to ${firstName}?`
+    : `Hey — could I speak to whoever runs the business?`
+
+  return [
+    '━━━ OPENING ━━━',
+    '',
+    openLine,
+    '',
+    `${greeting} — quick question for you. Do you want to hear the good news or the bad news?`,
+    '',
+    '[ Wait. They will almost always say bad news. ]',
+    '',
+    '━━━ BAD NEWS — create the pain ━━━',
+    '',
+    `So I was searching for ${industry}s in ${area} on Google yesterday — and ${company} came up, but you don't have a website. Here's why that's the bad news.`,
+    '',
+    `Every day people in ${area} are searching Google for exactly what you do. Most of them never scroll past the first few results. If even three or four of those people a week can't find you properly and end up somewhere else — at say £50 a visit — that's potentially £600 to £800 a month just walking past your door.`,
+    '',
+    '[ If they say they\'re busy or doing fine already: ]',
+    `"That's great — honestly. But right now you're mainly relying on people who already know you. A website means Google sends you people who've never heard of ${company} before. And if you had more enquiries, you'd get to choose the ones you actually want."`,
+    '',
+    '━━━ GOOD NEWS — solve the pain ━━━',
+    '',
+    `Good news is — this is exactly what we fix. We build websites for local businesses in Southampton. Simple, professional, built to actually show up when someone searches for a ${industry} near them. One-off cost, no monthly fees, no subscriptions.`,
+    '',
+    '━━━ CLOSE ━━━',
+    '',
+    `What I'd love to do is put together a quick example of what it could look like for ${company} — takes me a couple of hours. If you like it, great. If not, no hard feelings — you've lost nothing.`,
+    '',
+    'Would that be worth a look?',
+    '',
+    '[ Yes ]  "Brilliant — what\'s the best number or email to send that to?"',
+    '[ Unsure ]  "What if I just put one together and sent it over — you can decide from there."',
+    '[ Not now ]  "No problem — is it more the timing, or just not something that feels right for the business?"',
+    '',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '',
+    `I'll get something over to you within 48 hours. If it's useful, we can have a proper chat about it. If not — no problem at all.`,
+    '',
+    'What\'s the best way to reach you?',
+  ].join('\n')
+}
+
+function generateMarketResearchScript(lead) {
   const hasFacebook = lead.notes?.toLowerCase().includes('facebook')
   const noWebsite   = !lead.website
   const industry    = lead.industry?.toLowerCase() || 'business'
   const company     = lead.company || 'your business'
+  const firstName   = lead.owner_name ? lead.owner_name.split(' ')[0] : null
+  const greeting    = firstName ? `Hi ${firstName}` : 'Hi'
+  const openLine    = firstName
+    ? `Hey, is that ${firstName}? / Could I speak to ${firstName}?`
+    : `Hey — could I speak to whoever runs the business?`
 
-  // How they're finding customers now — contextual opener
   const discoveryContext = hasFacebook
     ? `And how are most new customers finding you right now — is it mainly Facebook, word of mouth, walk-ins?`
     : `And how are most new customers finding you right now — is it mainly word of mouth, walk-ins, Google, social media?`
 
-  // Seed if they go quiet on the magic wand question
   const seedLine = noWebsite
     ? `Some ${industry}s we have spoken to have mentioned things like wanting to show up when someone Googles "${industry} near me", or having somewhere to send people that looks professional when they ask for details. Does any of that sound like something useful?`
-    : `Some ${industry}s we have spoken to have said they want their site to actually bring in new customers rather than just sit there, or they want online booking so the phone is not ringing all day. Does any of that sound familiar?`
+    : `Some ${industry}s we have spoken to said they want their site to actually bring in new customers rather than just sit there, or they want online booking so the phone is not ringing all day. Does any of that sound familiar?`
 
-  // Natural offer — flows from what they just said, no confession needed
   const offerLine = noWebsite
-    ? `Based on what you have described — that is actually something I help with. I build websites for local ${industry}s in Southampton. Straightforward, affordable, and built around what the business actually needs rather than a generic template.`
+    ? `Based on what you have described — that is actually something I help with. I build websites for local ${industry}s in Southampton. Straightforward, affordable, and built around what the business actually needs.`
     : `Based on what you have just said — that is something I help with. I build and refresh websites for local ${industry}s in Southampton. Built around getting you more of the right customers, not just a site that looks nice and does nothing.`
 
   return [
     '━━━ OPENING ━━━',
     '',
-    'Hey, is that [Name]?',
+    openLine,
     '',
-    `Hi [Name] — my name is Dowayne, I run a small local business in Southampton called AIMyBiz. We are doing some quick research into how ${industry}s in the area are using digital tools — websites, online booking, that kind of thing. Have you got two minutes?`,
+    `${greeting} — my name is Dowayne, I run a small local business in Southampton called AIMyBiz. We are doing some quick research into how ${industry}s in the area are using digital tools — websites, online booking, that kind of thing. Have you got two minutes?`,
     '',
     '[ Wait for yes. Most people say yes — you are asking for their opinion, not their money. ]',
     '',
@@ -95,47 +193,15 @@ function generateCallScript(lead) {
     '',
     `Would it be useful if I put together a quick example of what that could look like for ${company}? Just so you have something concrete to look at — no commitment, you can tell me honestly if it is relevant.`,
     '',
-    '[ If yes: ] "Brilliant — what is the best number or email to send that to?"',
-    '[ If unsure: ] "What if I just sent one example — you can decide from there whether it is worth a chat or not."',
-    '[ If not now: ] "No problem at all — can I ask, is it more the timing, or just not something that feels relevant right now?"',
+    '[ Yes ]  "Brilliant — what is the best number or email to send that to?"',
+    '[ Unsure ]  "What if I just sent one example — you can decide from there whether it is worth a chat."',
+    '[ Not now ]  "No problem at all — can I ask, is it more the timing, or just not something that feels relevant right now?"',
     '',
     '━━━ CLOSE ━━━',
     '',
     `I will put something together for ${company} and get it over to you within 48 hours. If it is useful, we can have a proper conversation about it. If not, no problem at all.`,
     '',
     'What is the best way to reach you?',
-    '',
-    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    '  OBJECTION HANDLERS',
-    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    '',
-    '❝ We\'re too busy right now ❞',
-    '→ "Completely understand — that is actually a good sign. Would it be alright if I sent something over so you can look at it when things calm down? Takes two seconds to forward to the right person."',
-    '',
-    '❝ We get enough customers already ❞',
-    '→ "That is great to hear — honestly. I am not trying to fix a problem if there is not one. I am just curious — is that mainly word of mouth, or are people finding you on Google too?"',
-    '   [ If just word of mouth: ] "The only thing I would flag is what happens when those referrals slow down — a site means you are pulling in people who have never heard of you. Worth having as a safety net at least."',
-    '',
-    '❝ We already have someone doing our social media ❞',
-    `→ "That is good — social is great for keeping existing customers warm. A website does something different though — it catches the people actively searching for a ${industry} right now, who have never come across ${company} before. Those two things work together rather than replacing each other."`,
-    '',
-    '❝ We had a website before and it didn\'t work ❞',
-    '→ "Can I ask what happened with it? Most of the time when I hear that, it is because it was not set up to show up on Google — which means no one ever found it. That is fixable, and it is actually the main thing I focus on. Would it be worth seeing what that looks like?"',
-    '',
-    '❝ How much does it cost? ❞',
-    '→ "Honestly I would rather show you what it could look like first — then we can talk about that. I do not want to give you a number before you have seen anything concrete. If it looks right for the business, the price conversation is usually pretty quick."',
-    '',
-    '❝ I\'m not the right person / you need to speak to my partner ❞',
-    '→ "No problem at all — who would be the best person to send something to? I will put together a quick visual so they can see exactly what I am talking about rather than having to explain it second-hand."',
-    '',
-    '❝ Just send me a leaflet / email ❞',
-    `→ "Of course — what is the best email? I will put together something specific to ${company} rather than a generic one, so it is actually worth looking at."`,
-    '',
-    '❝ I\'m not interested ❞',
-    '→ "No worries at all — appreciate you taking the time. Can I just ask, is it more that the timing is not right, or is it genuinely just not something that feels relevant for the business?"',
-    '   [ If timing: ] "Totally fine — would it be alright to try you again in a few weeks?"',
-    '   [ If not relevant: ] "Fair enough — out of curiosity, how do most of your new customers find you at the moment?"',
-    '   [ This keeps the conversation going and often reverses the objection naturally. ]',
   ].join('\n')
 }
 
@@ -143,8 +209,7 @@ function generateLinkedInMessage(prospect) {
   const firstName = prospect.name?.split(' ')[0] || 'there'
   const company   = prospect.company || 'your team'
   const reason    = prospect.reason || ''
-
-  const openLine = reason
+  const openLine  = reason
     ? reason.split('.')[0] + '.'
     : 'I came across your profile and the work you are doing at ' + company + ' stood out.'
 
@@ -153,13 +218,13 @@ function generateLinkedInMessage(prospect) {
     '',
     openLine,
     '',
-    'Quick question - when a new rep joins ' + company + ', how long before they are genuinely confident handling objections on their own?',
+    'Quick question — when a new rep joins ' + company + ', how long before they are genuinely confident handling objections on their own?',
     '',
-    'Most sales managers I speak to say 3-4 months. The ones using AI roleplay are cutting that in half - reps practice real conversations before they ever get on a live call.',
+    'Most sales managers I speak to say 3 to 4 months. The ones using AI roleplay are cutting that in half — reps practise real conversations before they ever get on a live call.',
     '',
-    "That is what I built CloseCoach to do. It is not a course or a script library - it simulates actual customer pushback so your team can fail safely, learn fast, and close better.",
+    'That is what I built CloseCoach to do. It is not a course or a script library — it simulates actual customer pushback so your team can fail safely, learn fast, and close better.',
     '',
-    'Not sure if the timing is right for ' + company + ' - but if you are open to it, I would rather show you 15 minutes of it working than try to explain it.',
+    'Not sure if the timing is right for ' + company + ' — but if you are open to it, I would rather show you 15 minutes of it working than try to explain it.',
     '',
     'Worth a look?',
     '',
@@ -167,8 +232,100 @@ function generateLinkedInMessage(prospect) {
   ].join('\n')
 }
 
-function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMode, draft, onDraftChange, onSave, onCancel, onReset }) {
+// ── Objection handlers panel ──────────────────────────────────────────────────
+
+function ObjectionHandlers() {
+  const [openIdx, setOpenIdx] = useState(null)
+
+  return (
+    <div
+      style={{
+        marginTop: 'var(--space-2)',
+        background: 'var(--layer-2)',
+        border: '1px solid var(--border-subtle)',
+        borderRadius: 'var(--radius-md)',
+        overflow: 'hidden',
+      }}
+      className="animate-in"
+    >
+      {/* Header */}
+      <div style={{ padding: '6px 10px', borderBottom: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+        <ShieldAlert size={11} strokeWidth={2} style={{ color: 'var(--accent-blue)', flexShrink: 0 }} />
+        <span style={{ fontSize: '10px', color: 'var(--text-tertiary)', fontWeight: 500 }}>Objection Handlers — tap to expand</span>
+      </div>
+
+      {/* Objection list */}
+      {OBJECTIONS.map((obj, i) => (
+        <div
+          key={i}
+          style={{ borderBottom: i < OBJECTIONS.length - 1 ? '1px solid var(--border-subtle)' : 'none' }}
+        >
+          <button
+            onClick={() => setOpenIdx(openIdx === i ? null : i)}
+            style={{
+              width: '100%',
+              background: openIdx === i ? 'rgba(124,140,248,0.05)' : 'transparent',
+              border: 'none',
+              padding: '8px 10px',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              fontFamily: 'inherit',
+              transition: 'background 0.15s',
+            }}
+          >
+            <span style={{
+              fontSize: '9px',
+              color: 'var(--accent-blue)',
+              fontWeight: 700,
+              flexShrink: 0,
+              width: '10px',
+              textAlign: 'center',
+            }}>
+              {openIdx === i ? '▾' : '▸'}
+            </span>
+            <span style={{ fontSize: '11px', color: 'var(--text-secondary)', fontStyle: 'italic', lineHeight: 1.4 }}>
+              "{obj.trigger}"
+            </span>
+          </button>
+
+          {openIdx === i && (
+            <div style={{ padding: '4px 10px 10px 28px' }}>
+              <p style={{
+                fontSize: '11px',
+                color: 'var(--text-primary)',
+                lineHeight: 1.7,
+                marginBottom: obj.followUp ? '6px' : 0,
+              }}>
+                → {obj.response}
+              </p>
+              {obj.followUp && (
+                <p style={{
+                  fontSize: '10px',
+                  color: 'var(--text-tertiary)',
+                  lineHeight: 1.6,
+                  fontStyle: 'italic',
+                  paddingLeft: '8px',
+                  borderLeft: '2px solid var(--border-medium)',
+                }}>
+                  {obj.followUp}
+                </p>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// ── Copyable script panel ─────────────────────────────────────────────────────
+
+function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMode, draft, onDraftChange, onSave, onCancel, onReset, scriptMode, onScriptModeChange }) {
   const [copied, setCopied] = useState(false)
+
   function copy() {
     navigator.clipboard.writeText(editMode ? draft : text).catch(() => {})
     setCopied(true)
@@ -190,7 +347,53 @@ function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMod
       }}
       className="animate-in"
     >
-      {/* Header row */}
+      {/* Mode toggle row */}
+      <div style={{
+        display: 'flex',
+        gap: '4px',
+        padding: '6px 10px',
+        borderBottom: '1px solid var(--border-subtle)',
+        background: 'var(--layer-3)',
+      }}>
+        <button
+          onClick={() => onScriptModeChange('good_bad')}
+          style={{
+            background: scriptMode === 'good_bad' ? 'var(--accent-gold)' : 'transparent',
+            border: `1px solid ${scriptMode === 'good_bad' ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
+            borderRadius: 'var(--radius-full)',
+            padding: '3px 10px',
+            fontSize: '10px',
+            fontWeight: scriptMode === 'good_bad' ? 700 : 400,
+            color: scriptMode === 'good_bad' ? 'var(--layer-0)' : 'var(--text-tertiary)',
+            cursor: 'pointer',
+            fontFamily: 'inherit',
+            transition: 'all 0.15s',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          ⚡ Good / Bad News
+        </button>
+        <button
+          onClick={() => onScriptModeChange('market_research')}
+          style={{
+            background: scriptMode === 'market_research' ? 'rgba(124,140,248,0.15)' : 'transparent',
+            border: `1px solid ${scriptMode === 'market_research' ? 'var(--accent-blue)' : 'var(--border-medium)'}`,
+            borderRadius: 'var(--radius-full)',
+            padding: '3px 10px',
+            fontSize: '10px',
+            fontWeight: scriptMode === 'market_research' ? 600 : 400,
+            color: scriptMode === 'market_research' ? 'var(--accent-blue)' : 'var(--text-tertiary)',
+            cursor: 'pointer',
+            fontFamily: 'inherit',
+            transition: 'all 0.15s',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          ◎ Market Research
+        </button>
+      </div>
+
+      {/* Label + actions row */}
       <div
         className="flex items-center justify-between"
         style={{ padding: '6px 10px', borderBottom: '1px solid var(--border-subtle)' }}
@@ -249,7 +452,7 @@ function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMod
         </div>
       </div>
 
-      {/* Script content or edit textarea */}
+      {/* Script body */}
       {editMode ? (
         <textarea
           value={draft}
@@ -270,7 +473,7 @@ function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMod
             margin: 0, padding: '10px', fontSize: '11px',
             color: 'var(--text-secondary)', lineHeight: 1.7,
             whiteSpace: 'pre-wrap', fontFamily: 'inherit',
-            maxHeight: '260px', overflowY: 'auto',
+            maxHeight: '280px', overflowY: 'auto',
           }}
         >
           {text}
@@ -280,21 +483,25 @@ function CopyableScript({ text, isAgentGenerated, isCustom, onEditStart, editMod
   )
 }
 
+// ── Main component ────────────────────────────────────────────────────────────
+
 export default function DailyPrep({ onXpEarned, onCallLogged }) {
-  const [prep, setPrep] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [activeTab, setActiveTab] = useState('leads')
+  const [prep, setPrep]             = useState(null)
+  const [loading, setLoading]       = useState(true)
+  const [activeTab, setActiveTab]   = useState('leads')
   const [smePipeline, setSmePipeline] = useLocalStorage('advisor_sme_pipeline', {})
   const [messaged, setMessaged]       = useLocalStorage(`advisor_messaged_${todayKey()}`, {})
   const [usedIdeas, setUsedIdeas]     = useLocalStorage(`advisor_ideas_${todayKey()}`, {})
-  const [copiedId, setCopiedId]         = useState(null)
-  const [collapsed, setCollapsed]       = useLocalStorage('advisor_prep_collapsed', false)
-  const [openScript, setOpenScript]     = useState(null)
-  const [pendingNote, setPendingNote]   = useState(null) // { leadId, outcomeKey }
-  const [noteForm, setNoteForm]         = useState({ contactName: '', callNotes: '' })
+  const [copiedId, setCopiedId]       = useState(null)
+  const [collapsed, setCollapsed]     = useLocalStorage('advisor_prep_collapsed', false)
+  const [openScript, setOpenScript]   = useState(null)
+  const [openObjections, setOpenObjections] = useState(null)
+  const [pendingNote, setPendingNote] = useState(null)
+  const [noteForm, setNoteForm]       = useState({ contactName: '', callNotes: '' })
   const [customScripts, setCustomScripts] = useLocalStorage('advisor_custom_scripts', {})
-  const [editingScript, setEditingScript] = useState(null)   // leadId currently being edited
+  const [editingScript, setEditingScript] = useState(null)
   const [scriptDraft, setScriptDraft]     = useState('')
+  const [scriptMode, setScriptMode]       = useLocalStorage('advisor_script_mode', 'good_bad')
 
   useEffect(() => {
     fetchDailyPrep().then(data => {
@@ -303,6 +510,13 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
     })
   }, [])
 
+  function getScriptText(lead) {
+    if (customScripts[lead.id]) return customScripts[lead.id]
+    return scriptMode === 'good_bad'
+      ? generateGoodBadScript(lead)
+      : generateMarketResearchScript(lead)
+  }
+
   function copyPhone(lead) {
     navigator.clipboard.writeText(lead.phone).catch(() => {})
     setCopiedId(lead.id)
@@ -310,8 +524,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
   }
 
   function startEditScript(lead) {
-    const baseText = lead.call_script || generateCallScript(lead)
-    setScriptDraft(customScripts[lead.id] ?? baseText)
+    setScriptDraft(customScripts[lead.id] ?? getScriptText(lead))
     setEditingScript(lead.id)
   }
 
@@ -326,9 +539,15 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
   }
 
   function resetScript(lead) {
-    const baseText = lead.call_script || generateCallScript(lead)
-    setScriptDraft(baseText)
+    setScriptDraft(getScriptText(lead))
     setCustomScripts(prev => { const next = { ...prev }; delete next[lead.id]; return next })
+  }
+
+  function handleScriptModeChange(mode) {
+    setScriptMode(mode)
+    // clear any per-lead custom script edits in progress
+    setEditingScript(null)
+    setScriptDraft('')
   }
 
   function startLogOutcome(lead, outcomeKey) {
@@ -374,17 +593,17 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
 
   if (loading) return null
 
-  const allLeads    = prep?.sme_leads || []
-  const newLeads    = allLeads.filter(l => !smePipeline[l.id])
-  const activeLeads = newLeads
+  const allLeads        = prep?.sme_leads || []
+  const newLeads        = allLeads.filter(l => !smePipeline[l.id])
+  const activeLeads     = newLeads
   const activeProspects = (prep?.linkedin_prospects || []).filter(p => !messaged[p.id])
   const allIdeas        = prep?.content_ideas || {}
   const ideaCount       = Object.values(allIdeas).flat().length
 
   const tabs = [
-    { id: 'leads',     label: `SME Leads`,  count: activeLeads.length },
-    { id: 'prospects', label: `Prospects`,  count: activeProspects.length },
-    { id: 'ideas',     label: `Content`,    count: ideaCount },
+    { id: 'leads',     label: 'SME Leads',  count: activeLeads.length },
+    { id: 'prospects', label: 'Prospects',  count: activeProspects.length },
+    { id: 'ideas',     label: 'Content',    count: ideaCount },
   ]
 
   return (
@@ -412,9 +631,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
         <div className="flex items-center gap-3">
           <div
             style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
+              display: 'inline-flex', alignItems: 'center', gap: '6px',
               padding: '3px 10px',
               background: prep?.source === 'scheduled_agent' ? 'var(--success-bg)' : 'var(--accent-gold-muted)',
               border: `1px solid ${prep?.source === 'scheduled_agent' ? 'rgba(52,211,153,0.2)' : 'rgba(232,196,104,0.2)'}`,
@@ -427,70 +644,46 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
             <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'currentColor' }} />
             {prep?.source === 'scheduled_agent' ? 'Live' : 'Seed'}
           </div>
-          <span
-            className="font-semibold"
-            style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
-          >
+          <span className="font-semibold" style={{ fontSize: 'var(--text-xl)', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
             Today's Prep
           </span>
           {prep?.generated_at && (
             <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)' }}>
-              Generated {prep.generated_at}
-              {prep.source === 'scheduled_agent' ? ' by agent' : ' · seed data'}
+              Generated {prep.generated_at}{prep.source === 'scheduled_agent' ? ' by agent' : ' · seed data'}
             </span>
           )}
         </div>
         <span style={{ color: 'var(--text-tertiary)', display: 'flex', alignItems: 'center' }}>
-          {collapsed
-            ? <ChevronDown size={16} strokeWidth={1.75} />
-            : <ChevronUp size={16} strokeWidth={1.75} />
-          }
+          {collapsed ? <ChevronDown size={16} strokeWidth={1.75} /> : <ChevronUp size={16} strokeWidth={1.75} />}
         </span>
       </div>
 
       {!collapsed && (
         <>
           {/* Tabs */}
-          <div
-            className="flex"
-            style={{
-              padding: '0 var(--space-6)',
-              gap: 'var(--space-3)',
-              borderBottom: '1px solid var(--divider)',
-            }}
-          >
+          <div className="flex" style={{ padding: '0 var(--space-6)', gap: 'var(--space-3)', borderBottom: '1px solid var(--divider)' }}>
             {tabs.map(t => (
               <button
                 key={t.id}
                 onClick={() => setActiveTab(t.id)}
                 style={{
                   padding: 'var(--space-2) var(--space-2)',
-                  background: 'transparent',
-                  border: 'none',
+                  background: 'transparent', border: 'none',
                   borderBottom: activeTab === t.id ? '2px solid var(--accent-gold)' : '2px solid transparent',
                   color: activeTab === t.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
-                  fontSize: 'var(--text-xs)',
-                  fontFamily: 'inherit',
+                  fontSize: 'var(--text-xs)', fontFamily: 'inherit',
                   fontWeight: activeTab === t.id ? 600 : 400,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  transition: 'color 0.15s',
-                  whiteSpace: 'nowrap',
+                  cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px',
+                  transition: 'color 0.15s', whiteSpace: 'nowrap',
                 }}
               >
                 {t.label}
-                <span
-                  style={{
-                    background: activeTab === t.id ? 'rgba(232, 196, 104, 0.10)' : 'var(--layer-3)',
-                    color: activeTab === t.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
-                    borderRadius: 'var(--radius-full)',
-                    padding: '0 6px',
-                    fontSize: '10px',
-                    fontWeight: 600,
-                  }}
-                >
+                <span style={{
+                  background: activeTab === t.id ? 'rgba(232,196,104,0.10)' : 'var(--layer-3)',
+                  color: activeTab === t.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
+                  borderRadius: 'var(--radius-full)', padding: '0 6px',
+                  fontSize: '10px', fontWeight: 600,
+                }}>
                   {t.count}
                 </span>
               </button>
@@ -509,7 +702,6 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                   </p>
                 )}
 
-                {/* ── New unactioned leads ── */}
                 {newLeads.length > 0 && (
                   <div className="space-y-3">
                     {newLeads.map(lead => (
@@ -523,8 +715,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                           padding: 'var(--space-6)',
                           boxShadow: 'var(--shadow-sm)',
                           transition: 'all var(--duration-base) var(--ease-out)',
-                          position: 'relative',
-                          overflow: 'hidden',
+                          position: 'relative', overflow: 'hidden',
                         }}
                         onMouseEnter={e => {
                           e.currentTarget.style.borderColor = 'var(--border-medium)'
@@ -537,12 +728,13 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                           e.currentTarget.style.transform = 'translateY(0)'
                         }}
                       >
-                        {/* Gradient accent strip */}
+                        {/* Accent strip */}
                         <div style={{
                           position: 'absolute', top: 0, left: 0, right: 0, height: '2px',
                           background: 'linear-gradient(90deg, var(--accent-gold), var(--accent-blue))',
                           opacity: 0.5,
                         }} />
+
                         <div className="flex items-start justify-between gap-3">
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 flex-wrap">
@@ -569,6 +761,18 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                                 </span>
                               )}
                             </div>
+
+                            {/* Owner name — shown if Companies House found one */}
+                            {lead.owner_name && (
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginTop: '4px' }}>
+                                <User size={11} strokeWidth={1.75} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+                                <span style={{ fontSize: 'var(--text-xs)', color: 'var(--accent-gold)', fontWeight: 500 }}>
+                                  {lead.owner_name}
+                                </span>
+                                <span style={{ fontSize: '10px', color: 'var(--text-tertiary)' }}>· Companies House</span>
+                              </div>
+                            )}
+
                             <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.65 }}>
                               {lead.location} · {lead.notes}
                             </p>
@@ -594,13 +798,9 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                           </button>
                         </div>
 
-                        {/* Script toggle + outcome buttons / note form */}
-                        <div style={{
-                          marginTop: 'var(--space-4)', paddingTop: 'var(--space-4)',
-                          borderTop: '1px solid var(--divider)',
-                        }}>
+                        {/* Action row + note form */}
+                        <div style={{ marginTop: 'var(--space-4)', paddingTop: 'var(--space-4)', borderTop: '1px solid var(--divider)' }}>
                           {pendingNote?.leadId === lead.id ? (
-                            /* ── Inline note capture ── */
                             <div className="space-y-2">
                               <p style={{ fontSize: 'var(--text-xs)', color: 'var(--accent-gold)', fontWeight: 600, marginBottom: '4px' }}>
                                 Logging: {OUTCOME_CONFIG[pendingNote.outcomeKey]?.label} · add notes before saving
@@ -646,8 +846,9 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                               </div>
                             </div>
                           ) : (
-                            /* ── Script + outcome buttons ── */
                             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', flexWrap: 'wrap' }}>
+
+                              {/* Script button */}
                               <button
                                 onClick={() => setOpenScript(openScript === lead.id ? null : lead.id)}
                                 style={{
@@ -656,7 +857,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                                   borderRadius: 'var(--radius-full)', padding: '6px 14px',
                                   fontSize: 'var(--text-xs)',
                                   color: openScript === lead.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
-                                  cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s', marginRight: '4px',
+                                  cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
                                 }}
                               >
                                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
@@ -666,9 +867,32 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                                   }
                                 </span>
                               </button>
+
+                              {/* Objections button */}
+                              <button
+                                onClick={() => setOpenObjections(openObjections === lead.id ? null : lead.id)}
+                                style={{
+                                  background: openObjections === lead.id ? 'rgba(124,140,248,0.10)' : 'transparent',
+                                  border: `1px solid ${openObjections === lead.id ? 'var(--accent-blue)' : 'var(--border-medium)'}`,
+                                  borderRadius: 'var(--radius-full)', padding: '6px 14px',
+                                  fontSize: 'var(--text-xs)',
+                                  color: openObjections === lead.id ? 'var(--accent-blue)' : 'var(--text-tertiary)',
+                                  cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
+                                  marginRight: '4px',
+                                }}
+                              >
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                                  <ShieldAlert size={13} strokeWidth={1.75} />
+                                  objections
+                                </span>
+                              </button>
+
+                              {/* Log label */}
                               <span style={{ fontSize: 'var(--text-xs)', fontWeight: 600, color: 'var(--text-tertiary)', letterSpacing: '0.05em', textTransform: 'uppercase', marginRight: 'var(--space-1)' }}>
                                 Log
                               </span>
+
+                              {/* Outcome buttons */}
                               {Object.entries(OUTCOME_CONFIG).map(([key, cfg]) => (
                                 <button
                                   key={key}
@@ -697,10 +921,10 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                           )}
                         </div>
 
-                        {/* Call script panel */}
+                        {/* Script panel */}
                         {openScript === lead.id && pendingNote?.leadId !== lead.id && (
                           <CopyableScript
-                            text={customScripts[lead.id] ?? generateCallScript(lead)}
+                            text={getScriptText(lead)}
                             isAgentGenerated={false}
                             isCustom={!!customScripts[lead.id]}
                             editMode={editingScript === lead.id}
@@ -710,7 +934,14 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                             onSave={() => saveScript(lead)}
                             onCancel={cancelEditScript}
                             onReset={() => resetScript(lead)}
+                            scriptMode={scriptMode}
+                            onScriptModeChange={handleScriptModeChange}
                           />
+                        )}
+
+                        {/* Objection panel */}
+                        {openObjections === lead.id && pendingNote?.leadId !== lead.id && (
+                          <ObjectionHandlers />
                         )}
                       </div>
                     ))}
@@ -728,89 +959,78 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                   </p>
                 ) : activeProspects.map(p => (
                   <div key={p.id}>
-                  <div
-                    style={{
-                      background: 'var(--layer-2)',
-                      border: '1px solid var(--border-subtle)',
-                      borderRadius: 'var(--radius-lg)',
-                      padding: 'var(--space-6)',
-                      display: 'flex',
-                      alignItems: 'flex-start',
-                      gap: 'var(--space-3)',
-                      boxShadow: 'var(--shadow-sm)',
-                      transition: 'all var(--duration-base) var(--ease-out)',
-                    }}
-                    onMouseEnter={e => {
-                      e.currentTarget.style.borderColor = 'var(--border-medium)'
-                      e.currentTarget.style.boxShadow = 'var(--shadow-md)'
-                    }}
-                    onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = 'var(--border-subtle)'
-                      e.currentTarget.style.boxShadow = 'var(--shadow-sm)'
-                    }}
-                  >
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold" style={{ fontSize: 'var(--text-lg)', color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>
-                          {p.name}
-                        </span>
-                        <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
-                          {p.title} · {p.company}
-                        </span>
+                    <div
+                      style={{
+                        background: 'var(--layer-2)', border: '1px solid var(--border-subtle)',
+                        borderRadius: 'var(--radius-lg)', padding: 'var(--space-6)',
+                        display: 'flex', alignItems: 'flex-start', gap: 'var(--space-3)',
+                        boxShadow: 'var(--shadow-sm)', transition: 'all var(--duration-base) var(--ease-out)',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--border-medium)'; e.currentTarget.style.boxShadow = 'var(--shadow-md)' }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-subtle)'; e.currentTarget.style.boxShadow = 'var(--shadow-sm)' }}
+                    >
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-semibold" style={{ fontSize: 'var(--text-lg)', color: 'var(--text-primary)', letterSpacing: '-0.01em' }}>
+                            {p.name}
+                          </span>
+                          <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
+                            {p.title} · {p.company}
+                          </span>
+                        </div>
+                        <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.65 }}>
+                          {p.reason}
+                        </p>
                       </div>
-                      <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.65 }}>
-                        {p.reason}
-                      </p>
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        <a
+                          href={p.url} target="_blank" rel="noreferrer"
+                          style={{
+                            background: 'rgba(124,140,248,0.08)', color: 'var(--accent-blue)',
+                            border: '1px solid rgba(124,140,248,0.15)', borderRadius: 'var(--radius-full)',
+                            padding: '4px 12px', fontSize: '10px', textDecoration: 'none', fontWeight: 500,
+                          }}
+                        >
+                          View ↗
+                        </a>
+                        <button
+                          onClick={() => setOpenScript(openScript === p.id ? null : p.id)}
+                          style={{
+                            background: openScript === p.id ? 'var(--accent-gold-muted)' : 'transparent',
+                            border: `1px solid ${openScript === p.id ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
+                            borderRadius: 'var(--radius-full)', padding: '4px 12px', fontSize: '10px',
+                            color: openScript === p.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
+                            cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
+                          }}
+                        >
+                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                            <MessageSquare size={13} strokeWidth={1.75} />
+                            message
+                          </span>
+                        </button>
+                        <button
+                          onClick={() => markMessaged(p.id)}
+                          style={{
+                            background: 'transparent', border: '1px solid var(--border-subtle)',
+                            borderRadius: 'var(--radius-full)', padding: '4px 12px', fontSize: '10px',
+                            color: 'var(--text-tertiary)', cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
+                          }}
+                          onMouseEnter={e => { e.currentTarget.style.color = 'var(--success)'; e.currentTarget.style.borderColor = 'rgba(52,211,153,0.3)' }}
+                          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-tertiary)'; e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
+                        >
+                          Sent +20XP
+                        </button>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 flex-shrink-0">
-                      <a
-                        href={p.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{
-                          background: 'rgba(124,140,248,0.08)', color: 'var(--accent-blue)',
-                          border: '1px solid rgba(124,140,248,0.15)', borderRadius: 'var(--radius-full)',
-                          padding: '4px 12px', fontSize: '10px', textDecoration: 'none', fontWeight: 500,
-                        }}
-                      >
-                        View ↗
-                      </a>
-                      <button
-                        onClick={() => setOpenScript(openScript === p.id ? null : p.id)}
-                        style={{
-                          background: openScript === p.id ? 'var(--accent-gold-muted)' : 'transparent',
-                          border: `1px solid ${openScript === p.id ? 'var(--accent-gold)' : 'var(--border-medium)'}`,
-                          borderRadius: 'var(--radius-full)', padding: '4px 12px', fontSize: '10px',
-                          color: openScript === p.id ? 'var(--accent-gold)' : 'var(--text-tertiary)',
-                          cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
-                        }}
-                      >
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-                          <MessageSquare size={13} strokeWidth={1.75} />
-                          message
-                        </span>
-                      </button>
-                      <button
-                        onClick={() => markMessaged(p.id)}
-                        style={{
-                          background: 'transparent', border: '1px solid var(--border-subtle)',
-                          borderRadius: 'var(--radius-full)', padding: '4px 12px', fontSize: '10px',
-                          color: 'var(--text-tertiary)', cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s',
-                        }}
-                        onMouseEnter={e => { e.currentTarget.style.color = 'var(--success)'; e.currentTarget.style.borderColor = 'rgba(52,211,153,0.3)' }}
-                        onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-tertiary)'; e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
-                      >
-                        Sent +20XP
-                      </button>
-                    </div>
-                  </div>
 
-                  {openScript === p.id && (
-                    <CopyableScript
-                      text={p.outreach_message || generateLinkedInMessage(p)}
-                      isAgentGenerated={!!p.outreach_message}
-                    />
-                  )}
+                    {openScript === p.id && (
+                      <CopyableScript
+                        text={p.outreach_message || generateLinkedInMessage(p)}
+                        isAgentGenerated={!!p.outreach_message}
+                        scriptMode={null}
+                        onScriptModeChange={() => {}}
+                      />
+                    )}
                   </div>
                 ))}
               </div>
@@ -824,15 +1044,12 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                   if (!ideas || ideas.length === 0) return null
                   return (
                     <div key={venture}>
-                      <p
-                        className="text-xs font-semibold uppercase tracking-widest mb-2"
-                        style={{ color: vc.color || 'var(--color-text-faint)' }}
-                      >
+                      <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: vc.color || 'var(--color-text-faint)' }}>
                         {VENTURE_LABELS[venture] || venture}
                       </p>
                       <div className="space-y-2">
                         {ideas.map((idea, i) => {
-                          const key = `${venture}_${i}`
+                          const key  = `${venture}_${i}`
                           const used = usedIdeas[key]
                           const isObj = typeof idea === 'object' && idea !== null
                           return (
@@ -887,6 +1104,7 @@ export default function DailyPrep({ onXpEarned, onCallLogged }) {
                 })}
               </div>
             )}
+
           </div>
         </>
       )}

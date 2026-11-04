@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Clock, CalendarDays, BarChart3, Radar, Flame } from 'lucide-react'
+import { Clock, CalendarDays, BarChart3, Radar, Flame, Briefcase, Target, Clapperboard } from 'lucide-react'
 import { useLocalStorage } from './hooks/useLocalStorage'
 import { DEFAULT_METRICS } from './data/metrics'
 import { getTasksForDay } from './data/tasks'
@@ -10,12 +10,20 @@ import ProspectPipeline from './components/ProspectPipeline'
 import CallTracker from './components/CallTracker'
 import GiMediaPipeline from './components/GiMediaPipeline'
 import ThemeEditor from './components/ThemeEditor'
+import ContentStudio from './components/ContentStudio'
+import { privateComponent } from './privateModules'
+
+const JobShortlist = privateComponent('JobShortlist')
+const GoalsOS = privateComponent('GoalsOS')
 
 const TABS = [
   { id: 'daily',    label: 'Daily HQ',        Icon: Clock },
   { id: 'weekly',   label: 'Weekly',           Icon: CalendarDays },
   { id: 'pipeline', label: 'Pipeline',         Icon: BarChart3 },
   { id: 'mission',  label: 'Mission Control',  Icon: Radar },
+  { id: 'jobs',     label: 'Job Shortlist',    Icon: Briefcase },
+  { id: 'goals',    label: 'Goals OS',         Icon: Target },
+  { id: 'content',  label: 'Content',          Icon: Clapperboard },
 ]
 
 function getDateKey() {
@@ -336,6 +344,15 @@ export default function App() {
           )}
           {tab === 'mission' && (
             <MissionControl metrics={metrics} setMetrics={setMetrics} />
+          )}
+          {tab === 'jobs' && (
+            <JobShortlist />
+          )}
+          {tab === 'goals' && (
+            <GoalsOS />
+          )}
+          {tab === 'content' && (
+            <ContentStudio />
           )}
         </div>
       </main>

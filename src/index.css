@@ -127,6 +127,14 @@
   --venture-athletics-dim: rgba(232, 196, 104, 0.10);
   --venture-admin:         #6B7082;
   --venture-admin-dim:     rgba(107, 112, 130, 0.10);
+  --venture-property:      #A78BFA;
+  --venture-property-dim:  rgba(167, 139, 250, 0.10);
+  --venture-body:          #F472B6;
+  --venture-body-dim:      rgba(244, 114, 182, 0.10);
+  --venture-spiritual:     #FB923C;
+  --venture-spiritual-dim: rgba(251, 146, 60, 0.10);
+  --venture-jobs:          #60A5FA;
+  --venture-jobs-dim:      rgba(96, 165, 250, 0.10);
 }
 
 body {
