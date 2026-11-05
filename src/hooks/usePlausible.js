@@ -1,13 +1,11 @@
 import { useState, useEffect, useCallback } from 'react'
 
-const API_KEY  = import.meta.env.VITE_PLAUSIBLE_API_KEY
-const SITE_ID  = import.meta.env.VITE_PLAUSIBLE_SITE_ID
-const BASE_URL = 'https://plausible.io/api/v1'
+// Calls go through the dev server's /api/plausible proxy (server/plausibleProxy.js),
+// which adds the API key and site id server-side. No secret reaches the browser.
+const BASE_URL = '/api/plausible'
 
 function plausibleFetch(path) {
-  return fetch(`${BASE_URL}${path}`, {
-    headers: { Authorization: `Bearer ${API_KEY}` },
-  }).then(r => {
+  return fetch(`${BASE_URL}${path}`).then(r => {
     if (!r.ok) throw new Error(`Plausible ${r.status}`)
     return r.json()
   })
@@ -25,10 +23,10 @@ export function usePlausible() {
     try {
       const [aggRes, srcRes] = await Promise.all([
         plausibleFetch(
-          `/stats/aggregate?site_id=${SITE_ID}&period=30d&metrics=visitors,pageviews,bounce_rate,visit_duration`
+          `/stats/aggregate?period=30d&metrics=visitors,pageviews,bounce_rate,visit_duration`
         ),
         plausibleFetch(
-          `/stats/breakdown?site_id=${SITE_ID}&period=30d&property=visit:source&metrics=visitors&limit=5`
+          `/stats/breakdown?period=30d&property=visit:source&metrics=visitors&limit=5`
         ),
       ])
       setStats(aggRes.results)
@@ -44,7 +42,7 @@ export function usePlausible() {
 
   const fetchRealtime = useCallback(async () => {
     try {
-      const res = await plausibleFetch(`/stats/realtime/visitors?site_id=${SITE_ID}`)
+      const res = await plausibleFetch(`/stats/realtime/visitors`)
       setRealtime(typeof res === 'number' ? res : 0)
     } catch {
       // silently fail on realtime — not critical

@@ -148,6 +148,23 @@ function PieceCard({ piece, status, onStatusChange }) {
               <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: '2px' }}>{piece.thumbnail?.visual}</div>
             </div>
           </div>
+
+          {(piece.sources?.length > 0 || piece.notes) && (
+            <div style={{ background: 'var(--layer-1)', borderRadius: 'var(--radius-md)', padding: 'var(--space-3)' }}>
+              <div style={{ ...label, marginBottom: 'var(--space-2)' }}>Sources and notes</div>
+              {piece.sources?.map(s => (
+                <div key={s.what} style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', marginBottom: '4px', lineHeight: 1.5 }}>
+                  {s.url
+                    ? <a href={s.url} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-blue)' }}>{s.what}</a>
+                    : s.what}
+                  <span style={{ color: 'var(--text-disabled)' }}> · checked {s.checked}</span>
+                </div>
+              ))}
+              {piece.notes && (
+                <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', marginTop: 'var(--space-2)', lineHeight: 1.5 }}>{piece.notes}</div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>

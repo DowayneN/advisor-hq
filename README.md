@@ -20,6 +20,19 @@ A few details that keep it reliable:
 
 Personal tabs (job shortlist, goals) and the content plan live in `src/private/`, which is gitignored here and kept in a separate private repo. `src/privateModules.js` loads whatever is in that folder at build time. In a fresh clone without it, those tabs show an empty state and everything else works.
 
+## Plausible stats
+
+Mission Control shows site stats from Plausible. The browser never sees the API key: it calls `/api/plausible/...` on the Vite server, and `server/plausibleProxy.js` adds the key and site id before forwarding to Plausible. Only three read-only stats endpoints are allowed through.
+
+Set these in `.env` (no `VITE_` prefix, so Vite keeps them out of the bundle):
+
+```
+PLAUSIBLE_API_KEY=...
+PLAUSIBLE_SITE_ID=yoursite.com
+```
+
+The proxy runs under `npm run dev` and `npm run preview`. On a static host there's no server, so the stats panel shows an error instead.
+
 ## Stack
 
 React 18, Vite, Tailwind CSS, Node.js, Anthropic SDK.
