@@ -79,6 +79,16 @@ function PieceCard({ piece, status, onStatusChange }) {
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', gap: 'var(--space-2)', alignItems: 'center', flexWrap: 'wrap', marginBottom: '6px' }}>
             <span style={label}>{formatWeek(piece.targetWeek)}</span>
+            {piece.pillar && (
+              <span style={{
+                ...label,
+                color: piece.pillar === 'CloseCoach' ? ACCENT : 'var(--accent-blue)',
+                border: `1px solid ${piece.pillar === 'CloseCoach' ? ACCENT : 'var(--accent-blue)'}`,
+                padding: '1px 8px', borderRadius: 'var(--radius-full)',
+              }}>
+                {piece.pillar}
+              </span>
+            )}
             {held && (
               <span style={{
                 ...label, color: 'var(--warning)', background: 'var(--warning-bg)',
