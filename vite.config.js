@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react(),
-      analyticsProxy({ apiKey: env.UMAMI_API_KEY, websiteId: env.UMAMI_WEBSITE_ID }),
+      analyticsProxy({ shareId: env.UMAMI_SHARE_ID }),
     ],
     server: {
       port: 5080,

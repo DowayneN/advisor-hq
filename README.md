@@ -22,13 +22,12 @@ Personal tabs (job shortlist, goals) and the content plan live in `src/private/`
 
 ## Site stats (Umami)
 
-Mission Control shows 30-day traffic for drivingtestswap.uk from Umami Cloud. The browser never sees the API key: it calls `/api/analytics/summary` and `/api/analytics/realtime` on the Vite server, and `server/analyticsProxy.js` adds the key, calls Umami and returns only the numbers the panel needs.
+Mission Control shows 30-day traffic for drivingtestswap.uk from Umami Cloud. The browser never talks to Umami: it calls `/api/analytics/summary` and `/api/analytics/realtime` on the Vite server, and `server/analyticsProxy.js` reads the stats through the website's Umami share link (works on the free plan, no API key) and returns only the numbers the panel needs.
 
-Set these in `.env` (no `VITE_` prefix, so Vite keeps them out of the bundle). Create the key in Umami Cloud under Settings, API keys.
+Turn on the share URL for the website in Umami, then set its id (the last part of the link) in `.env`. No `VITE_` prefix, so Vite keeps it out of the bundle.
 
 ```
-UMAMI_API_KEY=...
-UMAMI_WEBSITE_ID=your-website-id
+UMAMI_SHARE_ID=...
 ```
 
 The proxy runs under `npm run dev` and `npm run preview`. On a static host there's no server, so the stats panel shows an error instead.
