@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { RefreshCw, Radio, TrendingUp, Eye, Clock, ExternalLink } from 'lucide-react'
 import { METRICS_DEFINITIONS } from '../data/metrics'
 import MetricInput from './MetricInput'
-import { usePlausible } from '../hooks/usePlausible'
+import { useAnalytics } from '../hooks/useAnalytics'
 
 function ProgressBar({ current, target, color }) {
   const pct = Math.min(100, Math.round((current / target) * 100))
@@ -43,7 +43,7 @@ function ventureOverallPct(ventureKey, metrics) {
 }
 
 function DTSTrafficWidget() {
-  const { stats, realtime, sources, loading, error, lastUpdated, refetch } = usePlausible()
+  const { stats, realtime, sources, loading, error, lastUpdated, refetch } = useAnalytics()
 
   const fmt = v => v == null ? '—' : Number(v).toLocaleString()
   const fmtDuration = secs => {
@@ -103,10 +103,10 @@ function DTSTrafficWidget() {
             <RefreshCw size={11} strokeWidth={2} />
           </button>
           <a
-            href="https://plausible.io/drivingtestswap.uk"
+            href="https://cloud.umami.is/websites/2f0354ae-35d0-41df-9718-10ed81dd8426"
             target="_blank"
             rel="noopener noreferrer"
-            title="Open Plausible"
+            title="Open Umami"
             style={{ color: 'var(--text-tertiary)', display: 'flex', alignItems: 'center' }}
           >
             <ExternalLink size={11} strokeWidth={2} />
@@ -131,10 +131,10 @@ function DTSTrafficWidget() {
           {/* Stat row */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '6px', marginBottom: 'var(--space-3)' }}>
             {[
-              { icon: TrendingUp, label: 'Visitors',  value: fmt(stats.visitors?.value),                       note: '30 days' },
-              { icon: Eye,        label: 'Pageviews', value: fmt(stats.pageviews?.value),                      note: '30 days' },
-              { icon: Radio,      label: 'Bounce',    value: stats.bounce_rate?.value != null ? `${stats.bounce_rate.value}%` : '—', note: 'rate' },
-              { icon: Clock,      label: 'Avg. Time', value: fmtDuration(stats.visit_duration?.value),         note: 'on site' },
+              { icon: TrendingUp, label: 'Visitors',  value: fmt(stats.visitors),                       note: '30 days' },
+              { icon: Eye,        label: 'Pageviews', value: fmt(stats.pageviews),                      note: '30 days' },
+              { icon: Radio,      label: 'Bounce',    value: stats.bounceRate != null ? `${stats.bounceRate}%` : '—', note: 'rate' },
+              { icon: Clock,      label: 'Avg. Time', value: fmtDuration(stats.avgDuration),         note: 'on site' },
             ].map(s => (
               <div key={s.label} style={{
                 background: 'var(--layer-3)',

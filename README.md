@@ -20,15 +20,15 @@ A few details that keep it reliable:
 
 Personal tabs (job shortlist, goals) and the content plan live in `src/private/`, which is gitignored here and kept in a separate private repo. `src/privateModules.js` loads whatever is in that folder at build time. In a fresh clone without it, those tabs show an empty state and everything else works.
 
-## Plausible stats
+## Site stats (Umami)
 
-Mission Control shows site stats from Plausible. The browser never sees the API key: it calls `/api/plausible/...` on the Vite server, and `server/plausibleProxy.js` adds the key and site id before forwarding to Plausible. Only three read-only stats endpoints are allowed through.
+Mission Control shows 30-day traffic for drivingtestswap.uk from Umami Cloud. The browser never sees the API key: it calls `/api/analytics/summary` and `/api/analytics/realtime` on the Vite server, and `server/analyticsProxy.js` adds the key, calls Umami and returns only the numbers the panel needs.
 
-Set these in `.env` (no `VITE_` prefix, so Vite keeps them out of the bundle):
+Set these in `.env` (no `VITE_` prefix, so Vite keeps them out of the bundle). Create the key in Umami Cloud under Settings, API keys.
 
 ```
-PLAUSIBLE_API_KEY=...
-PLAUSIBLE_SITE_ID=yoursite.com
+UMAMI_API_KEY=...
+UMAMI_WEBSITE_ID=your-website-id
 ```
 
 The proxy runs under `npm run dev` and `npm run preview`. On a static host there's no server, so the stats panel shows an error instead.

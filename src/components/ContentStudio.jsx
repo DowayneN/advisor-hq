@@ -24,6 +24,31 @@ function formatWeek(iso) {
   return 'w/c ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
 }
 
+function shortDay(iso) {
+  return new Date(iso + 'T00:00:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
+}
+
+/* Production and posting dates, mirrored as events in Google Calendar */
+function ScheduleLine({ schedule }) {
+  if (!schedule) return null
+  const steps = [
+    ['Script', schedule.script],
+    ['Record + edit', schedule.record],
+    ['YouTube', schedule.youtube],
+    ['LinkedIn', schedule.linkedin],
+    ['Shorts', schedule.shorts?.length ? schedule.shorts.map(shortDay).join(', ') : null],
+  ].filter(([, v]) => v)
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px', marginBottom: 'var(--space-3)' }}>
+      {steps.map(([name, v]) => (
+        <span key={name} style={{ fontSize: '10px', fontFamily: 'var(--font-mono)', color: 'var(--text-tertiary)' }}>
+          <span style={{ color: ACCENT }}>{name}</span> {name === 'Shorts' ? v : shortDay(v)}
+        </span>
+      ))}
+    </div>
+  )
+}
+
 /* ── Status track: five steps, click to set ─────────────────────────────── */
 function StatusTrack({ status, onChange, locked }) {
   const current = STATUS_IDS.indexOf(status)
@@ -102,6 +127,7 @@ function PieceCard({ piece, status, onStatusChange }) {
           <div style={{ fontSize: 'var(--text-base)', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.4, marginBottom: 'var(--space-3)' }}>
             {piece.title}
           </div>
+          <ScheduleLine schedule={piece.schedule} />
           <StatusTrack status={status} onChange={onStatusChange} locked={held} />
           {held && (
             <div style={{ fontSize: 'var(--text-xs)', color: 'var(--warning)', marginTop: 'var(--space-2)' }}>

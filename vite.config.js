@@ -1,6 +1,6 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
-import { plausibleProxy } from './server/plausibleProxy.js'
+import { analyticsProxy } from './server/analyticsProxy.js'
 
 export default defineConfig(({ mode }) => {
   // Load every variable from .env for server-side use only. Anything without
@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react(),
-      plausibleProxy({ apiKey: env.PLAUSIBLE_API_KEY, siteId: env.PLAUSIBLE_SITE_ID }),
+      analyticsProxy({ apiKey: env.UMAMI_API_KEY, websiteId: env.UMAMI_WEBSITE_ID }),
     ],
     server: {
       port: 5080,
